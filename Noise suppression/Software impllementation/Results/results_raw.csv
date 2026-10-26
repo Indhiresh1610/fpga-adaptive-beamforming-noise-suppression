@@ -1,0 +1,1501 @@
+signal_type,noise_type,input_snr_db,seed,method,snr_gain_db,segsnr_db,sdr_db,lsd_db,oracle_gain_rmse
+single_tone,white,-5,0,Spectral Subtraction,8.5721,3.9789,3.1812,27.3044,0.2418
+single_tone,white,-5,0,Spectral Gating,8.8701,4.297,3.776,25.6385,0.2457
+single_tone,white,-5,0,Wiener,19.1818,15.0924,14.0334,10.1148,0.0361
+single_tone,white,-5,0,MMSE-STSA,13.4604,8.8045,8.1498,24.7657,0.2965
+single_tone,white,-5,0,log-MMSE,16.4061,11.8698,11.1109,19.9801,0.1673
+single_tone,white,-5,1,Spectral Subtraction,8.5118,3.9595,3.1527,27.2687,0.2435
+single_tone,white,-5,1,Spectral Gating,8.7921,4.2419,3.77,25.6679,0.248
+single_tone,white,-5,1,Wiener,19.2737,15.1071,14.1231,10.2971,0.0407
+single_tone,white,-5,1,MMSE-STSA,13.3593,8.7135,8.0817,24.7023,0.2983
+single_tone,white,-5,1,log-MMSE,16.3933,11.8552,11.1064,19.9322,0.1706
+single_tone,white,-5,2,Spectral Subtraction,8.5463,3.9758,3.121,27.3399,0.2423
+single_tone,white,-5,2,Spectral Gating,8.8805,4.3416,3.7172,25.6416,0.2442
+single_tone,white,-5,2,Wiener,19.5396,15.3575,14.4555,10.1017,0.0353
+single_tone,white,-5,2,MMSE-STSA,13.567,8.9128,8.2489,24.7826,0.296
+single_tone,white,-5,2,log-MMSE,16.5915,12.0415,11.2895,19.9854,0.1678
+single_tone,white,-5,3,Spectral Subtraction,8.3948,3.8133,3.0191,27.5501,0.2509
+single_tone,white,-5,3,Spectral Gating,8.4019,3.8158,3.2964,26.2381,0.2674
+single_tone,white,-5,3,Wiener,19.2096,14.8876,14.0574,10.6566,0.0444
+single_tone,white,-5,3,MMSE-STSA,13.119,8.4407,7.8142,24.9732,0.3042
+single_tone,white,-5,3,log-MMSE,16.2582,11.647,10.9636,20.1753,0.1735
+single_tone,white,-5,4,Spectral Subtraction,8.4388,3.8233,3.3424,27.4317,0.247
+single_tone,white,-5,4,Spectral Gating,8.7854,4.1727,3.8107,25.7135,0.2494
+single_tone,white,-5,4,Wiener,19.2231,15.0057,14.1282,10.4796,0.0432
+single_tone,white,-5,4,MMSE-STSA,13.2288,8.5415,8.1515,24.9098,0.3017
+single_tone,white,-5,4,log-MMSE,16.3058,11.7196,11.2019,20.1261,0.1716
+single_tone,white,0,0,Spectral Subtraction,8.5819,8.992,8.4418,22.6503,0.2419
+single_tone,white,0,0,Spectral Gating,8.8665,9.2975,8.8154,21.0399,0.2459
+single_tone,white,0,0,Wiener,19.0837,20.0479,19.0441,7.2107,0.0381
+single_tone,white,0,0,MMSE-STSA,13.4141,13.7695,13.3006,20.0008,0.2966
+single_tone,white,0,0,log-MMSE,16.3502,16.842,16.2526,15.4297,0.1676
+single_tone,white,0,1,Spectral Subtraction,8.5213,8.9713,8.4115,22.6194,0.2436
+single_tone,white,0,1,Spectral Gating,8.8022,9.2571,8.8013,21.0697,0.248
+single_tone,white,0,1,Wiener,19.0937,20.0242,19.0425,7.4183,0.0422
+single_tone,white,0,1,MMSE-STSA,13.2913,13.6638,13.2036,19.9491,0.2983
+single_tone,white,0,1,log-MMSE,16.2976,16.8056,16.2085,15.4045,0.1708
+single_tone,white,0,2,Spectral Subtraction,8.562,8.9955,8.4346,22.6854,0.2423
+single_tone,white,0,2,Spectral Gating,8.9823,9.456,8.9828,21.0233,0.2435
+single_tone,white,0,2,Wiener,19.4435,20.3381,19.408,7.2027,0.0368
+single_tone,white,0,2,MMSE-STSA,13.509,13.8691,13.4109,20.0187,0.296
+single_tone,white,0,2,log-MMSE,16.5377,17.022,16.4451,15.4368,0.1679
+single_tone,white,0,3,Spectral Subtraction,8.4035,8.8267,8.2666,22.8941,0.251
+single_tone,white,0,3,Spectral Gating,8.4026,8.8195,8.3471,21.6376,0.2674
+single_tone,white,0,3,Wiener,19.101,19.8586,19.0591,7.6941,0.0459
+single_tone,white,0,3,MMSE-STSA,13.0797,13.4151,12.9668,20.22,0.3042
+single_tone,white,0,3,log-MMSE,16.204,16.6272,16.1055,15.638,0.1737
+single_tone,white,0,4,Spectral Subtraction,8.433,8.822,8.4079,22.7779,0.2472
+single_tone,white,0,4,Spectral Gating,8.7777,9.1682,8.7909,21.1184,0.2496
+single_tone,white,0,4,Wiener,19.0442,19.9225,19.0171,7.5506,0.0453
+single_tone,white,0,4,MMSE-STSA,13.1823,13.5091,13.1621,20.1472,0.3017
+single_tone,white,0,4,log-MMSE,16.2152,16.6709,16.1863,15.5753,0.1719
+single_tone,white,5,0,Spectral Subtraction,8.5766,13.993,13.5213,18.1452,0.2422
+single_tone,white,5,0,Spectral Gating,8.8541,14.2926,13.8256,16.6313,0.2461
+single_tone,white,5,0,Wiener,18.9121,25.0292,23.9084,4.8451,0.0417
+single_tone,white,5,0,MMSE-STSA,13.3653,18.7513,18.3203,15.345,0.2968
+single_tone,white,5,0,log-MMSE,16.262,21.8265,21.2294,11.12,0.1683
+single_tone,white,5,1,Spectral Subtraction,8.5178,13.9727,13.4831,18.122,0.2439
+single_tone,white,5,1,Spectral Gating,8.7942,14.255,13.7937,16.6627,0.2483
+single_tone,white,5,1,Wiener,18.9024,24.973,23.8857,5.0615,0.0455
+single_tone,white,5,1,MMSE-STSA,13.2403,18.6406,18.2105,15.3121,0.2985
+single_tone,white,5,1,log-MMSE,16.1983,21.7729,21.1691,11.1282,0.1713
+single_tone,white,5,2,Spectral Subtraction,8.5586,13.9982,13.519,18.1818,0.2426
+single_tone,white,5,2,Spectral Gating,8.9742,14.4523,13.9751,16.6085,0.2438
+single_tone,white,5,2,Wiener,19.2502,25.3153,24.2384,4.8261,0.0404
+single_tone,white,5,2,MMSE-STSA,13.4564,18.8491,18.4238,15.3629,0.2963
+single_tone,white,5,2,log-MMSE,16.4404,22.0046,21.4104,11.1271,0.1686
+single_tone,white,5,3,Spectral Subtraction,8.3988,13.8292,13.3435,18.3851,0.2512
+single_tone,white,5,3,Spectral Gating,8.3919,13.8168,13.3609,17.2205,0.2678
+single_tone,white,5,3,Wiener,18.908,24.854,23.9037,5.2475,0.0486
+single_tone,white,5,3,MMSE-STSA,13.0329,18.4027,17.987,15.5786,0.3044
+single_tone,white,5,3,log-MMSE,16.1082,21.6175,21.0745,11.3427,0.1743
+single_tone,white,5,4,Spectral Subtraction,8.4261,13.8204,13.421,18.2725,0.2475
+single_tone,white,5,4,Spectral Gating,8.7689,14.1666,13.7761,16.7139,0.2499
+single_tone,white,5,4,Wiener,18.7617,24.8832,23.7536,5.1544,0.0485
+single_tone,white,5,4,MMSE-STSA,13.1118,18.4833,18.1063,15.4992,0.302
+single_tone,white,5,4,log-MMSE,16.0734,21.64,21.065,11.2734,0.1726
+single_tone,white,10,0,Spectral Subtraction,8.5681,18.9918,18.5448,13.8918,0.2425
+single_tone,white,10,0,Spectral Gating,8.8375,19.2877,18.8221,12.5522,0.2466
+single_tone,white,10,0,Wiener,18.5269,29.986,28.534,3.0593,0.0462
+single_tone,white,10,0,MMSE-STSA,13.2621,23.7293,23.2438,10.9065,0.2973
+single_tone,white,10,0,log-MMSE,16.0621,26.8093,26.0529,7.247,0.1693
+single_tone,white,10,1,Spectral Subtraction,8.506,18.9707,18.4948,13.8792,0.2443
+single_tone,white,10,1,Spectral Gating,8.7787,19.2512,18.7784,12.5844,0.2488
+single_tone,white,10,1,Wiener,18.5993,29.9506,28.5939,3.2622,0.0496
+single_tone,white,10,1,MMSE-STSA,13.1625,23.6242,23.1519,10.9039,0.2989
+single_tone,white,10,1,log-MMSE,16.043,26.7556,26.033,7.2978,0.1723
+single_tone,white,10,2,Spectral Subtraction,8.5471,18.996,18.5347,13.9285,0.2429
+single_tone,white,10,2,Spectral Gating,8.9571,19.448,18.9577,12.522,0.2443
+single_tone,white,10,2,Wiener,18.8937,30.2713,28.8898,3.0244,0.045
+single_tone,white,10,2,MMSE-STSA,13.3713,23.834,23.36,10.9221,0.2967
+single_tone,white,10,2,log-MMSE,16.264,26.9907,26.254,7.2502,0.1696
+single_tone,white,10,3,Spectral Subtraction,8.3883,18.8279,18.3643,14.1205,0.2515
+single_tone,white,10,3,Spectral Gating,8.3764,18.8139,18.3596,13.1158,0.2682
+single_tone,white,10,3,Wiener,18.5403,29.8424,28.5481,3.3707,0.0523
+single_tone,white,10,3,MMSE-STSA,12.9457,23.3885,22.9266,11.1577,0.3047
+single_tone,white,10,3,log-MMSE,15.9262,26.6055,25.9166,7.4777,0.1751
+single_tone,white,10,4,Spectral Subtraction,8.417,18.8176,18.4171,14.0166,0.2477
+single_tone,white,10,4,Spectral Gating,8.7586,19.1604,18.7628,12.6364,0.2503
+single_tone,white,10,4,Wiener,18.3522,29.8549,28.3497,3.3209,0.0525
+single_tone,white,10,4,MMSE-STSA,13.0105,23.4639,23.0089,11.0712,0.3025
+single_tone,white,10,4,log-MMSE,15.8622,26.6171,25.8596,7.4094,0.1735
+single_tone,pink,-5,0,Spectral Subtraction,8.143,5.2899,2.8197,22.4889,0.2416
+single_tone,pink,-5,0,Spectral Gating,9.9777,6.8597,4.896,20.8945,0.245
+single_tone,pink,-5,0,Wiener,19.7515,15.9957,14.6128,7.6877,0.036
+single_tone,pink,-5,0,MMSE-STSA,12.7254,9.4647,7.4578,19.8756,0.2962
+single_tone,pink,-5,0,log-MMSE,16.2089,12.5741,10.941,15.4687,0.1668
+single_tone,pink,-5,1,Spectral Subtraction,9.208,6.2884,3.942,22.1261,0.2422
+single_tone,pink,-5,1,Spectral Gating,11.7346,7.7108,6.7323,20.5425,0.2456
+single_tone,pink,-5,1,Wiener,20.6313,16.7702,15.5219,7.4588,0.0396
+single_tone,pink,-5,1,MMSE-STSA,14.1326,10.3612,8.9244,19.4735,0.2966
+single_tone,pink,-5,1,log-MMSE,17.3763,13.4785,12.1589,15.0798,0.1691
+single_tone,pink,-5,2,Spectral Subtraction,8.7507,5.5541,3.4199,22.504,0.242
+single_tone,pink,-5,2,Spectral Gating,10.7555,6.872,5.7291,20.8605,0.2429
+single_tone,pink,-5,2,Wiener,20.4883,16.4629,15.4072,7.7297,0.035
+single_tone,pink,-5,2,MMSE-STSA,13.4791,9.8714,8.2226,19.8559,0.2952
+single_tone,pink,-5,2,log-MMSE,17.1055,13.1282,11.853,15.4506,0.167
+single_tone,pink,-5,3,Spectral Subtraction,9.7072,6.0322,4.3876,22.7528,0.2501
+single_tone,pink,-5,3,Spectral Gating,10.1367,6.2955,5.0427,21.564,0.2668
+single_tone,pink,-5,3,Wiener,20.4231,16.2035,15.3258,7.9128,0.0443
+single_tone,pink,-5,3,MMSE-STSA,14.5115,10.2366,9.2562,20.0844,0.3032
+single_tone,pink,-5,3,log-MMSE,17.4932,13.1856,12.2591,15.6195,0.1726
+single_tone,pink,-5,4,Spectral Subtraction,5.9746,4.0022,0.8937,22.8809,0.2481
+single_tone,pink,-5,4,Spectral Gating,5.3051,4.2721,0.3285,21.2686,0.2513
+single_tone,pink,-5,4,Wiener,13.4569,14.0775,8.3649,8.3385,0.0458
+single_tone,pink,-5,4,MMSE-STSA,9.3662,7.7932,4.3014,20.3103,0.3024
+single_tone,pink,-5,4,log-MMSE,11.6596,10.8363,6.5673,15.9154,0.1723
+single_tone,pink,0,0,Spectral Subtraction,8.1476,10.3038,8.0289,18.109,0.2417
+single_tone,pink,0,0,Spectral Gating,9.9728,11.8579,9.9274,16.6288,0.2451
+single_tone,pink,0,0,Wiener,19.6529,20.9522,19.615,5.4665,0.0382
+single_tone,pink,0,0,MMSE-STSA,12.6958,14.4341,12.5944,15.3879,0.2962
+single_tone,pink,0,0,log-MMSE,16.1637,17.5487,16.0713,11.4117,0.1671
+single_tone,pink,0,1,Spectral Subtraction,9.2129,11.3001,9.1307,17.7536,0.2423
+single_tone,pink,0,1,Spectral Gating,11.7238,12.7099,11.7238,16.2729,0.2458
+single_tone,pink,0,1,Wiener,20.4379,21.6817,20.401,5.2765,0.0415
+single_tone,pink,0,1,MMSE-STSA,14.0754,15.3157,14.0081,15.001,0.2965
+single_tone,pink,0,1,log-MMSE,17.2831,18.4288,17.2143,11.0485,0.1692
+single_tone,pink,0,2,Spectral Subtraction,8.7582,10.5749,8.658,18.1385,0.242
+single_tone,pink,0,2,Spectral Gating,10.7817,11.9111,10.7828,16.5975,0.2429
+single_tone,pink,0,2,Wiener,20.365,21.4325,20.3349,5.5056,0.0369
+single_tone,pink,0,2,MMSE-STSA,13.4307,14.8388,13.3501,15.3853,0.2952
+single_tone,pink,0,2,log-MMSE,17.0471,18.1113,16.9689,11.4128,0.1672
+single_tone,pink,0,3,Spectral Subtraction,9.7137,11.0485,9.5954,18.34,0.2502
+single_tone,pink,0,3,Spectral Gating,10.135,11.2971,10.0843,17.2589,0.2669
+single_tone,pink,0,3,Wiener,20.2885,21.1798,20.2674,5.6035,0.0459
+single_tone,pink,0,3,MMSE-STSA,14.4658,15.2046,14.3701,15.5747,0.3032
+single_tone,pink,0,3,log-MMSE,17.4268,18.1627,17.3489,11.5196,0.1728
+single_tone,pink,0,4,Spectral Subtraction,5.9709,9.002,5.9504,18.4883,0.2483
+single_tone,pink,0,4,Spectral Gating,5.3019,9.2626,5.3143,16.9926,0.2515
+single_tone,pink,0,4,Wiener,13.4149,19.0227,13.3893,6.0786,0.0479
+single_tone,pink,0,4,MMSE-STSA,9.3494,12.775,9.3326,15.818,0.3024
+single_tone,pink,0,4,log-MMSE,11.6324,15.8072,11.6069,11.842,0.1727
+single_tone,pink,5,0,Spectral Subtraction,8.1423,15.3056,13.0944,14.0278,0.2419
+single_tone,pink,5,0,Spectral Gating,9.9568,16.8511,14.9314,12.7432,0.2455
+single_tone,pink,5,0,Wiener,19.4705,25.9317,24.4657,3.7563,0.0421
+single_tone,pink,5,0,MMSE-STSA,12.6593,19.4156,17.6176,11.2161,0.2963
+single_tone,pink,5,0,log-MMSE,16.0876,22.5324,21.0546,7.8832,0.1678
+single_tone,pink,5,1,Spectral Subtraction,9.2099,16.3025,14.1838,13.6863,0.2426
+single_tone,pink,5,1,Spectral Gating,11.7099,17.7089,16.7096,12.3892,0.2462
+single_tone,pink,5,1,Wiener,20.2361,26.6265,25.2242,3.6088,0.0453
+single_tone,pink,5,1,MMSE-STSA,14.0308,20.296,19.0078,10.8543,0.2966
+single_tone,pink,5,1,log-MMSE,17.1883,23.397,22.1655,7.5551,0.1698
+single_tone,pink,5,2,Spectral Subtraction,8.7527,15.5804,13.7216,14.0769,0.2424
+single_tone,pink,5,2,Spectral Gating,10.7777,16.9121,15.7788,12.7194,0.2433
+single_tone,pink,5,2,Wiener,20.1632,26.414,25.1533,3.7744,0.0411
+single_tone,pink,5,2,MMSE-STSA,13.3809,19.8245,18.3539,11.2353,0.2953
+single_tone,pink,5,2,log-MMSE,16.9581,23.0999,21.9326,7.8968,0.1678
+single_tone,pink,5,3,Spectral Subtraction,9.7062,16.0508,14.658,14.2088,0.2504
+single_tone,pink,5,3,Spectral Gating,10.1184,16.2923,15.0904,13.3032,0.2672
+single_tone,pink,5,3,Wiener,20.0443,26.1778,25.0491,3.8091,0.0486
+single_tone,pink,5,3,MMSE-STSA,14.4039,20.1869,19.3653,11.3589,0.3033
+single_tone,pink,5,3,log-MMSE,17.3034,23.1506,22.2783,7.9225,0.1733
+single_tone,pink,5,4,Spectral Subtraction,5.9664,14.0011,10.9627,14.3859,0.2485
+single_tone,pink,5,4,Spectral Gating,5.2984,14.2609,10.3051,13.0888,0.2519
+single_tone,pink,5,4,Wiener,13.3421,23.9995,18.3346,4.3267,0.0511
+single_tone,pink,5,4,MMSE-STSA,9.3221,17.7649,14.3177,11.6358,0.3026
+single_tone,pink,5,4,log-MMSE,11.5864,20.7921,16.5791,8.2882,0.1733
+single_tone,pink,10,0,Spectral Subtraction,8.1319,20.3039,18.1112,10.3839,0.2424
+single_tone,pink,10,0,Spectral Gating,9.9471,21.8488,19.9335,9.3985,0.2459
+single_tone,pink,10,0,Wiener,19.0553,30.7866,29.0609,2.5018,0.0478
+single_tone,pink,10,0,MMSE-STSA,12.5778,24.392,22.5598,7.6098,0.2967
+single_tone,pink,10,0,log-MMSE,15.9044,27.5121,25.8935,5.0996,0.1689
+single_tone,pink,10,1,Spectral Subtraction,9.1969,21.3023,19.1885,10.0567,0.2431
+single_tone,pink,10,1,Spectral Gating,11.6818,22.7067,21.6815,9.05,0.2468
+single_tone,pink,10,1,Wiener,19.8572,31.4802,29.8534,2.3961,0.0504
+single_tone,pink,10,1,MMSE-STSA,13.9472,25.2802,23.9388,7.2792,0.297
+single_tone,pink,10,1,log-MMSE,17.0072,28.3778,26.9993,4.816,0.171
+single_tone,pink,10,2,Spectral Subtraction,8.7387,20.5818,18.7291,10.4491,0.2429
+single_tone,pink,10,2,Spectral Gating,10.7571,21.9109,20.7577,9.3875,0.2439
+single_tone,pink,10,2,Wiener,19.7511,31.3213,29.7478,2.4984,0.0467
+single_tone,pink,10,2,MMSE-STSA,13.2865,24.8121,23.277,7.6456,0.2957
+single_tone,pink,10,2,log-MMSE,16.7699,28.0892,26.7612,5.1122,0.1689
+single_tone,pink,10,3,Spectral Subtraction,9.691,21.0466,19.6701,10.4905,0.2508
+single_tone,pink,10,3,Spectral Gating,10.0961,21.284,20.0811,9.8509,0.2677
+single_tone,pink,10,3,Wiener,19.5881,31.0856,29.6002,2.4911,0.0528
+single_tone,pink,10,3,MMSE-STSA,14.2874,25.1664,24.272,7.6682,0.3035
+single_tone,pink,10,3,log-MMSE,17.0707,28.135,27.0653,5.0543,0.1742
+single_tone,pink,10,4,Spectral Subtraction,5.9606,18.9986,15.9611,10.7027,0.2489
+single_tone,pink,10,4,Spectral Gating,5.2939,19.2545,15.2978,9.7141,0.2523
+single_tone,pink,10,4,Wiener,13.2315,28.9189,23.2291,3.0284,0.0557
+single_tone,pink,10,4,MMSE-STSA,9.2842,22.7576,19.2829,7.9955,0.3029
+single_tone,pink,10,4,log-MMSE,11.5167,25.7804,21.5144,5.4709,0.1742
+single_tone,narrowband,-5,0,Spectral Subtraction,6.3814,4.1426,1.37,8.3554,0.1265
+single_tone,narrowband,-5,0,Spectral Gating,5.9122,5.1492,0.9123,8.1267,0.1399
+single_tone,narrowband,-5,0,Wiener,21.7003,22.5621,16.6849,4.6912,0.1174
+single_tone,narrowband,-5,0,MMSE-STSA,11.6273,8.0805,6.615,7.8264,0.9387
+single_tone,narrowband,-5,0,log-MMSE,16.0804,12.9821,11.0648,6.8122,0.1348
+single_tone,narrowband,-5,1,Spectral Subtraction,9.3132,8.442,4.3046,7.3464,0.1252
+single_tone,narrowband,-5,1,Spectral Gating,9.6004,10.398,4.5974,7.0364,0.1257
+single_tone,narrowband,-5,1,Wiener,28.3269,28.6127,23.3179,3.3714,0.1197
+single_tone,narrowband,-5,1,MMSE-STSA,15.2157,11.8163,10.2072,6.9035,0.9372
+single_tone,narrowband,-5,1,log-MMSE,19.5137,16.6494,14.5038,5.9038,0.1337
+single_tone,narrowband,-5,2,Spectral Subtraction,7.8432,6.8019,2.8306,7.7693,0.1416
+single_tone,narrowband,-5,2,Spectral Gating,8.2092,9.0061,3.2064,7.3458,0.129
+single_tone,narrowband,-5,2,Wiener,26.0918,26.8993,21.0786,3.8736,0.1274
+single_tone,narrowband,-5,2,MMSE-STSA,13.3932,10.1026,8.3808,7.345,0.9597
+single_tone,narrowband,-5,2,log-MMSE,18.1803,15.2529,13.1657,6.3097,0.1388
+single_tone,narrowband,-5,3,Spectral Subtraction,9.0813,7.8818,3.9957,7.4365,0.1418
+single_tone,narrowband,-5,3,Spectral Gating,8.7975,8.9144,3.7933,7.1921,0.1289
+single_tone,narrowband,-5,3,Wiener,28.0499,27.9301,23.0618,3.5292,0.1303
+single_tone,narrowband,-5,3,MMSE-STSA,14.7452,11.1191,9.6729,6.9943,0.9675
+single_tone,narrowband,-5,3,log-MMSE,19.321,16.1204,14.239,5.9906,0.1404
+single_tone,narrowband,-5,4,Spectral Subtraction,9.846,8.312,4.8366,7.5349,0.1163
+single_tone,narrowband,-5,4,Spectral Gating,9.2585,7.9136,4.2562,7.5157,0.1306
+single_tone,narrowband,-5,4,Wiener,29.2708,28.3617,24.2613,3.5246,0.1051
+single_tone,narrowband,-5,4,MMSE-STSA,15.0606,11.5625,10.0516,7.0801,0.9509
+single_tone,narrowband,-5,4,log-MMSE,19.9683,16.7492,14.9573,6.0284,0.1238
+single_tone,narrowband,0,0,Spectral Subtraction,6.3808,9.1426,6.3769,7.3569,0.121
+single_tone,narrowband,0,0,Spectral Gating,5.9121,10.1492,5.9123,7.1222,0.1397
+single_tone,narrowband,0,0,Wiener,21.6511,27.0291,21.6443,3.8113,0.1024
+single_tone,narrowband,0,0,MMSE-STSA,11.6217,13.0778,11.6161,6.8303,0.9376
+single_tone,narrowband,0,0,log-MMSE,16.0676,17.9781,16.0608,5.8394,0.1259
+single_tone,narrowband,0,1,Spectral Subtraction,9.309,13.4372,9.3047,6.3858,0.1096
+single_tone,narrowband,0,1,Spectral Gating,9.5972,15.3895,9.5948,6.079,0.1254
+single_tone,narrowband,0,1,Wiener,27.9813,31.8171,27.9769,2.5997,0.1099
+single_tone,narrowband,0,1,MMSE-STSA,15.202,16.8075,15.1973,5.947,0.9363
+single_tone,narrowband,0,1,log-MMSE,19.4724,21.6354,19.4673,4.9808,0.1269
+single_tone,narrowband,0,2,Spectral Subtraction,7.8424,11.8016,7.8375,6.7746,0.1188
+single_tone,narrowband,0,2,Spectral Gating,8.2069,13.9988,8.2054,6.3742,0.1285
+single_tone,narrowband,0,2,Wiener,25.8944,30.5111,25.8886,3.0563,0.1221
+single_tone,narrowband,0,2,MMSE-STSA,13.3845,15.1023,13.3785,6.3803,0.9585
+single_tone,narrowband,0,2,log-MMSE,18.1462,20.2368,18.1394,5.3729,0.1338
+single_tone,narrowband,0,3,Spectral Subtraction,9.0799,12.8855,9.0516,6.4774,0.1281
+single_tone,narrowband,0,3,Spectral Gating,8.7937,13.913,8.7907,6.2414,0.1275
+single_tone,narrowband,0,3,Wiener,27.6791,31.4937,27.6844,2.758,0.1282
+single_tone,narrowband,0,3,MMSE-STSA,14.7265,16.1166,14.7003,6.0521,0.9663
+single_tone,narrowband,0,3,log-MMSE,19.2713,21.1284,19.2429,5.0779,0.1373
+single_tone,narrowband,0,4,Spectral Subtraction,9.8427,13.3097,9.8388,6.5527,0.1114
+single_tone,narrowband,0,4,Spectral Gating,9.2562,12.913,9.2545,6.5389,0.1301
+single_tone,narrowband,0,4,Wiener,28.8437,31.7531,28.8394,2.7246,0.0905
+single_tone,narrowband,0,4,MMSE-STSA,15.048,16.5556,15.0434,6.1113,0.9495
+single_tone,narrowband,0,4,log-MMSE,19.9219,21.7366,19.9165,5.0867,0.1112
+single_tone,narrowband,5,0,Spectral Subtraction,6.378,14.1421,11.3764,6.3842,0.1156
+single_tone,narrowband,5,0,Spectral Gating,5.9113,15.1492,10.911,6.1487,0.1396
+single_tone,narrowband,5,0,Wiener,21.5274,30.656,26.524,2.9856,0.0875
+single_tone,narrowband,5,0,MMSE-STSA,11.6091,18.0728,16.6061,5.8587,0.9363
+single_tone,narrowband,5,0,log-MMSE,16.035,22.9695,21.0315,4.8942,0.1144
+single_tone,narrowband,5,1,Spectral Subtraction,9.3026,18.431,14.3004,5.4521,0.1056
+single_tone,narrowband,5,1,Spectral Gating,9.5923,20.3803,14.5909,5.1458,0.1251
+single_tone,narrowband,5,1,Wiener,27.1275,33.7604,32.1251,1.8999,0.0911
+single_tone,narrowband,5,1,MMSE-STSA,15.1612,21.7912,20.1579,5.0163,0.935
+single_tone,narrowband,5,1,log-MMSE,19.3518,26.523,24.3485,4.0904,0.1149
+single_tone,narrowband,5,2,Spectral Subtraction,7.8385,16.7967,12.8361,5.8194,0.1118
+single_tone,narrowband,5,2,Spectral Gating,8.2016,18.9858,13.2004,5.4325,0.1282
+single_tone,narrowband,5,2,Wiener,25.4735,33.1076,30.4706,2.2949,0.1026
+single_tone,narrowband,5,2,MMSE-STSA,13.3645,20.1004,18.3611,5.4329,0.9573
+single_tone,narrowband,5,2,log-MMSE,18.0716,25.1821,23.068,4.4554,0.1232
+single_tone,narrowband,5,3,Spectral Subtraction,9.0744,17.8847,14.0644,5.535,0.1129
+single_tone,narrowband,5,3,Spectral Gating,8.7882,18.9115,13.7866,5.3183,0.1269
+single_tone,narrowband,5,3,Wiener,26.8536,33.6053,31.8562,2.0371,0.1155
+single_tone,narrowband,5,3,MMSE-STSA,14.683,21.1105,19.6724,5.1312,0.9652
+single_tone,narrowband,5,3,log-MMSE,19.1407,26.1049,24.1299,4.1906,0.1297
+single_tone,narrowband,5,4,Spectral Subtraction,9.835,18.3058,14.833,5.6002,0.093
+single_tone,narrowband,5,4,Spectral Gating,9.2472,17.9093,14.246,5.586,0.1301
+single_tone,narrowband,5,4,Wiener,27.9473,33.9579,32.9452,1.9914,0.0847
+single_tone,narrowband,5,4,MMSE-STSA,15.0151,21.5425,20.0122,5.1617,0.9486
+single_tone,narrowband,5,4,log-MMSE,19.8039,26.6633,24.8007,4.1718,0.1033
+single_tone,narrowband,10,0,Spectral Subtraction,6.373,19.1415,16.3722,5.436,0.1018
+single_tone,narrowband,10,0,Spectral Gating,5.9068,20.1396,15.9063,5.2044,0.1397
+single_tone,narrowband,10,0,Wiener,21.2233,33.1611,31.2214,2.228,0.0823
+single_tone,narrowband,10,0,MMSE-STSA,11.5772,23.0606,21.5754,4.9124,0.9354
+single_tone,narrowband,10,0,log-MMSE,15.9539,27.9328,25.9519,3.9818,0.1072
+single_tone,narrowband,10,1,Spectral Subtraction,9.2821,23.419,19.2807,4.5527,0.0957
+single_tone,narrowband,10,1,Spectral Gating,9.5715,25.359,19.5701,4.2468,0.1252
+single_tone,narrowband,10,1,Wiener,25.6823,34.5742,35.6811,1.2995,0.0833
+single_tone,narrowband,10,1,MMSE-STSA,15.0714,26.7665,25.0691,4.1197,0.9338
+single_tone,narrowband,10,1,log-MMSE,19.094,31.0251,29.0918,3.2445,0.1051
+single_tone,narrowband,10,2,Spectral Subtraction,7.8254,21.7603,17.824,4.9009,0.1092
+single_tone,narrowband,10,2,Spectral Gating,8.1871,23.9333,18.1861,4.5208,0.1281
+single_tone,narrowband,10,2,Wiener,24.5853,34.3359,34.5838,1.6148,0.0885
+single_tone,narrowband,10,2,MMSE-STSA,13.3216,25.0882,23.3196,4.5055,0.9559
+single_tone,narrowband,10,2,log-MMSE,17.9193,29.9711,27.9172,3.5654,0.1104
+single_tone,narrowband,10,3,Spectral Subtraction,9.0556,22.8746,19.0516,4.6218,0.1091
+single_tone,narrowband,10,3,Spectral Gating,8.7684,23.8965,18.7669,4.4281,0.1268
+single_tone,narrowband,10,3,Wiener,25.5489,34.6384,35.5503,1.4038,0.0959
+single_tone,narrowband,10,3,MMSE-STSA,14.6012,26.1008,24.5965,4.237,0.9637
+single_tone,narrowband,10,3,log-MMSE,18.9067,30.7482,28.9024,3.3402,0.1162
+single_tone,narrowband,10,4,Spectral Subtraction,9.8125,23.2698,19.8111,4.6783,0.0833
+single_tone,narrowband,10,4,Spectral Gating,9.2288,22.8761,19.2277,4.6678,0.1301
+single_tone,narrowband,10,4,Wiener,26.4034,34.7479,36.4024,1.3497,0.0794
+single_tone,narrowband,10,4,MMSE-STSA,14.9392,26.5178,24.9373,4.2452,0.948
+single_tone,narrowband,10,4,log-MMSE,19.5575,31.2817,29.5556,3.3,0.0976
+multi_tone,white,-5,0,Spectral Subtraction,7.8154,3.1542,1.6704,32.026,0.2466
+multi_tone,white,-5,0,Spectral Gating,7.9812,3.31,2.322,30.4388,0.2557
+multi_tone,white,-5,0,Wiener,14.0449,9.3538,9.0285,14.158,0.0936
+multi_tone,white,-5,0,MMSE-STSA,11.874,7.1333,6.0315,29.6022,0.2946
+multi_tone,white,-5,0,log-MMSE,13.3191,8.6007,7.6993,24.8519,0.1766
+multi_tone,white,-5,1,Spectral Subtraction,7.6784,3.0424,1.3478,31.9976,0.2502
+multi_tone,white,-5,1,Spectral Gating,7.8485,3.2033,1.8871,30.428,0.2621
+multi_tone,white,-5,1,Wiener,13.5152,8.8316,8.752,14.2765,0.104
+multi_tone,white,-5,1,MMSE-STSA,11.6595,6.9337,5.7172,29.532,0.2978
+multi_tone,white,-5,1,log-MMSE,12.9248,8.2138,7.3281,24.7891,0.1832
+multi_tone,white,-5,2,Spectral Subtraction,7.8257,3.1813,1.7312,31.9691,0.2455
+multi_tone,white,-5,2,Spectral Gating,8.1992,3.5707,2.4845,30.2956,0.2517
+multi_tone,white,-5,2,Wiener,14.1804,9.503,8.9652,14.1382,0.0869
+multi_tone,white,-5,2,MMSE-STSA,11.9311,7.2088,6.1274,29.5352,0.2934
+multi_tone,white,-5,2,log-MMSE,13.3716,8.6682,7.7279,24.7957,0.176
+multi_tone,white,-5,3,Spectral Subtraction,7.6714,3.0243,1.5363,32.3571,0.2568
+multi_tone,white,-5,3,Spectral Gating,7.5943,2.9319,1.8601,31.1136,0.2789
+multi_tone,white,-5,3,Wiener,14.0265,9.3538,8.9984,14.8851,0.1027
+multi_tone,white,-5,3,MMSE-STSA,11.6424,6.9076,5.778,29.8649,0.3028
+multi_tone,white,-5,3,log-MMSE,13.2341,8.5272,7.5972,25.1112,0.185
+multi_tone,white,-5,4,Spectral Subtraction,7.745,3.0668,1.9321,32.1592,0.2493
+multi_tone,white,-5,4,Spectral Gating,7.9215,3.2261,2.5314,30.5617,0.2572
+multi_tone,white,-5,4,Wiener,14.4509,9.8303,8.9806,14.7742,0.0793
+multi_tone,white,-5,4,MMSE-STSA,11.649,6.9058,5.9913,29.7575,0.2985
+multi_tone,white,-5,4,log-MMSE,13.3776,8.6828,7.7087,25.0559,0.1761
+multi_tone,white,0,0,Spectral Subtraction,7.8293,8.1764,7.4579,27.4051,0.2428
+multi_tone,white,0,0,Spectral Gating,8.0363,8.3873,7.9341,25.8188,0.2478
+multi_tone,white,0,0,Wiener,14.4286,14.7831,14.3364,11.2429,0.0733
+multi_tone,white,0,0,MMSE-STSA,11.6457,11.9122,11.3792,24.9686,0.2929
+multi_tone,white,0,0,log-MMSE,13.2769,13.5768,13.0779,20.438,0.1719
+multi_tone,white,0,1,Spectral Subtraction,7.7082,8.0796,7.2968,27.3815,0.2452
+multi_tone,white,0,1,Spectral Gating,7.8928,8.2612,7.7621,25.865,0.2519
+multi_tone,white,0,1,Wiener,14.1414,14.6071,14.0663,11.4258,0.0742
+multi_tone,white,0,1,MMSE-STSA,11.4468,11.7564,11.161,24.9115,0.2954
+multi_tone,white,0,1,log-MMSE,13.0369,13.4137,12.8359,20.4017,0.1749
+multi_tone,white,0,2,Spectral Subtraction,7.8371,8.2016,7.4979,27.3486,0.2415
+multi_tone,white,0,2,Spectral Gating,8.1527,8.5293,8.0019,25.7568,0.2457
+multi_tone,white,0,2,Wiener,14.5565,14.9906,14.4537,11.1571,0.0703
+multi_tone,white,0,2,MMSE-STSA,11.7074,12.0101,11.4607,24.8934,0.2914
+multi_tone,white,0,2,log-MMSE,13.3749,13.7321,13.1754,20.3576,0.1711
+multi_tone,white,0,3,Spectral Subtraction,7.6719,8.0326,7.3152,27.7444,0.2514
+multi_tone,white,0,3,Spectral Gating,7.6241,7.976,7.5508,26.5178,0.2694
+multi_tone,white,0,3,Wiener,14.4518,14.8406,14.3561,11.902,0.0763
+multi_tone,white,0,3,MMSE-STSA,11.4134,11.685,11.1536,25.2554,0.3003
+multi_tone,white,0,3,log-MMSE,13.2148,13.5318,13.0086,20.7256,0.1774
+multi_tone,white,0,4,Spectral Subtraction,7.724,8.0523,7.4679,27.5402,0.2465
+multi_tone,white,0,4,Spectral Gating,7.9813,8.3035,7.949,25.9633,0.2511
+multi_tone,white,0,4,Wiener,14.2474,14.6475,14.0824,11.6494,0.0745
+multi_tone,white,0,4,MMSE-STSA,11.3788,11.6455,11.1791,25.1137,0.2968
+multi_tone,white,0,4,log-MMSE,13.0839,13.4076,12.8746,20.5997,0.1743
+multi_tone,white,5,0,Spectral Subtraction,7.7877,13.138,12.6612,22.8759,0.2414
+multi_tone,white,5,0,Spectral Gating,7.99,13.3434,12.9583,21.3395,0.2458
+multi_tone,white,5,0,Wiener,14.1212,19.5378,19.0936,8.3999,0.0697
+multi_tone,white,5,0,MMSE-STSA,11.4041,16.6942,16.3142,20.3671,0.2914
+multi_tone,white,5,0,log-MMSE,13.0284,18.3739,17.9649,16.0559,0.1701
+multi_tone,white,5,1,Spectral Subtraction,7.6601,13.0346,12.5276,22.8538,0.2431
+multi_tone,white,5,1,Spectral Gating,7.7953,13.1609,12.7625,21.3791,0.2503
+multi_tone,white,5,1,Wiener,13.8749,19.4128,18.8631,8.6053,0.0749
+multi_tone,white,5,1,MMSE-STSA,11.1742,16.5112,16.0814,20.3272,0.2933
+multi_tone,white,5,1,log-MMSE,12.7782,18.2042,17.7116,16.045,0.1723
+multi_tone,white,5,2,Spectral Subtraction,7.7908,13.1587,12.6826,22.8187,0.2399
+multi_tone,white,5,2,Spectral Gating,8.1082,13.4882,13.0868,21.2527,0.2432
+multi_tone,white,5,2,Wiener,14.2227,19.7354,19.183,8.3362,0.0654
+multi_tone,white,5,2,MMSE-STSA,11.4539,16.7894,16.3741,20.2916,0.2899
+multi_tone,white,5,2,log-MMSE,13.0998,18.515,18.0329,15.982,0.1691
+multi_tone,white,5,3,Spectral Subtraction,7.6479,13.0166,12.5329,23.214,0.2501
+multi_tone,white,5,3,Spectral Gating,7.6178,12.9803,12.6023,22.0312,0.2676
+multi_tone,white,5,3,Wiener,14.1219,19.5607,19.0825,8.9732,0.0722
+multi_tone,white,5,3,MMSE-STSA,11.1925,16.4859,16.1071,20.6703,0.2997
+multi_tone,white,5,3,log-MMSE,12.9543,18.3112,17.8852,16.362,0.1761
+multi_tone,white,5,4,Spectral Subtraction,7.6809,13.016,12.5993,23.0118,0.2461
+multi_tone,white,5,4,Spectral Gating,7.9479,13.2748,12.943,21.4875,0.2505
+multi_tone,white,5,4,Wiener,13.8753,19.3584,18.8187,8.7469,0.0724
+multi_tone,white,5,4,MMSE-STSA,11.1711,16.4727,16.1056,20.5193,0.2964
+multi_tone,white,5,4,log-MMSE,12.7962,18.1798,17.7278,16.2171,0.1738
+multi_tone,white,10,0,Spectral Subtraction,7.7499,18.1107,17.7064,18.4884,0.241
+multi_tone,white,10,0,Spectral Gating,7.9587,18.3272,17.9457,17.0429,0.2453
+multi_tone,white,10,0,Wiener,13.6737,24.2127,23.6633,6.0038,0.0671
+multi_tone,white,10,0,MMSE-STSA,11.1759,21.5265,21.1446,15.8696,0.2912
+multi_tone,white,10,0,log-MMSE,12.6786,23.1165,22.6574,11.8796,0.1692
+multi_tone,white,10,1,Spectral Subtraction,7.6416,18.0273,17.6002,18.4725,0.2427
+multi_tone,white,10,1,Spectral Gating,7.8372,18.2235,17.8362,17.078,0.2478
+multi_tone,white,10,1,Wiener,13.3896,24.0136,23.3746,6.2069,0.0675
+multi_tone,white,10,1,MMSE-STSA,10.9549,21.3403,20.9241,15.8495,0.2932
+multi_tone,white,10,1,log-MMSE,12.4285,22.9279,22.4045,11.8984,0.1718
+multi_tone,white,10,2,Spectral Subtraction,7.7532,18.129,17.7193,18.4302,0.2397
+multi_tone,white,10,2,Spectral Gating,8.0933,18.4893,18.0926,16.9501,0.2413
+multi_tone,white,10,2,Wiener,13.7653,24.3919,23.7489,5.9605,0.0628
+multi_tone,white,10,2,MMSE-STSA,11.2296,21.6244,21.2032,15.7965,0.2895
+multi_tone,white,10,2,log-MMSE,12.7447,23.2508,22.7216,11.8164,0.1683
+multi_tone,white,10,3,Spectral Subtraction,7.6123,17.9924,17.5746,18.8215,0.2499
+multi_tone,white,10,3,Spectral Gating,7.5901,17.967,17.5857,17.7214,0.2668
+multi_tone,white,10,3,Wiener,13.6607,24.2182,23.6451,6.4491,0.0704
+multi_tone,white,10,3,MMSE-STSA,10.9809,21.3294,20.9518,16.1884,0.2999
+multi_tone,white,10,3,log-MMSE,12.6082,23.0532,22.5846,12.1919,0.1761
+multi_tone,white,10,4,Spectral Subtraction,7.624,17.9658,17.5994,18.627,0.2459
+multi_tone,white,10,4,Spectral Gating,7.8377,18.1676,17.8399,17.1948,0.2504
+multi_tone,white,10,4,Wiener,13.4359,24.0667,23.4163,6.2933,0.0712
+multi_tone,white,10,4,MMSE-STSA,10.9352,21.306,20.9144,16.0308,0.2963
+multi_tone,white,10,4,log-MMSE,12.4534,22.9491,22.4308,12.0449,0.1734
+multi_tone,pink,-5,0,Spectral Subtraction,7.5561,4.2707,1.6582,26.838,0.2419
+multi_tone,pink,-5,0,Spectral Gating,8.9908,5.3562,3.5853,25.2588,0.2471
+multi_tone,pink,-5,0,Wiener,14.365,10.0762,8.9242,11.1153,0.0655
+multi_tone,pink,-5,0,MMSE-STSA,11.4491,7.6618,5.7355,24.3913,0.2926
+multi_tone,pink,-5,0,log-MMSE,13.3612,9.1495,7.6788,19.9234,0.1693
+multi_tone,pink,-5,1,Spectral Subtraction,8.2712,4.7173,2.1627,26.5056,0.2444
+multi_tone,pink,-5,1,Spectral Gating,9.8396,5.4146,4.0739,24.9426,0.2516
+multi_tone,pink,-5,1,Wiener,12.4348,7.9078,6.7386,11.0306,0.083
+multi_tone,pink,-5,1,MMSE-STSA,12.1388,7.7749,6.3427,24.0002,0.2938
+multi_tone,pink,-5,1,log-MMSE,12.8528,8.2755,7.1052,19.5485,0.1745
+multi_tone,pink,-5,2,Spectral Subtraction,7.93,4.2679,1.8409,26.7568,0.2431
+multi_tone,pink,-5,2,Spectral Gating,9.2123,4.8851,3.2155,25.1436,0.2495
+multi_tone,pink,-5,2,Wiener,12.9547,8.4918,7.4502,11.0533,0.0858
+multi_tone,pink,-5,2,MMSE-STSA,11.7742,7.6618,5.9547,24.2586,0.2914
+multi_tone,pink,-5,2,log-MMSE,12.9756,8.5564,7.2645,19.7824,0.1741
+multi_tone,pink,-5,3,Spectral Subtraction,8.9272,4.9448,3.1456,27.2124,0.2509
+multi_tone,pink,-5,3,Spectral Gating,9.0652,4.8767,3.6274,26.0632,0.2709
+multi_tone,pink,-5,3,Wiener,14.9541,10.4674,9.6128,11.576,0.0761
+multi_tone,pink,-5,3,MMSE-STSA,12.7647,8.2852,7.1655,24.6806,0.2999
+multi_tone,pink,-5,3,log-MMSE,14.1761,9.6456,8.6189,20.186,0.1762
+multi_tone,pink,-5,4,Spectral Subtraction,5.5582,3.0103,-0.3046,27.2614,0.2482
+multi_tone,pink,-5,4,Spectral Gating,4.8502,2.8973,-0.7852,25.7193,0.255
+multi_tone,pink,-5,4,Wiener,10.8973,7.9275,4.7738,12.0098,0.0763
+multi_tone,pink,-5,4,MMSE-STSA,8.6748,6.2152,2.9143,24.8422,0.2981
+multi_tone,pink,-5,4,log-MMSE,10.185,7.4864,4.1392,20.4388,0.1752
+multi_tone,pink,0,0,Spectral Subtraction,7.5714,9.3161,7.2662,22.3671,0.2416
+multi_tone,pink,0,0,Spectral Gating,9.154,10.6045,9.0756,20.8312,0.2454
+multi_tone,pink,0,0,Wiener,15.0359,15.691,14.9281,8.4751,0.066
+multi_tone,pink,0,0,MMSE-STSA,11.3408,12.5202,11.1032,19.8636,0.2924
+multi_tone,pink,0,0,log-MMSE,13.4712,14.2668,13.2714,15.6736,0.1695
+multi_tone,pink,0,1,Spectral Subtraction,8.3726,9.8915,8.0177,22.029,0.2427
+multi_tone,pink,0,1,Spectral Gating,10.4858,11.196,10.3935,20.4954,0.2469
+multi_tone,pink,0,1,Wiener,14.7584,15.4391,14.6831,8.321,0.0673
+multi_tone,pink,0,1,MMSE-STSA,12.1134,12.8187,11.8665,19.487,0.2933
+multi_tone,pink,0,1,log-MMSE,13.6387,14.2411,13.4607,15.3152,0.1719
+multi_tone,pink,0,2,Spectral Subtraction,7.9904,9.3759,7.6398,22.2904,0.2407
+multi_tone,pink,0,2,Spectral Gating,9.7162,10.5318,9.5915,20.7737,0.2419
+multi_tone,pink,0,2,Wiener,14.8009,15.4899,14.7276,8.4524,0.0634
+multi_tone,pink,0,2,MMSE-STSA,11.6979,12.6179,11.4414,19.7485,0.2905
+multi_tone,pink,0,2,log-MMSE,13.582,14.248,13.3988,15.5722,0.1688
+multi_tone,pink,0,3,Spectral Subtraction,8.919,9.9525,8.6628,22.7246,0.25
+multi_tone,pink,0,3,Spectral Gating,9.221,10.0853,9.1675,21.6283,0.268
+multi_tone,pink,0,3,Wiener,15.3202,15.8771,15.2121,8.8932,0.0689
+multi_tone,pink,0,3,MMSE-STSA,12.5672,13.0951,12.3716,20.1627,0.2995
+multi_tone,pink,0,3,log-MMSE,14.1527,14.6687,13.9827,15.9547,0.1748
+multi_tone,pink,0,4,Spectral Subtraction,5.5739,8.0554,5.2947,22.7869,0.2473
+multi_tone,pink,0,4,Spectral Gating,4.9348,8.1358,4.868,21.3082,0.2526
+multi_tone,pink,0,4,Wiener,11.6714,14.3311,11.4131,9.1986,0.0706
+multi_tone,pink,0,4,MMSE-STSA,8.6184,11.1124,8.3817,20.3234,0.2977
+multi_tone,pink,0,4,log-MMSE,10.3916,12.8871,10.1103,16.167,0.174
+multi_tone,pink,5,0,Spectral Subtraction,7.4472,14.1185,12.3286,18.0784,0.2431
+multi_tone,pink,5,0,Spectral Gating,8.8416,15.1526,13.7973,16.6537,0.2471
+multi_tone,pink,5,0,Wiener,14.8336,20.5515,19.8449,6.2448,0.0808
+multi_tone,pink,5,0,MMSE-STSA,11.1579,17.3139,16.0673,15.483,0.2927
+multi_tone,pink,5,0,log-MMSE,13.341,19.1702,18.2872,11.6863,0.1736
+multi_tone,pink,5,1,Spectral Subtraction,8.2523,14.7197,13.121,17.7438,0.2444
+multi_tone,pink,5,1,Spectral Gating,10.0771,15.7353,15.0202,16.3185,0.2499
+multi_tone,pink,5,1,Wiener,14.6679,20.4154,19.7015,6.1057,0.0813
+multi_tone,pink,5,1,MMSE-STSA,11.9285,17.655,16.8406,15.1252,0.294
+multi_tone,pink,5,1,log-MMSE,13.5796,19.2385,18.5481,11.3584,0.1758
+multi_tone,pink,5,2,Spectral Subtraction,7.8818,14.2257,12.7564,18.009,0.2415
+multi_tone,pink,5,2,Spectral Gating,9.511,15.2996,14.4499,16.5829,0.244
+multi_tone,pink,5,2,Wiener,14.6872,20.4141,19.7153,6.2336,0.0769
+multi_tone,pink,5,2,MMSE-STSA,11.4646,17.3944,16.3734,15.3847,0.2905
+multi_tone,pink,5,2,log-MMSE,13.4898,19.1904,18.449,11.6115,0.1717
+multi_tone,pink,5,3,Spectral Subtraction,8.761,14.7668,13.6675,18.4091,0.2506
+multi_tone,pink,5,3,Spectral Gating,8.9659,14.7712,13.9376,17.4176,0.269
+multi_tone,pink,5,3,Wiener,14.9974,20.6648,19.9911,6.5353,0.0801
+multi_tone,pink,5,3,MMSE-STSA,12.255,17.7979,17.184,15.7788,0.2997
+multi_tone,pink,5,3,log-MMSE,13.8564,19.4326,18.8033,11.9443,0.1766
+multi_tone,pink,5,4,Spectral Subtraction,5.5165,12.9462,10.4184,18.4915,0.2481
+multi_tone,pink,5,4,Spectral Gating,4.8708,12.9891,9.8533,17.1159,0.2533
+multi_tone,pink,5,4,Wiener,11.5656,19.2151,16.4717,6.8833,0.0815
+multi_tone,pink,5,4,MMSE-STSA,8.4956,15.9099,13.4125,15.9492,0.2978
+multi_tone,pink,5,4,log-MMSE,10.2913,17.7522,15.1915,12.1782,0.1756
+multi_tone,pink,10,0,Spectral Subtraction,7.2917,18.8912,17.2483,14.0515,0.243
+multi_tone,pink,10,0,Spectral Gating,8.6157,19.8864,18.6032,12.8114,0.247
+multi_tone,pink,10,0,Wiener,14.1279,24.9322,24.1314,4.4792,0.0813
+multi_tone,pink,10,0,MMSE-STSA,10.8032,21.9333,20.7703,11.3807,0.293
+multi_tone,pink,10,0,log-MMSE,12.8182,23.675,22.8007,8.1754,0.174
+multi_tone,pink,10,1,Spectral Subtraction,8.0302,19.4218,17.9836,13.7375,0.2436
+multi_tone,pink,10,1,Spectral Gating,9.4866,20.0806,19.4698,12.4849,0.2492
+multi_tone,pink,10,1,Wiener,13.9903,24.8065,24.004,4.3463,0.0806
+multi_tone,pink,10,1,MMSE-STSA,11.4264,22.1599,21.3955,11.0511,0.2937
+multi_tone,pink,10,1,log-MMSE,12.987,23.6992,22.9768,7.8824,0.175
+multi_tone,pink,10,2,Spectral Subtraction,7.7209,19.0218,17.6766,14.0085,0.2413
+multi_tone,pink,10,2,Spectral Gating,9.1002,19.8544,19.0808,12.7609,0.2441
+multi_tone,pink,10,2,Wiener,14.027,24.8571,24.0335,4.4546,0.0777
+multi_tone,pink,10,2,MMSE-STSA,11.0343,22.0016,21.0018,11.3053,0.2907
+multi_tone,pink,10,2,log-MMSE,12.9568,23.7382,22.9429,8.1275,0.1722
+multi_tone,pink,10,3,Spectral Subtraction,8.5745,19.5561,18.5413,14.35,0.2508
+multi_tone,pink,10,3,Spectral Gating,8.78,19.5806,18.7726,13.5183,0.2691
+multi_tone,pink,10,3,Wiener,14.2094,24.9858,24.2017,4.6392,0.0819
+multi_tone,pink,10,3,MMSE-STSA,11.8235,22.419,21.7976,11.6523,0.3005
+multi_tone,pink,10,3,log-MMSE,13.281,23.9504,23.2626,8.3716,0.1789
+multi_tone,pink,10,4,Spectral Subtraction,5.4309,17.7966,15.3969,14.4553,0.2492
+multi_tone,pink,10,4,Spectral Gating,4.8142,17.8763,14.8093,13.2546,0.2547
+multi_tone,pink,10,4,Wiener,11.2168,23.7507,21.1853,5.0316,0.0856
+multi_tone,pink,10,4,MMSE-STSA,8.338,20.6946,18.3065,11.8471,0.2992
+multi_tone,pink,10,4,log-MMSE,10.0466,22.4372,20.0112,8.6469,0.179
+multi_tone,narrowband,-5,0,Spectral Subtraction,6.382,4.1426,1.3713,9.5866,0.2224
+multi_tone,narrowband,-5,0,Spectral Gating,5.9265,5.1542,0.9264,9.3579,0.1789
+multi_tone,narrowband,-5,0,Wiener,21.7197,22.5712,16.7068,5.7833,0.2321
+multi_tone,narrowband,-5,0,MMSE-STSA,11.6296,8.0819,6.6194,9.0364,0.9006
+multi_tone,narrowband,-5,0,log-MMSE,16.0848,12.9836,11.0716,7.993,0.2395
+multi_tone,narrowband,-5,1,Spectral Subtraction,9.3154,8.4453,4.3088,8.5322,0.2079
+multi_tone,narrowband,-5,1,Spectral Gating,9.6018,10.4021,4.6011,8.2177,0.1661
+multi_tone,narrowband,-5,1,Wiener,28.4651,28.6395,23.4581,4.343,0.225
+multi_tone,narrowband,-5,1,MMSE-STSA,15.2211,11.8212,10.2149,8.0688,0.9004
+multi_tone,narrowband,-5,1,log-MMSE,19.5299,16.6584,14.5223,7.0286,0.2299
+multi_tone,narrowband,-5,2,Spectral Subtraction,7.8437,6.8019,2.8313,8.953,0.2372
+multi_tone,narrowband,-5,2,Spectral Gating,8.2107,9.0138,3.2101,8.535,0.2102
+multi_tone,narrowband,-5,2,Wiener,26.1855,26.9087,21.1724,4.9234,0.2585
+multi_tone,narrowband,-5,2,MMSE-STSA,13.3965,10.1009,8.3851,8.5396,0.9172
+multi_tone,narrowband,-5,2,log-MMSE,18.1967,15.2583,13.1824,7.471,0.2637
+multi_tone,narrowband,-5,3,Spectral Subtraction,9.0798,7.8635,3.9849,8.6019,0.2466
+multi_tone,narrowband,-5,3,Spectral Gating,8.7992,8.9149,3.7979,8.3657,0.2224
+multi_tone,narrowband,-5,3,Wiener,27.9609,26.8937,22.9857,4.4876,0.2655
+multi_tone,narrowband,-5,3,MMSE-STSA,14.7479,11.1118,9.6706,8.1585,0.9206
+multi_tone,narrowband,-5,3,log-MMSE,19.3097,16.0519,14.22,7.1125,0.2716
+multi_tone,narrowband,-5,4,Spectral Subtraction,9.8481,8.3132,4.8396,8.7389,0.2273
+multi_tone,narrowband,-5,4,Spectral Gating,9.2599,7.9139,4.2595,8.7183,0.2069
+multi_tone,narrowband,-5,4,Wiener,29.4589,28.3816,24.4505,4.5494,0.2472
+multi_tone,narrowband,-5,4,MMSE-STSA,15.0652,11.5659,10.0574,8.2662,0.9115
+multi_tone,narrowband,-5,4,log-MMSE,19.9866,16.7562,14.9767,7.1812,0.2526
+multi_tone,narrowband,0,0,Spectral Subtraction,6.3817,9.1426,6.3781,8.5606,0.213
+multi_tone,narrowband,0,0,Spectral Gating,5.9265,10.1545,5.9263,8.3279,0.1779
+multi_tone,narrowband,0,0,Wiener,21.7096,27.0442,21.7049,4.8646,0.2311
+multi_tone,narrowband,0,0,MMSE-STSA,11.6281,13.081,11.6244,8.0154,0.8976
+multi_tone,narrowband,0,0,log-MMSE,16.0823,17.9827,16.0776,6.9972,0.2365
+multi_tone,narrowband,0,1,Spectral Subtraction,9.3141,13.4432,9.3116,7.5411,0.1961
+multi_tone,narrowband,0,1,Spectral Gating,9.601,15.3998,9.6004,7.2317,0.1662
+multi_tone,narrowband,0,1,Wiener,28.3947,31.8528,28.3921,3.5027,0.2169
+multi_tone,narrowband,0,1,MMSE-STSA,15.2189,16.8188,15.2164,7.0829,0.8962
+multi_tone,narrowband,0,1,log-MMSE,19.5226,21.6538,19.5197,6.0699,0.2193
+multi_tone,narrowband,0,2,Spectral Subtraction,7.8433,11.8013,7.8389,7.9544,0.2381
+multi_tone,narrowband,0,2,Spectral Gating,8.2099,14.0095,8.2093,7.5405,0.2009
+multi_tone,narrowband,0,2,Wiener,26.1372,30.531,26.1326,4.0595,0.2569
+multi_tone,narrowband,0,2,MMSE-STSA,13.3946,15.1014,13.3902,7.5435,0.9173
+multi_tone,narrowband,0,2,log-MMSE,18.1884,20.2475,18.1832,6.5037,0.2617
+multi_tone,narrowband,0,3,Spectral Subtraction,9.0821,12.8805,9.0511,7.6148,0.2482
+multi_tone,narrowband,0,3,Spectral Gating,8.7983,13.9147,8.7974,7.3844,0.2167
+multi_tone,narrowband,0,3,Wiener,28.0387,31.4373,28.0497,3.6764,0.2711
+multi_tone,narrowband,0,3,MMSE-STSA,14.7455,16.1186,14.7188,7.18,0.9205
+multi_tone,narrowband,0,3,log-MMSE,19.3197,21.1146,19.2903,6.1686,0.2752
+multi_tone,narrowband,0,4,Spectral Subtraction,9.847,13.3125,9.8439,7.732,0.2271
+multi_tone,narrowband,0,4,Spectral Gating,9.2591,12.9137,9.2586,7.7135,0.1943
+multi_tone,narrowband,0,4,Wiener,29.3592,31.779,29.3561,3.6992,0.2518
+multi_tone,narrowband,0,4,MMSE-STSA,15.063,16.5643,15.0601,7.2652,0.9099
+multi_tone,narrowband,0,4,log-MMSE,19.9772,21.7514,19.9736,6.2119,0.2542
+multi_tone,narrowband,5,0,Spectral Subtraction,6.3812,14.1426,11.38,7.5589,0.206
+multi_tone,narrowband,5,0,Spectral Gating,5.912,15.1494,10.912,7.3246,0.1779
+multi_tone,narrowband,5,0,Wiener,21.6793,30.6837,26.6774,3.9731,0.2236
+multi_tone,narrowband,5,0,MMSE-STSA,11.6243,18.079,16.6227,7.0208,0.8946
+multi_tone,narrowband,5,0,log-MMSE,16.0744,22.9802,21.0725,6.0229,0.2285
+multi_tone,narrowband,5,1,Spectral Subtraction,9.3111,18.4393,14.31,6.5773,0.1813
+multi_tone,narrowband,5,1,Spectral Gating,9.599,20.3936,14.5985,6.2667,0.1677
+multi_tone,narrowband,5,1,Wiener,28.1685,33.8003,33.1673,2.727,0.2073
+multi_tone,narrowband,5,1,MMSE-STSA,15.2106,21.8126,20.2094,6.1252,0.8926
+multi_tone,narrowband,5,1,log-MMSE,19.4969,26.552,24.4955,5.1462,0.2075
+multi_tone,narrowband,5,2,Spectral Subtraction,7.8427,16.8015,12.8411,6.9659,0.2306
+multi_tone,narrowband,5,2,Spectral Gating,8.2083,19.0045,13.2079,6.5693,0.1877
+multi_tone,narrowband,5,2,Wiener,26.0053,33.1356,31.0034,3.2259,0.2607
+multi_tone,narrowband,5,2,MMSE-STSA,13.3892,20.1018,18.3873,6.5605,0.915
+multi_tone,narrowband,5,2,log-MMSE,18.167,25.1999,23.1648,5.5463,0.2606
+multi_tone,narrowband,5,3,Spectral Subtraction,9.0815,17.8849,14.0713,6.6539,0.242
+multi_tone,narrowband,5,3,Spectral Gating,8.7959,18.9138,13.7951,6.4339,0.2087
+multi_tone,narrowband,5,3,Wiener,27.8779,33.6169,32.8833,2.9039,0.2709
+multi_tone,narrowband,5,3,MMSE-STSA,14.7354,21.118,19.726,6.2374,0.9192
+multi_tone,narrowband,5,3,log-MMSE,19.2979,26.1116,24.2877,5.2517,0.274
+multi_tone,narrowband,5,4,Spectral Subtraction,9.8446,18.311,14.8434,6.7525,0.2265
+multi_tone,narrowband,5,4,Spectral Gating,9.2567,17.9131,14.2562,6.7346,0.185
+multi_tone,narrowband,5,4,Wiener,29.0823,33.9939,34.081,2.8726,0.2452
+multi_tone,narrowband,5,4,MMSE-STSA,15.0551,21.5594,20.0537,6.2968,0.9083
+multi_tone,narrowband,5,4,log-MMSE,19.9483,26.6884,24.9467,5.2613,0.248
+multi_tone,narrowband,10,0,Spectral Subtraction,6.3803,19.1427,16.3798,6.58,0.1944
+multi_tone,narrowband,10,0,Spectral Gating,5.9119,20.1403,15.9119,6.3432,0.1786
+multi_tone,narrowband,10,0,Wiener,21.5986,33.2015,31.5977,3.1398,0.214
+multi_tone,narrowband,10,0,MMSE-STSA,11.6156,23.0755,21.6148,6.0478,0.8903
+multi_tone,narrowband,10,0,log-MMSE,16.0528,27.9569,26.0519,5.0764,0.2188
+multi_tone,narrowband,10,1,Spectral Subtraction,9.3068,23.4345,19.3063,5.636,0.1721
+multi_tone,narrowband,10,1,Spectral Gating,9.5964,25.3871,19.5961,5.3275,0.1642
+multi_tone,narrowband,10,1,Wiener,27.5615,34.6129,37.5609,2.0192,0.1897
+multi_tone,narrowband,10,1,MMSE-STSA,15.1841,26.7954,25.1834,5.1951,0.8906
+multi_tone,narrowband,10,1,log-MMSE,19.4183,31.0597,29.4175,4.2568,0.1962
+multi_tone,narrowband,10,2,Spectral Subtraction,7.841,21.7751,17.8403,6.0151,0.229
+multi_tone,narrowband,10,2,Spectral Gating,8.2053,23.9666,18.2051,5.6222,0.1817
+multi_tone,narrowband,10,2,Wiener,25.7169,34.3715,35.7161,2.448,0.2549
+multi_tone,narrowband,10,2,MMSE-STSA,13.3752,25.0958,23.3743,5.6121,0.9128
+multi_tone,narrowband,10,2,log-MMSE,18.1137,29.9919,28.1126,4.6284,0.2575
+multi_tone,narrowband,10,3,Spectral Subtraction,9.0783,22.879,19.0748,5.7234,0.2457
+multi_tone,narrowband,10,3,Spectral Gating,8.7918,23.9037,18.7914,5.5059,0.1974
+multi_tone,narrowband,10,3,Wiener,27.3442,34.6634,37.3464,2.2196,0.2698
+multi_tone,narrowband,10,3,MMSE-STSA,14.7085,26.1114,24.7049,5.3142,0.9193
+multi_tone,narrowband,10,3,log-MMSE,19.2201,30.7603,29.2165,4.3683,0.2725
+multi_tone,narrowband,10,4,Spectral Subtraction,9.8399,23.2804,19.8394,5.7902,0.2205
+multi_tone,narrowband,10,4,Spectral Gating,9.2504,22.8803,19.2502,5.7744,0.1803
+multi_tone,narrowband,10,4,Wiener,28.4175,34.7852,38.4169,2.1184,0.239
+multi_tone,narrowband,10,4,MMSE-STSA,15.0325,26.5457,25.0318,5.3451,0.9061
+multi_tone,narrowband,10,4,log-MMSE,19.866,31.313,29.8652,4.3437,0.2421
+chirp,white,-5,0,Spectral Subtraction,8.5474,3.9471,3.1793,27.1218,0.2444
+chirp,white,-5,0,Spectral Gating,8.7974,4.2102,3.6763,25.4709,0.2495
+chirp,white,-5,0,Wiener,16.4032,12.1503,12.4371,9.7184,0.0674
+chirp,white,-5,0,MMSE-STSA,12.6053,7.9251,6.7876,24.6675,0.3038
+chirp,white,-5,0,log-MMSE,14.755,10.2013,9.593,19.8347,0.1781
+chirp,white,-5,1,Spectral Subtraction,8.468,3.9148,3.0687,27.0679,0.2456
+chirp,white,-5,1,Spectral Gating,8.7247,4.1804,3.5764,25.4731,0.2509
+chirp,white,-5,1,Wiener,15.8638,11.5932,11.7041,9.9201,0.0717
+chirp,white,-5,1,MMSE-STSA,12.2767,7.6118,6.3922,24.5876,0.3059
+chirp,white,-5,1,log-MMSE,14.3375,9.7908,9.0872,19.7866,0.1822
+chirp,white,-5,2,Spectral Subtraction,8.5152,3.9323,3.1414,27.1062,0.2439
+chirp,white,-5,2,Spectral Gating,8.9169,4.3708,3.7807,25.3802,0.2459
+chirp,white,-5,2,Wiener,16.2105,11.867,12.1399,9.7048,0.0684
+chirp,white,-5,2,MMSE-STSA,12.511,7.8106,6.6729,24.6397,0.3031
+chirp,white,-5,2,log-MMSE,14.6115,10.0106,9.4166,19.8129,0.179
+chirp,white,-5,3,Spectral Subtraction,8.332,3.744,2.9216,27.3698,0.2536
+chirp,white,-5,3,Spectral Gating,8.3007,3.7043,3.1257,26.0732,0.2714
+chirp,white,-5,3,Wiener,16.0783,11.7604,12.0183,10.3065,0.073
+chirp,white,-5,3,MMSE-STSA,12.1875,7.5014,6.2923,24.8699,0.3116
+chirp,white,-5,3,log-MMSE,14.4262,9.8527,9.187,20.0324,0.1842
+chirp,white,-5,4,Spectral Subtraction,8.2891,3.6611,2.8283,27.3547,0.2523
+chirp,white,-5,4,Spectral Gating,8.5359,3.9018,3.3023,25.7115,0.259
+chirp,white,-5,4,Wiener,15.8856,11.7281,11.6515,10.3306,0.0745
+chirp,white,-5,4,MMSE-STSA,12.1399,7.4632,6.2334,24.8959,0.3119
+chirp,white,-5,4,log-MMSE,14.2866,9.7734,8.9959,20.0934,0.1854
+chirp,white,0,0,Spectral Subtraction,8.4876,8.8829,8.3542,22.5121,0.2443
+chirp,white,0,0,Spectral Gating,8.7262,9.1322,8.6852,20.9198,0.2496
+chirp,white,0,0,Wiener,17.0997,17.8119,17.7663,6.8088,0.068
+chirp,white,0,0,MMSE-STSA,12.7241,13.0374,12.4915,19.9436,0.3031
+chirp,white,0,0,log-MMSE,15.128,15.55,15.2324,15.3229,0.1778
+chirp,white,0,1,Spectral Subtraction,8.4105,8.8554,8.2636,22.4622,0.2454
+chirp,white,0,1,Spectral Gating,8.6507,9.1029,8.5968,20.9218,0.251
+chirp,white,0,1,Wiener,16.6124,17.3118,17.2258,7.0379,0.0719
+chirp,white,0,1,MMSE-STSA,12.4425,12.7719,12.193,19.8736,0.3049
+chirp,white,0,1,log-MMSE,14.7709,15.202,14.857,15.2888,0.1813
+chirp,white,0,2,Spectral Subtraction,8.4515,8.866,8.3147,22.4982,0.2441
+chirp,white,0,2,Spectral Gating,8.8397,9.2855,8.7947,20.8242,0.2461
+chirp,white,0,2,Wiener,16.9417,17.6087,17.5814,6.7953,0.0687
+chirp,white,0,2,MMSE-STSA,12.6636,12.9686,12.4285,19.9184,0.3024
+chirp,white,0,2,log-MMSE,15.0244,15.424,15.1237,15.2991,0.1785
+chirp,white,0,3,Spectral Subtraction,8.2767,8.6848,8.1211,22.7559,0.2535
+chirp,white,0,3,Spectral Gating,8.2257,8.6229,8.1619,21.5157,0.2713
+chirp,white,0,3,Wiener,16.7967,17.4453,17.4554,7.3409,0.0731
+chirp,white,0,3,MMSE-STSA,12.3135,12.6263,12.0535,20.1586,0.3111
+chirp,white,0,3,log-MMSE,14.8161,15.2269,14.9039,15.5313,0.1836
+chirp,white,0,4,Spectral Subtraction,8.2374,8.6063,8.0545,22.7452,0.2523
+chirp,white,0,4,Spectral Gating,8.4719,8.8332,8.3745,21.1652,0.2592
+chirp,white,0,4,Wiener,16.5584,17.3098,17.1982,7.3895,0.0751
+chirp,white,0,4,MMSE-STSA,12.2854,12.5955,12.0258,20.1796,0.3109
+chirp,white,0,4,log-MMSE,14.6728,15.1138,14.7614,15.5812,0.1848
+chirp,white,5,0,Spectral Subtraction,8.4214,13.8163,13.3741,18.0562,0.2441
+chirp,white,5,0,Spectral Gating,8.6407,14.0431,13.6284,16.559,0.2494
+chirp,white,5,0,Wiener,17.1439,22.8164,22.4334,4.4511,0.0704
+chirp,white,5,0,MMSE-STSA,12.6921,18.0076,17.626,15.3316,0.3023
+chirp,white,5,0,log-MMSE,15.1313,20.547,20.2046,11.0519,0.1777
+chirp,white,5,1,Spectral Subtraction,8.3333,13.7776,13.2791,18.0099,0.2453
+chirp,white,5,1,Spectral Gating,8.5728,14.0232,13.5538,16.5612,0.2508
+chirp,white,5,1,Wiener,16.6562,22.3299,21.9302,4.6911,0.0741
+chirp,white,5,1,MMSE-STSA,12.4195,17.7558,17.349,15.284,0.3041
+chirp,white,5,1,log-MMSE,14.7806,20.2146,19.851,11.0493,0.181
+chirp,white,5,2,Spectral Subtraction,8.3726,13.7874,13.3223,18.0447,0.244
+chirp,white,5,2,Spectral Gating,8.7223,14.1649,13.7072,16.4657,0.2463
+chirp,white,5,2,Wiener,16.9441,22.65,22.2205,4.4435,0.0711
+chirp,white,5,2,MMSE-STSA,12.6198,17.9452,17.5531,15.3103,0.3016
+chirp,white,5,2,log-MMSE,15.0027,20.437,20.0735,11.033,0.1785
+chirp,white,5,3,Spectral Subtraction,8.2145,13.6167,13.1548,18.2933,0.2534
+chirp,white,5,3,Spectral Gating,8.162,13.5539,13.1368,17.1423,0.2711
+chirp,white,5,3,Wiener,16.8223,22.4742,22.1246,4.9148,0.0754
+chirp,white,5,3,MMSE-STSA,12.2829,17.6036,17.2087,15.5632,0.3103
+chirp,white,5,3,log-MMSE,14.8086,20.2309,19.8846,11.2789,0.1837
+chirp,white,5,4,Spectral Subtraction,8.1762,13.5448,13.1021,18.2857,0.2522
+chirp,white,5,4,Spectral Gating,8.3849,13.7432,13.3428,16.8081,0.2591
+chirp,white,5,4,Wiener,16.6316,22.3191,21.9564,4.9847,0.0772
+chirp,white,5,4,MMSE-STSA,12.271,17.5821,17.201,15.577,0.3101
+chirp,white,5,4,log-MMSE,14.6994,20.1276,19.7891,11.3172,0.1844
+chirp,white,10,0,Spectral Subtraction,8.3489,18.7445,18.3323,13.8523,0.2446
+chirp,white,10,0,Spectral Gating,8.5644,18.9701,18.561,12.5245,0.2499
+chirp,white,10,0,Wiener,16.7701,27.442,26.8664,2.68,0.0738
+chirp,white,10,0,MMSE-STSA,12.556,22.8859,22.536,10.9325,0.3013
+chirp,white,10,0,log-MMSE,14.8987,25.3344,24.9272,7.2041,0.1775
+chirp,white,10,1,Spectral Subtraction,8.2563,18.7003,18.2363,13.8145,0.2459
+chirp,white,10,1,Spectral Gating,8.474,18.9228,18.4672,12.5286,0.2515
+chirp,white,10,1,Wiener,16.3083,27.0721,26.405,2.9089,0.0769
+chirp,white,10,1,MMSE-STSA,12.2806,22.6513,22.2599,10.9205,0.3033
+chirp,white,10,1,log-MMSE,14.5551,25.0527,24.5851,7.2446,0.1805
+chirp,white,10,2,Spectral Subtraction,8.3011,18.7173,18.2832,13.844,0.2445
+chirp,white,10,2,Spectral Gating,8.6568,19.1021,18.6518,12.425,0.2467
+chirp,white,10,2,Wiener,16.5785,27.3948,26.6722,2.6677,0.0743
+chirp,white,10,2,MMSE-STSA,12.4872,22.8527,22.4673,10.9144,0.3005
+chirp,white,10,2,log-MMSE,14.7727,25.281,24.8012,7.1893,0.1782
+chirp,white,10,3,Spectral Subtraction,8.1428,18.5457,18.1198,14.0811,0.2537
+chirp,white,10,3,Spectral Gating,8.0869,18.4815,18.0764,13.0867,0.2715
+chirp,white,10,3,Wiener,16.5326,27.1547,26.6489,3.0709,0.0783
+chirp,white,10,3,MMSE-STSA,12.1697,22.4916,22.1486,11.1886,0.3095
+chirp,white,10,3,log-MMSE,14.6198,25.0409,24.6563,7.4491,0.1836
+chirp,white,10,4,Spectral Subtraction,8.1043,18.4777,18.0731,14.073,0.253
+chirp,white,10,4,Spectral Gating,8.3071,18.671,18.287,12.7707,0.2599
+chirp,white,10,4,Wiener,16.3674,27.0933,26.5044,3.1435,0.0803
+chirp,white,10,4,MMSE-STSA,12.1592,22.49,22.1421,11.1948,0.3094
+chirp,white,10,4,log-MMSE,14.5201,24.984,24.5685,7.4789,0.1843
+chirp,pink,-5,0,Spectral Subtraction,8.2145,5.4491,3.0483,22.3948,0.2443
+chirp,pink,-5,0,Spectral Gating,10.0385,6.9967,4.9924,20.8111,0.249
+chirp,pink,-5,0,Wiener,19.258,16.7134,14.485,7.195,0.0688
+chirp,pink,-5,0,MMSE-STSA,12.6397,9.5331,7.1045,19.8684,0.3029
+chirp,pink,-5,0,log-MMSE,16.0052,12.7794,10.6485,15.3893,0.1776
+chirp,pink,-5,1,Spectral Subtraction,9.2877,6.4438,4.0831,22.0247,0.2445
+chirp,pink,-5,1,Spectral Gating,11.858,7.8984,6.7768,20.4415,0.2488
+chirp,pink,-5,1,Wiener,19.0539,16.7696,14.3115,6.9979,0.0726
+chirp,pink,-5,1,MMSE-STSA,13.7725,10.1928,8.2609,19.4563,0.3033
+chirp,pink,-5,1,log-MMSE,16.5814,13.2714,11.3025,15.0023,0.1804
+chirp,pink,-5,2,Spectral Subtraction,8.8101,5.7248,3.6267,22.3489,0.2441
+chirp,pink,-5,2,Spectral Gating,10.8647,7.069,5.7938,20.6829,0.2457
+chirp,pink,-5,2,Wiener,19.2221,16.775,14.477,7.2256,0.0698
+chirp,pink,-5,2,MMSE-STSA,13.1853,9.8671,7.6542,19.7935,0.3015
+chirp,pink,-5,2,log-MMSE,16.4958,13.1824,11.1983,15.3264,0.178
+chirp,pink,-5,3,Spectral Subtraction,9.7532,6.1153,4.4961,22.6615,0.2529
+chirp,pink,-5,3,Spectral Gating,10.1738,6.3669,5.0398,21.4786,0.2708
+chirp,pink,-5,3,Wiener,18.0965,16.4307,13.2673,7.4837,0.0742
+chirp,pink,-5,3,MMSE-STSA,13.9041,9.9019,8.3629,20.0765,0.3102
+chirp,pink,-5,3,log-MMSE,16.2517,12.9329,10.9669,15.5492,0.183
+chirp,pink,-5,4,Spectral Subtraction,5.9563,4.0176,0.6622,22.9086,0.2536
+chirp,pink,-5,4,Spectral Gating,5.2608,4.1848,0.0957,21.3848,0.2611
+chirp,pink,-5,4,Wiener,12.8986,14.2472,7.2269,8.1628,0.0774
+chirp,pink,-5,4,MMSE-STSA,9.1524,7.6343,3.4019,20.4075,0.3117
+chirp,pink,-5,4,log-MMSE,11.2972,10.7519,5.5476,15.9703,0.1857
+chirp,pink,0,0,Spectral Subtraction,8.1867,10.3989,8.1304,18.0546,0.2443
+chirp,pink,0,0,Spectral Gating,9.9949,11.9189,9.9868,16.5845,0.2493
+chirp,pink,0,0,Wiener,19.3527,21.7734,19.5086,4.9499,0.0714
+chirp,pink,0,0,MMSE-STSA,12.5964,14.5068,12.4076,15.4109,0.3021
+chirp,pink,0,0,log-MMSE,16.004,17.8148,15.904,11.3416,0.1776
+chirp,pink,0,1,Spectral Subtraction,9.2548,11.3891,9.1772,17.6923,0.2445
+chirp,pink,0,1,Spectral Gating,11.7618,12.8063,11.7325,16.211,0.2491
+chirp,pink,0,1,Wiener,19.4153,21.9095,19.6209,4.7773,0.0751
+chirp,pink,0,1,MMSE-STSA,13.7895,15.2051,13.6162,15.0177,0.3027
+chirp,pink,0,1,log-MMSE,16.727,18.3561,16.6744,10.98,0.1802
+chirp,pink,0,2,Spectral Subtraction,8.7732,10.681,8.7059,18.024,0.2441
+chirp,pink,0,2,Spectral Gating,10.8191,12.0084,10.7945,16.4619,0.246
+chirp,pink,0,2,Wiener,19.3883,21.8426,19.5682,4.9834,0.0725
+chirp,pink,0,2,MMSE-STSA,13.1471,14.8655,12.9626,15.3538,0.3008
+chirp,pink,0,2,log-MMSE,16.5502,18.2383,16.4815,11.2969,0.1781
+chirp,pink,0,3,Spectral Subtraction,9.7133,11.0671,9.6109,18.2903,0.2527
+chirp,pink,0,3,Spectral Gating,10.1044,11.2877,10.0531,17.2153,0.2707
+chirp,pink,0,3,Wiener,18.6322,21.5506,18.8636,5.1461,0.0762
+chirp,pink,0,3,MMSE-STSA,13.99,14.9625,13.8143,15.6007,0.3093
+chirp,pink,0,3,log-MMSE,16.4989,18.0413,16.4714,11.4647,0.1829
+chirp,pink,0,4,Spectral Subtraction,5.9392,8.988,5.8166,18.5581,0.2537
+chirp,pink,0,4,Spectral Gating,5.2308,9.1172,5.1554,17.1533,0.2614
+chirp,pink,0,4,Wiener,13.06,19.3632,12.8434,5.87,0.0796
+chirp,pink,0,4,MMSE-STSA,9.185,12.6774,8.9019,15.9554,0.3111
+chirp,pink,0,4,log-MMSE,11.3804,15.8428,11.1151,11.9159,0.1855
+chirp,pink,5,0,Spectral Subtraction,8.1513,15.3451,13.1343,14.0095,0.2447
+chirp,pink,5,0,Spectral Gating,9.9319,16.8421,14.934,12.7285,0.2497
+chirp,pink,5,0,Wiener,18.9593,26.4492,24.0199,3.2432,0.0753
+chirp,pink,5,0,MMSE-STSA,12.5054,19.4235,17.4408,11.2629,0.3015
+chirp,pink,5,0,log-MMSE,15.8121,22.6662,20.7827,7.8074,0.1777
+chirp,pink,5,1,Spectral Subtraction,9.2103,16.3301,14.1807,13.6584,0.245
+chirp,pink,5,1,Spectral Gating,11.6693,17.7176,16.6576,12.3527,0.2497
+chirp,pink,5,1,Wiener,19.2376,26.6854,24.3352,3.0996,0.0784
+chirp,pink,5,1,MMSE-STSA,13.7275,20.1408,18.6698,10.8948,0.3018
+chirp,pink,5,1,log-MMSE,16.621,23.2466,21.6159,7.4807,0.18
+chirp,pink,5,2,Spectral Subtraction,8.7252,15.6372,13.7011,13.9963,0.2446
+chirp,pink,5,2,Spectral Gating,10.7559,16.9379,15.7486,12.6163,0.2465
+chirp,pink,5,2,Wiener,18.9965,26.6305,24.0704,3.2724,0.0759
+chirp,pink,5,2,MMSE-STSA,12.9664,19.7932,17.9027,11.2282,0.3001
+chirp,pink,5,2,log-MMSE,16.3177,23.1363,21.3015,7.7828,0.1781
+chirp,pink,5,3,Spectral Subtraction,9.6547,16.0072,14.612,14.1985,0.2531
+chirp,pink,5,3,Spectral Gating,10.0295,16.217,15.0049,13.2991,0.2712
+chirp,pink,5,3,Wiener,18.6917,26.3347,23.8267,3.3603,0.0791
+chirp,pink,5,3,MMSE-STSA,13.955,19.9305,18.9003,11.4148,0.3085
+chirp,pink,5,3,log-MMSE,16.5041,22.9741,21.5211,7.8724,0.183
+chirp,pink,5,4,Spectral Subtraction,5.9158,13.9501,10.8634,14.4899,0.2541
+chirp,pink,5,4,Spectral Gating,5.2113,14.0605,10.1784,13.28,0.2621
+chirp,pink,5,4,Wiener,13.086,24.2529,18.0187,4.1048,0.0826
+chirp,pink,5,4,MMSE-STSA,9.1892,17.6601,14.0835,11.8013,0.3103
+chirp,pink,5,4,log-MMSE,11.3945,20.8091,16.3017,8.3644,0.1855
+chirp,pink,10,0,Spectral Subtraction,8.1063,20.2869,18.1019,10.3913,0.2451
+chirp,pink,10,0,Spectral Gating,9.8514,21.7517,19.8542,9.4044,0.2508
+chirp,pink,10,0,Wiener,18.5451,30.9861,28.5634,2.0302,0.08
+chirp,pink,10,0,MMSE-STSA,12.4137,24.327,22.3924,7.6517,0.3009
+chirp,pink,10,0,log-MMSE,15.6171,27.4915,25.6077,5.004,0.1781
+chirp,pink,10,1,Spectral Subtraction,9.1532,21.2617,19.1413,10.0551,0.2454
+chirp,pink,10,1,Spectral Gating,11.5464,22.6303,21.5413,9.0297,0.2501
+chirp,pink,10,1,Wiener,18.7009,31.1595,28.7367,1.922,0.0825
+chirp,pink,10,1,MMSE-STSA,13.5707,25.0345,23.5516,7.3265,0.3013
+chirp,pink,10,1,log-MMSE,16.3295,28.0636,26.3305,4.7263,0.1803
+chirp,pink,10,2,Spectral Subtraction,8.6663,20.5794,18.6575,10.3988,0.2451
+chirp,pink,10,2,Spectral Gating,10.6759,21.8506,20.6731,9.3013,0.2473
+chirp,pink,10,2,Wiener,18.268,31.0949,28.2906,2.0584,0.0803
+chirp,pink,10,2,MMSE-STSA,12.6602,24.6977,22.6381,7.6472,0.2997
+chirp,pink,10,2,log-MMSE,15.8875,27.9837,25.8824,5.0019,0.1785
+chirp,pink,10,3,Spectral Subtraction,9.5811,20.93,19.5627,10.5133,0.2534
+chirp,pink,10,3,Spectral Gating,9.9442,21.1256,19.9323,9.8736,0.2718
+chirp,pink,10,3,Wiener,18.1939,30.844,28.2523,2.0792,0.0833
+chirp,pink,10,3,MMSE-STSA,13.7376,24.822,23.721,7.7365,0.3078
+chirp,pink,10,3,log-MMSE,16.1903,27.8043,26.2042,4.9951,0.1834
+chirp,pink,10,4,Spectral Subtraction,5.8866,18.9038,15.8631,10.8283,0.2544
+chirp,pink,10,4,Spectral Gating,5.1547,18.9951,15.138,9.911,0.2626
+chirp,pink,10,4,Wiener,13.0275,28.9829,23.0084,2.8217,0.0866
+chirp,pink,10,4,MMSE-STSA,9.1655,22.6166,19.1264,8.1678,0.3095
+chirp,pink,10,4,log-MMSE,11.3481,25.725,21.3166,5.5273,0.1856
+chirp,narrowband,-5,0,Spectral Subtraction,6.2731,3.9653,1.1367,8.2961,0.3475
+chirp,narrowband,-5,0,Spectral Gating,5.7856,4.9362,0.686,8.0824,0.2766
+chirp,narrowband,-5,0,Wiener,17.881,21.7295,12.6702,4.5014,0.3788
+chirp,narrowband,-5,0,MMSE-STSA,11.2451,7.8376,6.0267,7.7154,0.8318
+chirp,narrowband,-5,0,log-MMSE,14.8831,12.5318,9.6403,6.6646,0.3685
+chirp,narrowband,-5,1,Spectral Subtraction,9.066,8.1254,3.9015,7.251,0.3455
+chirp,narrowband,-5,1,Spectral Gating,9.1942,9.9098,4.0189,6.953,0.2748
+chirp,narrowband,-5,1,Wiener,18.7706,27.2334,13.5846,3.1627,0.3809
+chirp,narrowband,-5,1,MMSE-STSA,14.0034,11.1892,8.7263,6.8083,0.828
+chirp,narrowband,-5,1,log-MMSE,16.7311,15.8383,11.4826,5.7687,0.3692
+chirp,narrowband,-5,2,Spectral Subtraction,7.6888,6.4786,2.4557,7.6447,0.3535
+chirp,narrowband,-5,2,Spectral Gating,7.9977,8.6045,2.7603,7.2367,0.2885
+chirp,narrowband,-5,2,Wiener,18.437,25.4731,13.2359,3.7123,0.3883
+chirp,narrowband,-5,2,MMSE-STSA,12.4833,9.5332,7.1656,7.2285,0.8452
+chirp,narrowband,-5,2,log-MMSE,15.8138,14.4379,10.535,6.1708,0.3754
+chirp,narrowband,-5,3,Spectral Subtraction,8.8913,7.7231,3.6807,7.2908,0.357
+chirp,narrowband,-5,3,Spectral Gating,8.5643,8.7321,3.3762,7.0984,0.2975
+chirp,narrowband,-5,3,Wiener,18.5111,26.718,13.3167,3.2825,0.3928
+chirp,narrowband,-5,3,MMSE-STSA,13.5415,10.6664,8.2054,6.8514,0.8514
+chirp,narrowband,-5,3,log-MMSE,16.4092,15.4385,11.1249,5.8279,0.3795
+chirp,narrowband,-5,4,Spectral Subtraction,9.5581,8.1553,4.3455,7.4095,0.3418
+chirp,narrowband,-5,4,Spectral Gating,8.9524,7.7187,3.7197,7.3731,0.2694
+chirp,narrowband,-5,4,Wiener,18.9488,27.3913,13.771,3.2524,0.3761
+chirp,narrowband,-5,4,MMSE-STSA,14.0107,11.2276,8.7359,6.9389,0.8486
+chirp,narrowband,-5,4,log-MMSE,16.9448,16.1462,11.7013,5.8536,0.3642
+chirp,narrowband,0,0,Spectral Subtraction,6.2163,8.9277,6.1488,7.276,0.3473
+chirp,narrowband,0,0,Spectral Gating,5.7193,9.8948,5.6682,7.0563,0.2594
+chirp,narrowband,0,0,Wiener,15.7927,26.0013,15.6769,3.6477,0.3794
+chirp,narrowband,0,0,MMSE-STSA,10.8551,12.7155,10.7088,6.7174,0.8336
+chirp,narrowband,0,0,log-MMSE,13.8464,17.402,13.6968,5.7029,0.3698
+chirp,narrowband,0,1,Spectral Subtraction,8.973,13.0792,8.8893,6.2815,0.3449
+chirp,narrowband,0,1,Spectral Gating,9.0868,14.8758,9.0321,5.9805,0.257
+chirp,narrowband,0,1,Wiener,15.4592,30.1735,15.3398,2.4421,0.3816
+chirp,narrowband,0,1,MMSE-STSA,12.7531,15.9462,12.5713,5.8741,0.8296
+chirp,narrowband,0,1,log-MMSE,14.518,20.5932,14.3636,4.8742,0.3708
+chirp,narrowband,0,2,Spectral Subtraction,7.5019,11.3735,7.3542,6.6625,0.3547
+chirp,narrowband,0,2,Spectral Gating,7.7906,13.506,7.6588,6.2541,0.2736
+chirp,narrowband,0,2,Wiener,14.9312,29.0149,14.7915,2.9343,0.3904
+chirp,narrowband,0,2,MMSE-STSA,11.4032,14.3551,11.1823,6.2778,0.8461
+chirp,narrowband,0,2,log-MMSE,13.6761,19.2766,13.494,5.2504,0.3782
+chirp,narrowband,0,3,Spectral Subtraction,8.6873,12.6828,8.5638,6.3289,0.3591
+chirp,narrowband,0,3,Spectral Gating,8.3345,13.73,8.2339,6.1331,0.285
+chirp,narrowband,0,3,Wiener,14.9575,30.0809,14.8241,2.5538,0.3958
+chirp,narrowband,0,3,MMSE-STSA,12.2031,15.485,11.9885,5.932,0.851
+chirp,narrowband,0,3,log-MMSE,14.034,20.2518,13.8599,4.945,0.3829
+chirp,narrowband,0,4,Spectral Subtraction,9.3422,13.0948,9.2158,6.4183,0.3393
+chirp,narrowband,0,4,Spectral Gating,8.7049,12.6488,8.5916,6.3897,0.2532
+chirp,narrowband,0,4,Wiener,15.5399,30.4751,15.4234,2.5047,0.3754
+chirp,narrowband,0,4,MMSE-STSA,12.883,16.0409,12.7037,5.9826,0.8467
+chirp,narrowband,0,4,log-MMSE,14.7404,20.9713,14.5927,4.9351,0.3639
+chirp,narrowband,5,0,Spectral Subtraction,6.1717,13.902,11.1461,6.29,0.3428
+chirp,narrowband,5,0,Spectral Gating,5.6719,14.837,10.6652,6.0696,0.2404
+chirp,narrowband,5,0,Wiener,15.391,29.5803,20.3621,2.8478,0.3765
+chirp,narrowband,5,0,MMSE-STSA,10.6508,17.6525,15.5832,5.7487,0.835
+chirp,narrowband,5,0,log-MMSE,13.5261,22.3434,18.4662,4.7709,0.3677
+chirp,narrowband,5,1,Spectral Subtraction,8.9142,18.0414,13.8873,5.3472,0.3422
+chirp,narrowband,5,1,Spectral Gating,9.0816,19.8751,14.0736,5.0479,0.2367
+chirp,narrowband,5,1,Wiener,14.8199,32.2849,19.8013,1.7913,0.3792
+chirp,narrowband,5,1,MMSE-STSA,12.3082,20.8873,17.2295,4.9562,0.8313
+chirp,narrowband,5,1,log-MMSE,13.7671,25.4197,18.7145,4.0067,0.3692
+chirp,narrowband,5,2,Spectral Subtraction,7.4435,16.3241,12.3739,5.715,0.3535
+chirp,narrowband,5,2,Spectral Gating,7.8199,18.5222,12.7721,5.3096,0.2552
+chirp,narrowband,5,2,Wiener,12.997,31.7286,17.9397,2.2047,0.3899
+chirp,narrowband,5,2,MMSE-STSA,10.6123,19.2489,15.5017,5.3495,0.8478
+chirp,narrowband,5,2,log-MMSE,12.194,24.1061,17.1115,4.357,0.3783
+chirp,narrowband,5,3,Spectral Subtraction,8.5859,17.6818,13.5331,5.3976,0.3586
+chirp,narrowband,5,3,Spectral Gating,8.2837,18.7096,13.2594,5.2089,0.2686
+chirp,narrowband,5,3,Wiener,13.3372,32.2832,18.2924,1.8864,0.3963
+chirp,narrowband,5,3,MMSE-STSA,11.3107,20.399,16.212,5.0354,0.8524
+chirp,narrowband,5,3,log-MMSE,12.5704,25.1535,17.4976,4.0875,0.3838
+chirp,narrowband,5,4,Spectral Subtraction,9.2745,18.071,14.219,5.4646,0.3327
+chirp,narrowband,5,4,Spectral Gating,8.7198,17.6383,13.6896,5.443,0.2404
+chirp,narrowband,5,4,Wiener,13.4546,32.5813,18.4099,1.8299,0.3706
+chirp,narrowband,5,4,MMSE-STSA,11.792,20.8754,16.7027,5.049,0.8416
+chirp,narrowband,5,4,log-MMSE,12.9625,25.7306,17.8975,4.0533,0.3593
+chirp,narrowband,10,0,Spectral Subtraction,6.1454,18.8812,16.1365,5.3395,0.3329
+chirp,narrowband,10,0,Spectral Gating,5.6566,19.8113,15.6551,5.1213,0.2279
+chirp,narrowband,10,0,Wiener,16.0724,32.256,26.0756,2.1275,0.3688
+chirp,narrowband,10,0,MMSE-STSA,10.5508,22.6032,20.5246,4.8192,0.8333
+chirp,narrowband,10,0,log-MMSE,13.6609,27.3009,23.6423,3.8787,0.3602
+chirp,narrowband,10,1,Spectral Subtraction,8.8088,22.9846,18.7996,4.4531,0.334
+chirp,narrowband,10,1,Spectral Gating,8.976,24.7871,18.9763,4.1575,0.2211
+chirp,narrowband,10,1,Wiener,15.8632,33.4466,25.8913,1.2428,0.3734
+chirp,narrowband,10,1,MMSE-STSA,12.5704,25.8762,22.5468,4.0747,0.8308
+chirp,narrowband,10,1,log-MMSE,14.4012,29.9711,24.3998,3.1822,0.3635
+chirp,narrowband,10,2,Spectral Subtraction,7.4286,21.2838,17.3975,4.8049,0.3498
+chirp,narrowband,10,2,Spectral Gating,7.7626,23.4355,17.7395,4.41,0.2375
+chirp,narrowband,10,2,Wiener,13.8522,33.2658,23.8687,1.5625,0.3864
+chirp,narrowband,10,2,MMSE-STSA,10.8521,24.2668,20.8164,4.4416,0.8486
+chirp,narrowband,10,2,log-MMSE,12.7424,28.9397,22.7334,3.4915,0.3759
+chirp,narrowband,10,3,Spectral Subtraction,8.4721,22.6356,18.4493,4.5074,0.356
+chirp,narrowband,10,3,Spectral Gating,8.2686,23.7105,18.2533,4.3139,0.2518
+chirp,narrowband,10,3,Wiener,14.1642,33.5559,24.1799,1.3155,0.3941
+chirp,narrowband,10,3,MMSE-STSA,11.4547,25.4122,21.4241,4.1634,0.8534
+chirp,narrowband,10,3,log-MMSE,13.0825,29.8552,23.0752,3.2637,0.382
+chirp,narrowband,10,4,Spectral Subtraction,9.1761,23.0092,19.1521,4.5481,0.3235
+chirp,narrowband,10,4,Spectral Gating,8.6757,22.6185,18.6601,4.5292,0.2426
+chirp,narrowband,10,4,Wiener,14.2518,33.5681,24.2784,1.2501,0.3602
+chirp,narrowband,10,4,MMSE-STSA,11.9174,25.8282,21.8917,4.143,0.8297
+chirp,narrowband,10,4,log-MMSE,13.4076,30.3272,23.4094,3.1974,0.3495
+am_modulated,white,-5,0,Spectral Subtraction,8.6694,0.139,3.436,23.2951,0.2434
+am_modulated,white,-5,0,Spectral Gating,8.9246,0.34,3.8775,21.687,0.2483
+am_modulated,white,-5,0,Wiener,19.3938,9.7768,14.2568,7.3546,0.0479
+am_modulated,white,-5,0,MMSE-STSA,13.6202,4.0779,8.3491,20.6273,0.2982
+am_modulated,white,-5,0,log-MMSE,16.6326,6.7044,11.3593,15.9824,0.1698
+am_modulated,white,-5,1,Spectral Subtraction,8.5999,0.1769,3.3013,23.2133,0.2444
+am_modulated,white,-5,1,Spectral Gating,8.8896,0.4196,3.7598,21.6704,0.249
+am_modulated,white,-5,1,Wiener,19.1977,9.6091,14.0624,7.5494,0.051
+am_modulated,white,-5,1,MMSE-STSA,13.4543,3.9868,8.1382,20.5386,0.2992
+am_modulated,white,-5,1,log-MMSE,16.4591,6.617,11.1647,15.9272,0.1727
+am_modulated,white,-5,2,Spectral Subtraction,8.6248,0.1517,3.2684,23.2053,0.2424
+am_modulated,white,-5,2,Spectral Gating,9.0597,0.5073,3.8583,21.5069,0.2434
+am_modulated,white,-5,2,Wiener,19.4158,9.6646,14.3219,7.2686,0.0447
+am_modulated,white,-5,2,MMSE-STSA,13.626,4.0872,8.2818,20.5601,0.2962
+am_modulated,white,-5,2,log-MMSE,16.627,6.6642,11.3301,15.9095,0.1689
+am_modulated,white,-5,3,Spectral Subtraction,8.4527,0.0676,3.1891,23.4911,0.2524
+am_modulated,white,-5,3,Spectral Gating,8.4149,0.0248,3.3171,22.2301,0.27
+am_modulated,white,-5,3,Wiener,19.1328,9.3798,13.9833,7.7817,0.053
+am_modulated,white,-5,3,MMSE-STSA,13.1831,3.7505,7.8918,20.8044,0.3056
+am_modulated,white,-5,3,log-MMSE,16.3132,6.438,11.0224,16.1431,0.1756
+am_modulated,white,-5,4,Spectral Subtraction,8.4548,-0.0178,3.3177,23.4546,0.2503
+am_modulated,white,-5,4,Spectral Gating,8.7192,0.1854,3.6851,21.8231,0.2561
+am_modulated,white,-5,4,Wiener,19.6208,9.6103,14.4713,7.8444,0.0549
+am_modulated,white,-5,4,MMSE-STSA,13.3006,3.8052,8.1417,20.8486,0.3049
+am_modulated,white,-5,4,log-MMSE,16.5293,6.5464,11.3357,16.2155,0.1752
+am_modulated,white,0,0,Spectral Subtraction,8.6526,4.2075,8.5763,18.7707,0.2433
+am_modulated,white,0,0,Spectral Gating,8.9128,4.4407,8.9055,17.2505,0.2481
+am_modulated,white,0,0,Wiener,18.9907,14.149,18.9422,4.868,0.0481
+am_modulated,white,0,0,MMSE-STSA,13.5192,8.3525,13.4268,15.949,0.2977
+am_modulated,white,0,0,log-MMSE,16.4332,11.0772,16.3427,11.6226,0.1696
+am_modulated,white,0,1,Spectral Subtraction,8.587,4.2337,8.4702,18.6957,0.2442
+am_modulated,white,0,1,Spectral Gating,8.8843,4.5131,8.8269,17.2322,0.2487
+am_modulated,white,0,1,Wiener,18.9116,13.9368,18.878,5.0681,0.0512
+am_modulated,white,0,1,MMSE-STSA,13.3646,8.2697,13.2448,15.8834,0.2988
+am_modulated,white,0,1,log-MMSE,16.2961,10.9588,16.1954,11.6016,0.1725
+am_modulated,white,0,2,Spectral Subtraction,8.6122,4.2281,8.4611,18.6806,0.2422
+am_modulated,white,0,2,Spectral Gating,9.0439,4.6157,8.9473,17.0626,0.2432
+am_modulated,white,0,2,Wiener,19.1547,14.1249,19.157,4.7972,0.0452
+am_modulated,white,0,2,MMSE-STSA,13.552,8.3752,13.414,15.8887,0.2957
+am_modulated,white,0,2,log-MMSE,16.4797,11.073,16.3811,11.5581,0.1687
+am_modulated,white,0,3,Spectral Subtraction,8.4352,4.1146,8.3426,18.9619,0.2523
+am_modulated,white,0,3,Spectral Gating,8.4067,4.0832,8.3785,17.7831,0.2697
+am_modulated,white,0,3,Wiener,18.8762,13.7581,18.8301,5.2446,0.0536
+am_modulated,white,0,3,MMSE-STSA,13.0839,7.9999,12.9786,16.146,0.3053
+am_modulated,white,0,3,log-MMSE,16.1532,10.7934,16.0551,11.8031,0.1755
+am_modulated,white,0,4,Spectral Subtraction,8.439,4.0341,8.3982,18.9273,0.2503
+am_modulated,white,0,4,Spectral Gating,8.6995,4.2657,8.7011,17.3876,0.2558
+am_modulated,white,0,4,Wiener,19.3723,14.0545,19.3235,5.338,0.0554
+am_modulated,white,0,4,MMSE-STSA,13.2172,8.0556,13.1657,16.1827,0.3045
+am_modulated,white,0,4,log-MMSE,16.3798,10.9245,16.3176,11.8663,0.1752
+am_modulated,white,5,0,Spectral Subtraction,8.6376,8.5372,13.6131,14.4808,0.2436
+am_modulated,white,5,0,Spectral Gating,8.8976,8.7748,13.8972,13.1217,0.2483
+am_modulated,white,5,0,Wiener,18.7136,18.8155,23.6978,2.9696,0.0515
+am_modulated,white,5,0,MMSE-STSA,13.4506,12.8409,18.4195,11.4689,0.2973
+am_modulated,white,5,0,log-MMSE,16.2791,15.6793,21.2489,7.6659,0.1698
+am_modulated,white,5,1,Spectral Subtraction,8.5694,8.5737,13.5209,14.4191,0.2444
+am_modulated,white,5,1,Spectral Gating,8.8633,8.8676,13.8343,13.1051,0.2489
+am_modulated,white,5,1,Wiener,18.7048,18.5923,23.7044,3.1655,0.0541
+am_modulated,white,5,1,MMSE-STSA,13.2971,12.754,18.2501,11.4364,0.2985
+am_modulated,white,5,1,log-MMSE,16.1814,15.5884,21.1483,7.6891,0.1727
+am_modulated,white,5,2,Spectral Subtraction,8.5942,8.5399,13.526,14.3975,0.2426
+am_modulated,white,5,2,Spectral Gating,9.0262,8.9497,13.9751,12.9257,0.2435
+am_modulated,white,5,2,Wiener,18.8718,18.7894,23.9042,2.9058,0.0493
+am_modulated,white,5,2,MMSE-STSA,13.4677,12.883,18.4124,11.4173,0.2955
+am_modulated,white,5,2,log-MMSE,16.3412,15.7017,21.3155,7.6113,0.1691
+am_modulated,white,5,3,Spectral Subtraction,8.4175,8.4179,13.3841,14.6625,0.2526
+am_modulated,white,5,3,Spectral Gating,8.3838,8.3865,13.3735,13.6289,0.2699
+am_modulated,white,5,3,Wiener,18.5444,18.3043,23.5313,3.2892,0.0571
+am_modulated,white,5,3,MMSE-STSA,12.9997,12.4536,17.9612,11.6889,0.305
+am_modulated,white,5,3,log-MMSE,15.9851,15.3726,20.9514,7.8652,0.1757
+am_modulated,white,5,4,Spectral Subtraction,8.4206,8.343,13.4099,14.6366,0.2506
+am_modulated,white,5,4,Spectral Gating,8.6817,8.5759,13.6861,13.2652,0.2561
+am_modulated,white,5,4,Wiener,18.9807,18.6083,23.9642,3.3996,0.0589
+am_modulated,white,5,4,MMSE-STSA,13.1275,12.5269,18.1111,11.7177,0.3043
+am_modulated,white,5,4,log-MMSE,16.1838,15.4912,21.1636,7.9185,0.1758
+am_modulated,white,10,0,Spectral Subtraction,8.6121,13.0437,18.6043,10.578,0.2445
+am_modulated,white,10,0,Spectral Gating,8.8724,13.3001,18.8728,9.5066,0.2493
+am_modulated,white,10,0,Wiener,18.5259,23.6157,28.5211,1.6532,0.0586
+am_modulated,white,10,0,MMSE-STSA,13.381,17.522,23.3702,7.3851,0.2973
+am_modulated,white,10,0,log-MMSE,16.1825,20.4883,26.1725,4.3816,0.171
+am_modulated,white,10,1,Spectral Subtraction,8.537,13.0898,18.5155,10.5292,0.2455
+am_modulated,white,10,1,Spectral Gating,8.8247,13.3865,18.8094,9.4927,0.2502
+am_modulated,white,10,1,Wiener,18.3821,23.2351,28.3914,1.8329,0.0611
+am_modulated,white,10,1,MMSE-STSA,13.1885,17.4134,23.1697,7.398,0.2985
+am_modulated,white,10,1,log-MMSE,15.9911,20.3359,25.9823,4.4519,0.1739
+am_modulated,white,10,2,Spectral Subtraction,8.5735,13.0676,18.5419,10.5033,0.2434
+am_modulated,white,10,2,Spectral Gating,8.9911,13.4891,18.9648,9.3225,0.2446
+am_modulated,white,10,2,Wiener,18.4982,23.3755,28.5376,1.6101,0.0572
+am_modulated,white,10,2,MMSE-STSA,13.3361,17.5211,23.3159,7.3451,0.2957
+am_modulated,white,10,2,log-MMSE,16.1283,20.4527,26.1305,4.3429,0.1704
+am_modulated,white,10,3,Spectral Subtraction,8.3897,12.9163,18.3769,10.7371,0.2535
+am_modulated,white,10,3,Spectral Gating,8.3498,12.8843,18.3445,9.9552,0.271
+am_modulated,white,10,3,Wiener,18.2177,23.0059,28.2151,1.9098,0.064
+am_modulated,white,10,3,MMSE-STSA,12.9086,17.1145,22.894,7.6263,0.3051
+am_modulated,white,10,3,log-MMSE,15.8164,20.1064,25.805,4.5843,0.1768
+am_modulated,white,10,4,Spectral Subtraction,8.3917,12.8621,18.3895,10.7206,0.2515
+am_modulated,white,10,4,Spectral Gating,8.6532,13.1198,18.6565,9.6457,0.2571
+am_modulated,white,10,4,Wiener,18.5038,23.2572,28.4981,2.0118,0.0658
+am_modulated,white,10,4,MMSE-STSA,13.0135,17.1807,23.0082,7.6446,0.3045
+am_modulated,white,10,4,log-MMSE,15.9459,20.2012,25.9392,4.6338,0.177
+am_modulated,pink,-5,0,Spectral Subtraction,8.2605,1.4845,3.1319,18.7207,0.243
+am_modulated,pink,-5,0,Spectral Gating,10.1163,2.6277,5.0991,17.2308,0.2474
+am_modulated,pink,-5,0,Wiener,21.0526,11.6586,15.9445,5.3949,0.0473
+am_modulated,pink,-5,0,MMSE-STSA,13.0022,5.0907,7.8398,15.9692,0.2977
+am_modulated,pink,-5,0,log-MMSE,16.8052,7.9394,11.623,11.8591,0.1692
+am_modulated,pink,-5,1,Spectral Subtraction,9.3427,2.19,4.1683,18.3196,0.243
+am_modulated,pink,-5,1,Spectral Gating,11.9781,3.4599,6.9003,16.8353,0.2467
+am_modulated,pink,-5,1,Wiener,21.7712,12.175,16.7002,5.1882,0.0502
+am_modulated,pink,-5,1,MMSE-STSA,14.4402,5.7234,9.2494,15.5486,0.2974
+am_modulated,pink,-5,1,log-MMSE,17.9628,8.5664,12.7784,11.4714,0.1712
+am_modulated,pink,-5,2,Spectral Subtraction,8.8713,1.5512,3.6456,18.6145,0.242
+am_modulated,pink,-5,2,Spectral Gating,10.9735,2.6556,5.8386,17.0119,0.2426
+am_modulated,pink,-5,2,Wiener,21.6257,11.8056,16.5722,5.3669,0.0445
+am_modulated,pink,-5,2,MMSE-STSA,13.7377,5.1432,8.5075,15.8746,0.2951
+am_modulated,pink,-5,2,log-MMSE,17.6631,8.1138,12.4553,11.7758,0.168
+am_modulated,pink,-5,3,Spectral Subtraction,9.8447,2.0135,4.6881,18.9082,0.2515
+am_modulated,pink,-5,3,Spectral Gating,10.2419,2.2354,5.1921,17.8138,0.2693
+am_modulated,pink,-5,3,Wiener,21.6606,11.8062,16.5842,5.4767,0.0527
+am_modulated,pink,-5,3,MMSE-STSA,14.8427,5.5721,9.6636,16.1196,0.3045
+am_modulated,pink,-5,3,log-MMSE,18.1492,8.3738,12.9696,11.9283,0.1746
+am_modulated,pink,-5,4,Spectral Subtraction,6.0077,0.2095,0.9298,19.1549,0.2513
+am_modulated,pink,-5,4,Spectral Gating,5.3006,0.3842,0.2852,17.6921,0.2579
+am_modulated,pink,-5,4,Wiener,13.7526,9.7891,8.6125,6.2512,0.0566
+am_modulated,pink,-5,4,MMSE-STSA,9.4587,3.5581,4.3618,16.502,0.3054
+am_modulated,pink,-5,4,log-MMSE,11.8521,6.3814,6.7194,12.4181,0.1758
+am_modulated,pink,0,0,Spectral Subtraction,8.2531,5.5946,8.2114,14.5925,0.2431
+am_modulated,pink,0,0,Spectral Gating,10.1036,6.8281,10.1013,13.286,0.2475
+am_modulated,pink,0,0,Wiener,20.7664,16.1989,20.7305,3.5587,0.0492
+am_modulated,pink,0,0,MMSE-STSA,12.9618,9.3841,12.906,11.7288,0.2971
+am_modulated,pink,0,0,log-MMSE,16.707,12.3847,16.6454,8.2202,0.1692
+am_modulated,pink,0,1,Spectral Subtraction,9.3344,6.3515,9.2636,14.206,0.243
+am_modulated,pink,0,1,Spectral Gating,11.9657,7.7527,11.9285,12.8874,0.2466
+am_modulated,pink,0,1,Wiener,21.5687,16.6738,21.5555,3.3895,0.0519
+am_modulated,pink,0,1,MMSE-STSA,14.3953,10.1253,14.32,11.3404,0.2969
+am_modulated,pink,0,1,log-MMSE,17.8727,13.059,17.807,7.8716,0.1711
+am_modulated,pink,0,2,Spectral Subtraction,8.863,5.6657,8.7628,14.5073,0.2421
+am_modulated,pink,0,2,Spectral Gating,10.9595,6.8601,10.8915,13.0705,0.2426
+am_modulated,pink,0,2,Wiener,21.39,16.3519,21.4,3.549,0.0468
+am_modulated,pink,0,2,MMSE-STSA,13.6935,9.4898,13.5953,11.6637,0.2947
+am_modulated,pink,0,2,log-MMSE,17.571,12.6343,17.4959,8.1641,0.168
+am_modulated,pink,0,3,Spectral Subtraction,9.8296,6.1371,9.7735,14.7301,0.2515
+am_modulated,pink,0,3,Spectral Gating,10.2248,6.3514,10.2067,13.7977,0.2693
+am_modulated,pink,0,3,Wiener,21.3312,16.2447,21.3084,3.5877,0.0547
+am_modulated,pink,0,3,MMSE-STSA,14.7659,9.9088,14.7002,11.8458,0.3041
+am_modulated,pink,0,3,log-MMSE,18.0037,12.8355,17.9417,8.2326,0.1745
+am_modulated,pink,0,4,Spectral Subtraction,6.0021,4.2362,5.9802,15.0099,0.2513
+am_modulated,pink,0,4,Spectral Gating,5.2966,4.4007,5.3007,13.7297,0.2578
+am_modulated,pink,0,4,Wiener,13.7001,14.1417,13.6554,4.3965,0.0585
+am_modulated,pink,0,4,MMSE-STSA,9.4369,7.7436,9.4058,12.2667,0.3051
+am_modulated,pink,0,4,log-MMSE,11.8161,10.644,11.7734,8.7703,0.1761
+am_modulated,pink,5,0,Spectral Subtraction,8.2439,9.9987,13.2305,10.884,0.2437
+am_modulated,pink,5,0,Spectral Gating,10.096,11.2567,15.0962,9.8605,0.248
+am_modulated,pink,5,0,Wiener,20.5772,20.9839,25.5656,2.228,0.0544
+am_modulated,pink,5,0,MMSE-STSA,12.9361,13.8923,17.9172,8.0161,0.2967
+am_modulated,pink,5,0,log-MMSE,16.6443,17.044,21.6236,5.3012,0.1697
+am_modulated,pink,5,1,Spectral Subtraction,9.3214,10.798,14.2906,10.5157,0.2437
+am_modulated,pink,5,1,Spectral Gating,11.9384,12.2435,16.9188,9.4702,0.2473
+am_modulated,pink,5,1,Wiener,21.3329,21.4204,26.3378,2.1064,0.0569
+am_modulated,pink,5,1,MMSE-STSA,14.3407,14.6605,19.3094,7.6644,0.2966
+am_modulated,pink,5,1,log-MMSE,17.7687,17.7218,22.7458,5.0,0.1717
+am_modulated,pink,5,2,Spectral Subtraction,8.8529,10.047,13.8058,10.8256,0.2425
+am_modulated,pink,5,2,Spectral Gating,10.9459,11.3609,15.91,9.6688,0.2432
+am_modulated,pink,5,2,Wiener,21.0939,21.031,26.124,2.2367,0.0528
+am_modulated,pink,5,2,MMSE-STSA,13.6295,14.0458,18.5866,7.9876,0.2945
+am_modulated,pink,5,2,log-MMSE,17.4542,17.3009,22.4308,5.2755,0.1687
+am_modulated,pink,5,3,Spectral Subtraction,9.8124,10.5292,14.7915,10.9523,0.2521
+am_modulated,pink,5,3,Spectral Gating,10.2099,10.7653,15.2028,10.2709,0.2697
+am_modulated,pink,5,3,Wiener,20.9997,20.916,25.9939,2.217,0.0595
+am_modulated,pink,5,3,MMSE-STSA,14.6924,14.4539,19.668,8.0603,0.3039
+am_modulated,pink,5,3,log-MMSE,17.8524,17.4871,22.831,5.2413,0.1751
+am_modulated,pink,5,4,Spectral Subtraction,5.9943,8.5758,10.9891,11.2702,0.252
+am_modulated,pink,5,4,Spectral Gating,5.2915,8.7211,10.2951,10.2879,0.2583
+am_modulated,pink,5,4,Wiener,13.6345,18.7536,18.6199,3.0223,0.0634
+am_modulated,pink,5,4,MMSE-STSA,9.4138,12.1459,14.4038,8.5355,0.3049
+am_modulated,pink,5,4,log-MMSE,11.7746,15.1624,16.7608,5.8267,0.1768
+am_modulated,pink,10,0,Spectral Subtraction,8.2264,14.5379,18.2221,7.6957,0.2451
+am_modulated,pink,10,0,Spectral Gating,10.0726,15.9142,20.073,7.0197,0.2494
+am_modulated,pink,10,0,Wiener,20.3935,25.4065,30.3898,1.3236,0.0641
+am_modulated,pink,10,0,MMSE-STSA,12.8858,18.5567,22.8788,5.1043,0.2971
+am_modulated,pink,10,0,log-MMSE,16.5578,21.8371,26.5507,3.2271,0.1715
+am_modulated,pink,10,1,Spectral Subtraction,9.2979,15.3938,19.2835,7.3539,0.2451
+am_modulated,pink,10,1,Spectral Gating,11.899,16.8284,21.8886,6.6363,0.249
+am_modulated,pink,10,1,Wiener,20.8903,25.5395,30.9004,1.2416,0.0668
+am_modulated,pink,10,1,MMSE-STSA,14.2478,19.3096,24.2344,4.7944,0.2968
+am_modulated,pink,10,1,log-MMSE,17.5764,22.4092,27.5697,2.9833,0.1734
+am_modulated,pink,10,2,Spectral Subtraction,8.8324,14.6628,18.8095,7.6643,0.2438
+am_modulated,pink,10,2,Spectral Gating,10.9104,16.0016,20.8918,6.8605,0.2449
+am_modulated,pink,10,2,Wiener,20.6864,25.3248,30.7212,1.3405,0.0631
+am_modulated,pink,10,2,MMSE-STSA,13.5353,18.738,23.5172,5.1028,0.2949
+am_modulated,pink,10,2,log-MMSE,17.2716,22.067,27.2697,3.2192,0.1707
+am_modulated,pink,10,3,Spectral Subtraction,9.7847,15.0825,19.7764,7.6919,0.2532
+am_modulated,pink,10,3,Spectral Gating,10.163,15.293,20.1593,7.315,0.2713
+am_modulated,pink,10,3,Wiener,20.6489,25.1915,30.649,1.2854,0.0682
+am_modulated,pink,10,3,MMSE-STSA,14.6103,19.1428,24.6006,5.0397,0.304
+am_modulated,pink,10,3,log-MMSE,17.6936,22.3108,27.6862,3.1105,0.1767
+am_modulated,pink,10,4,Spectral Subtraction,5.9823,13.0873,15.9816,8.0421,0.2532
+am_modulated,pink,10,4,Spectral Gating,5.2791,13.2258,15.2815,7.4289,0.2599
+am_modulated,pink,10,4,Wiener,13.5253,23.188,23.5201,2.0368,0.0721
+am_modulated,pink,10,4,MMSE-STSA,9.3767,16.7435,19.3732,5.5678,0.3052
+am_modulated,pink,10,4,log-MMSE,11.7089,19.8796,21.7041,3.715,0.1787
+am_modulated,narrowband,-5,0,Spectral Subtraction,6.3849,0.0788,1.383,7.5985,0.1803
+am_modulated,narrowband,-5,0,Spectral Gating,5.9279,0.8006,0.9263,7.3769,0.1833
+am_modulated,narrowband,-5,0,Wiener,21.7414,16.5077,16.7395,3.9107,0.1926
+am_modulated,narrowband,-5,0,MMSE-STSA,11.6345,3.0974,6.6327,7.0172,0.9237
+am_modulated,narrowband,-5,0,log-MMSE,16.0934,7.4086,11.0916,5.995,0.2004
+am_modulated,narrowband,-5,1,Spectral Subtraction,9.3192,4.4446,4.3173,6.5094,0.1833
+am_modulated,narrowband,-5,1,Spectral Gating,9.6035,6.2534,4.6026,6.2014,0.1779
+am_modulated,narrowband,-5,1,Wiener,28.5298,22.9062,23.5267,2.5083,0.2034
+am_modulated,narrowband,-5,1,MMSE-STSA,15.2262,6.7805,10.2235,6.0823,0.9187
+am_modulated,narrowband,-5,1,log-MMSE,19.5415,11.1974,14.5385,5.0674,0.2079
+am_modulated,narrowband,-5,2,Spectral Subtraction,7.8444,2.4877,2.8389,6.9723,0.1985
+am_modulated,narrowband,-5,2,Spectral Gating,8.1974,4.2725,3.1966,6.5517,0.1864
+am_modulated,narrowband,-5,2,Wiener,26.1494,20.4738,21.139,3.074,0.2136
+am_modulated,narrowband,-5,2,MMSE-STSA,13.3946,5.0471,8.3851,6.5455,0.9358
+am_modulated,narrowband,-5,2,log-MMSE,18.1994,9.5913,13.1887,5.5152,0.2182
+am_modulated,narrowband,-5,3,Spectral Subtraction,9.0848,3.7186,4.0616,6.6276,0.2054
+am_modulated,narrowband,-5,3,Spectral Gating,8.7819,4.5496,3.7806,6.4018,0.1898
+am_modulated,narrowband,-5,3,Wiener,27.8155,20.6366,22.7928,2.751,0.2186
+am_modulated,narrowband,-5,3,MMSE-STSA,14.7467,6.1921,9.7131,6.1812,0.9397
+am_modulated,narrowband,-5,3,log-MMSE,19.3108,10.4448,14.2726,5.1832,0.2221
+am_modulated,narrowband,-5,4,Spectral Subtraction,9.852,3.887,4.8488,6.7291,0.1865
+am_modulated,narrowband,-5,4,Spectral Gating,9.2615,3.5616,4.2604,6.691,0.1864
+am_modulated,narrowband,-5,4,Wiener,29.5102,22.4049,24.5051,2.6818,0.1999
+am_modulated,narrowband,-5,4,MMSE-STSA,15.069,6.4404,10.0641,6.2758,0.9289
+am_modulated,narrowband,-5,4,log-MMSE,19.9957,11.0833,14.9903,5.2067,0.2069
+am_modulated,narrowband,0,0,Spectral Subtraction,6.3846,4.0912,6.3834,6.5969,0.1922
+am_modulated,narrowband,0,0,Spectral Gating,5.9279,4.9194,5.9268,6.3797,0.1961
+am_modulated,narrowband,0,0,Wiener,21.7138,20.9731,21.7126,3.0923,0.203
+am_modulated,narrowband,0,0,MMSE-STSA,11.6321,7.5072,11.631,6.0274,0.9185
+am_modulated,narrowband,0,0,log-MMSE,16.0865,11.9546,16.0854,5.0392,0.2115
+am_modulated,narrowband,0,1,Spectral Subtraction,9.3182,8.6456,9.3172,5.5571,0.1919
+am_modulated,narrowband,0,1,Spectral Gating,9.6025,10.4839,9.6018,5.2537,0.1896
+am_modulated,narrowband,0,1,Wiener,28.4162,26.1404,28.4145,1.8602,0.2121
+am_modulated,narrowband,0,1,MMSE-STSA,15.2227,11.2033,15.2213,5.1326,0.9133
+am_modulated,narrowband,0,1,log-MMSE,19.5297,15.7309,19.5281,4.1743,0.2182
+am_modulated,narrowband,0,2,Spectral Subtraction,7.8437,6.5901,7.8412,5.9904,0.2036
+am_modulated,narrowband,0,2,Spectral Gating,8.1974,8.5379,8.197,5.5961,0.1965
+am_modulated,narrowband,0,2,Wiener,26.0835,24.2419,26.0788,2.3392,0.2287
+am_modulated,narrowband,0,2,MMSE-STSA,13.3924,9.4591,13.388,5.5878,0.9294
+am_modulated,narrowband,0,2,log-MMSE,18.1924,14.1595,18.1874,4.5939,0.2329
+am_modulated,narrowband,0,3,Spectral Subtraction,9.0845,7.7906,9.0758,5.6719,0.2099
+am_modulated,narrowband,0,3,Spectral Gating,8.7814,8.6681,8.7804,5.462,0.2061
+am_modulated,narrowband,0,3,Wiener,27.6807,24.2355,27.6734,2.0622,0.2363
+am_modulated,narrowband,0,3,MMSE-STSA,14.744,10.5298,14.7307,5.2573,0.934
+am_modulated,narrowband,0,3,log-MMSE,19.3,15.0177,19.2854,4.3006,0.2395
+am_modulated,narrowband,0,4,Spectral Subtraction,9.8508,8.1172,9.8493,5.753,0.1949
+am_modulated,narrowband,0,4,Spectral Gating,9.2605,7.8061,9.2599,5.7275,0.1979
+am_modulated,narrowband,0,4,Wiener,29.3664,25.9292,29.364,1.9898,0.2129
+am_modulated,narrowband,0,4,MMSE-STSA,15.0639,10.8734,15.0615,5.3071,0.923
+am_modulated,narrowband,0,4,log-MMSE,19.9788,15.6902,19.9761,4.2847,0.2173
+am_modulated,narrowband,5,0,Spectral Subtraction,6.3835,8.4209,11.3827,5.6304,0.2017
+am_modulated,narrowband,5,0,Spectral Gating,5.9258,9.2854,10.925,5.4154,0.2061
+am_modulated,narrowband,5,0,Wiener,21.646,25.0307,26.6451,2.3434,0.213
+am_modulated,narrowband,5,0,MMSE-STSA,11.6267,12.0489,16.626,5.0693,0.9157
+am_modulated,narrowband,5,0,log-MMSE,16.0704,16.6899,21.0696,4.1208,0.2195
+am_modulated,narrowband,5,1,Spectral Subtraction,9.3144,13.0329,14.3137,4.645,0.2004
+am_modulated,narrowband,5,1,Spectral Gating,9.5723,14.849,14.5717,4.343,0.1988
+am_modulated,narrowband,5,1,Wiener,28.1283,28.5424,33.1274,1.3063,0.2182
+am_modulated,narrowband,5,1,MMSE-STSA,15.2129,15.7992,20.212,4.2273,0.9097
+am_modulated,narrowband,5,1,log-MMSE,19.4979,20.288,24.4969,3.3284,0.2237
+am_modulated,narrowband,5,2,Spectral Subtraction,7.8418,11.0125,12.8406,5.0591,0.2141
+am_modulated,narrowband,5,2,Spectral Gating,8.1951,13.0381,13.1947,4.6715,0.2065
+am_modulated,narrowband,5,2,Wiener,25.9355,27.419,30.9333,1.6752,0.2322
+am_modulated,narrowband,5,2,MMSE-STSA,13.3869,14.0408,18.3848,4.6508,0.9245
+am_modulated,narrowband,5,2,log-MMSE,18.1734,18.844,23.1709,3.6968,0.2387
+am_modulated,narrowband,5,3,Spectral Subtraction,9.0822,12.1469,14.0784,4.7543,0.2223
+am_modulated,narrowband,5,3,Spectral Gating,8.78,13.0971,13.7795,4.5597,0.2127
+am_modulated,narrowband,5,3,Wiener,27.3425,27.0063,32.3404,1.4549,0.2439
+am_modulated,narrowband,5,3,MMSE-STSA,14.7361,15.1047,19.7303,4.3631,0.9294
+am_modulated,narrowband,5,3,log-MMSE,19.2703,19.6682,24.2642,3.4517,0.2495
+am_modulated,narrowband,5,4,Spectral Subtraction,9.8473,12.5932,14.8465,4.8174,0.1996
+am_modulated,narrowband,5,4,Spectral Gating,9.2595,12.2539,14.259,4.7986,0.2072
+am_modulated,narrowband,5,4,Wiener,29.0247,28.5735,34.0236,1.3832,0.2224
+am_modulated,narrowband,5,4,MMSE-STSA,15.0524,15.478,20.0512,4.3729,0.9198
+am_modulated,narrowband,5,4,log-MMSE,19.9392,20.3631,24.9379,3.4036,0.2258
+am_modulated,narrowband,10,0,Spectral Subtraction,6.3807,13.0514,16.3802,4.7022,0.1998
+am_modulated,narrowband,10,0,Spectral Gating,5.9252,13.9839,15.9247,4.4883,0.2068
+am_modulated,narrowband,10,0,Wiener,21.4633,28.281,31.4627,1.6718,0.2181
+am_modulated,narrowband,10,0,MMSE-STSA,11.6146,16.7662,21.614,4.1475,0.914
+am_modulated,narrowband,10,0,log-MMSE,16.0259,21.449,26.0253,3.2463,0.2219
+am_modulated,narrowband,10,1,Spectral Subtraction,9.3041,17.4874,19.3036,3.7745,0.2003
+am_modulated,narrowband,10,1,Spectral Gating,9.565,19.2859,19.5645,3.4751,0.1992
+am_modulated,narrowband,10,1,Wiener,27.3885,30.268,37.3879,0.8483,0.2241
+am_modulated,narrowband,10,1,MMSE-STSA,15.1814,20.4346,25.1807,3.3666,0.908
+am_modulated,narrowband,10,1,log-MMSE,19.4036,24.5143,29.4028,2.5318,0.2274
+am_modulated,narrowband,10,2,Spectral Subtraction,7.8345,15.5824,17.8339,4.168,0.2174
+am_modulated,narrowband,10,2,Spectral Gating,8.1921,17.6285,18.1917,3.7873,0.2114
+am_modulated,narrowband,10,2,Wiener,25.5382,29.8735,35.5372,1.1159,0.2354
+am_modulated,narrowband,10,2,MMSE-STSA,13.3713,18.7464,23.3703,3.7545,0.9219
+am_modulated,narrowband,10,2,log-MMSE,18.1192,23.3117,28.118,2.8498,0.2396
+am_modulated,narrowband,10,3,Spectral Subtraction,9.0768,16.6348,19.075,3.8688,0.2272
+am_modulated,narrowband,10,3,Spectral Gating,8.7747,17.6377,18.7743,3.6958,0.2174
+am_modulated,narrowband,10,3,Wiener,26.644,29.3017,36.6438,0.9489,0.247
+am_modulated,narrowband,10,3,MMSE-STSA,14.7091,19.7701,24.7064,3.4988,0.9258
+am_modulated,narrowband,10,3,log-MMSE,19.1812,23.894,29.1784,2.6468,0.2505
+am_modulated,narrowband,10,4,Spectral Subtraction,9.8392,17.1447,19.8386,3.9212,0.2039
+am_modulated,narrowband,10,4,Spectral Gating,9.2468,16.7741,19.2464,3.9114,0.2089
+am_modulated,narrowband,10,4,Wiener,28.1445,30.5834,38.1439,0.8846,0.2261
+am_modulated,narrowband,10,4,MMSE-STSA,15.0221,20.2044,25.0214,3.4833,0.9186
+am_modulated,narrowband,10,4,log-MMSE,19.8314,24.7061,29.8305,2.5799,0.2282
+square_wave,white,-5,0,Spectral Subtraction,7.7641,3.0857,1.7008,11.6718,0.2635
+square_wave,white,-5,0,Spectral Gating,7.9019,3.2143,2.1163,11.1847,0.2718
+square_wave,white,-5,0,Wiener,13.0002,8.1154,7.278,18.0712,0.1553
+square_wave,white,-5,0,MMSE-STSA,11.452,6.6458,5.5456,9.1372,0.2576
+square_wave,white,-5,0,log-MMSE,12.6435,7.793,6.8242,9.7294,0.1673
+square_wave,white,-5,1,Spectral Subtraction,7.7557,3.1212,1.6981,11.7448,0.2635
+square_wave,white,-5,1,Spectral Gating,7.9413,3.2968,2.1998,11.266,0.2699
+square_wave,white,-5,1,Wiener,13.0725,8.1917,7.3729,17.9903,0.1554
+square_wave,white,-5,1,MMSE-STSA,11.4573,6.6788,5.5761,9.2859,0.2584
+square_wave,white,-5,1,log-MMSE,12.7122,7.8763,6.9067,9.9416,0.1691
+square_wave,white,-5,2,Spectral Subtraction,7.7733,3.1074,1.8896,11.7476,0.2627
+square_wave,white,-5,2,Spectral Gating,7.9891,3.3239,2.3786,11.2253,0.2682
+square_wave,white,-5,2,Wiener,13.1654,8.2635,7.4475,18.0639,0.1541
+square_wave,white,-5,2,MMSE-STSA,11.5298,6.737,5.7432,9.2105,0.2577
+square_wave,white,-5,2,log-MMSE,12.7549,7.9081,6.9802,9.8324,0.1682
+square_wave,white,-5,3,Spectral Subtraction,7.6072,2.9419,1.471,11.8249,0.2715
+square_wave,white,-5,3,Spectral Gating,7.4095,2.7226,1.5321,11.5456,0.2935
+square_wave,white,-5,3,Wiener,12.9921,8.1199,7.4842,17.663,0.1623
+square_wave,white,-5,3,MMSE-STSA,11.2877,6.5078,5.3511,9.3146,0.2652
+square_wave,white,-5,3,log-MMSE,12.6479,7.824,6.8377,9.7513,0.1728
+square_wave,white,-5,4,Spectral Subtraction,7.5702,2.8794,1.4317,11.7603,0.2707
+square_wave,white,-5,4,Spectral Gating,7.658,2.9432,1.8568,11.3179,0.2819
+square_wave,white,-5,4,Wiener,12.8712,8.0061,7.157,17.691,0.1583
+square_wave,white,-5,4,MMSE-STSA,11.2212,6.4154,5.2595,9.24,0.2652
+square_wave,white,-5,4,log-MMSE,12.4883,7.6518,6.6361,9.6759,0.172
+square_wave,white,0,0,Spectral Subtraction,6.9873,7.2536,6.4239,10.2778,0.2893
+square_wave,white,0,0,Spectral Gating,7.0671,7.3156,6.6125,10.5053,0.301
+square_wave,white,0,0,Wiener,10.1701,10.2232,9.7506,18.9218,0.225
+square_wave,white,0,0,MMSE-STSA,9.8333,9.9756,9.3728,8.3887,0.2508
+square_wave,white,0,0,log-MMSE,10.3059,10.3956,9.8881,10.9147,0.1996
+square_wave,white,0,1,Spectral Subtraction,6.997,7.2987,6.4437,10.442,0.2893
+square_wave,white,0,1,Spectral Gating,7.1269,7.4136,6.6896,10.642,0.2987
+square_wave,white,0,1,Wiener,10.49,10.5558,10.102,18.8713,0.2236
+square_wave,white,0,1,MMSE-STSA,9.8221,9.9841,9.3679,8.6406,0.2524
+square_wave,white,0,1,log-MMSE,10.4659,10.5734,10.0613,11.1601,0.2009
+square_wave,white,0,2,Spectral Subtraction,6.9764,7.2475,6.482,10.4031,0.2898
+square_wave,white,0,2,Spectral Gating,7.1056,7.3672,6.7314,10.5711,0.2994
+square_wave,white,0,2,Wiener,10.2025,10.2577,9.769,18.9846,0.2247
+square_wave,white,0,2,MMSE-STSA,9.8342,9.9807,9.401,8.508,0.2518
+square_wave,white,0,2,log-MMSE,10.3274,10.4219,9.9049,11.0423,0.201
+square_wave,white,0,3,Spectral Subtraction,6.8868,7.1666,6.3327,10.4061,0.2946
+square_wave,white,0,3,Spectral Gating,6.7063,6.9682,6.3022,10.6563,0.3175
+square_wave,white,0,3,Wiener,10.4232,10.4939,10.0324,18.655,0.2233
+square_wave,white,0,3,MMSE-STSA,9.6783,9.8407,9.2154,8.5377,0.2566
+square_wave,white,0,3,log-MMSE,10.3644,10.4768,9.9499,10.9365,0.2012
+square_wave,white,0,4,Spectral Subtraction,6.8544,7.1103,6.279,10.3484,0.2944
+square_wave,white,0,4,Spectral Gating,6.8261,7.0501,6.3703,10.5673,0.3097
+square_wave,white,0,4,Wiener,10.4362,10.5042,10.0561,18.5107,0.2237
+square_wave,white,0,4,MMSE-STSA,9.7222,9.8703,9.2533,8.4407,0.2569
+square_wave,white,0,4,log-MMSE,10.4058,10.5135,10.0007,10.8188,0.2011
+square_wave,white,5,0,Spectral Subtraction,5.6803,10.8786,10.3724,10.0616,0.3334
+square_wave,white,5,0,Spectral Gating,5.526,10.6963,10.25,10.9239,0.3538
+square_wave,white,5,0,Wiener,7.2838,12.3256,12.0429,18.9374,0.3108
+square_wave,white,5,0,MMSE-STSA,7.5924,12.6934,12.3465,9.0548,0.2684
+square_wave,white,5,0,log-MMSE,7.6747,12.7422,12.448,12.3768,0.2578
+square_wave,white,5,1,Spectral Subtraction,5.5963,10.811,10.2825,10.2825,0.3375
+square_wave,white,5,1,Spectral Gating,5.452,10.6444,10.1618,11.0967,0.3575
+square_wave,white,5,1,Wiener,7.1705,12.2141,11.9172,19.1693,0.3167
+square_wave,white,5,1,MMSE-STSA,7.4541,12.5606,12.2002,9.3424,0.2723
+square_wave,white,5,1,log-MMSE,7.5295,12.5986,12.2907,12.7003,0.2646
+square_wave,white,5,2,Spectral Subtraction,5.6105,10.8049,10.3243,10.1469,0.3365
+square_wave,white,5,2,Spectral Gating,5.5252,10.6974,10.2808,10.8911,0.3549
+square_wave,white,5,2,Wiener,7.1446,12.1813,11.8786,19.1271,0.3142
+square_wave,white,5,2,MMSE-STSA,7.51,12.6066,12.2627,9.1558,0.2703
+square_wave,white,5,2,log-MMSE,7.5449,12.6053,12.2995,12.5259,0.2619
+square_wave,white,5,3,Spectral Subtraction,5.5805,10.7881,10.2769,10.1246,0.3395
+square_wave,white,5,3,Spectral Gating,5.3023,10.49,10.0432,10.8465,0.3676
+square_wave,white,5,3,Wiener,7.2526,12.3016,11.995,18.8371,0.3105
+square_wave,white,5,3,MMSE-STSA,7.4207,12.5294,12.1663,9.1256,0.2741
+square_wave,white,5,3,log-MMSE,7.5446,12.6169,12.3016,12.3899,0.2615
+square_wave,white,5,4,Spectral Subtraction,5.5728,10.7615,10.2593,10.1034,0.3383
+square_wave,white,5,4,Spectral Gating,5.3824,10.5397,10.1078,10.8822,0.36
+square_wave,white,5,4,Wiener,7.4221,12.4754,12.191,18.6832,0.3114
+square_wave,white,5,4,MMSE-STSA,7.508,12.6105,12.2571,9.0948,0.2735
+square_wave,white,5,4,log-MMSE,7.7051,12.7797,12.4808,12.3301,0.2608
+square_wave,white,10,0,Spectral Subtraction,3.8185,13.9608,13.6491,9.7233,0.3892
+square_wave,white,10,0,Spectral Gating,3.4495,13.5688,13.2877,10.9068,0.4271
+square_wave,white,10,0,Wiener,3.879,13.9538,13.7061,18.1178,0.4155
+square_wave,white,10,0,MMSE-STSA,4.7557,14.844,14.6096,9.5888,0.3207
+square_wave,white,10,0,log-MMSE,4.4315,14.5115,14.2817,13.0076,0.3442
+square_wave,white,10,1,Spectral Subtraction,3.7063,13.859,13.5319,9.8678,0.3941
+square_wave,white,10,1,Spectral Gating,3.3335,13.469,13.1626,10.9616,0.4327
+square_wave,white,10,1,Wiener,3.655,13.7131,13.4706,18.294,0.4226
+square_wave,white,10,1,MMSE-STSA,4.6192,14.7032,14.4679,9.7377,0.3251
+square_wave,white,10,1,log-MMSE,4.2413,14.3088,14.0825,13.1806,0.3504
+square_wave,white,10,2,Spectral Subtraction,3.7421,13.8814,13.5799,9.7463,0.3915
+square_wave,white,10,2,Spectral Gating,3.4201,13.5436,13.2698,10.8514,0.4285
+square_wave,white,10,2,Wiener,3.6964,13.7535,13.5105,18.1815,0.4204
+square_wave,white,10,2,MMSE-STSA,4.7207,14.8044,14.5717,9.5282,0.3216
+square_wave,white,10,2,log-MMSE,4.3159,14.3839,14.1562,13.0113,0.3467
+square_wave,white,10,3,Spectral Subtraction,3.7357,13.8873,13.5668,9.7161,0.3938
+square_wave,white,10,3,Spectral Gating,3.3121,13.4505,13.1546,10.7086,0.4353
+square_wave,white,10,3,Wiener,3.8055,13.8751,13.6267,17.9512,0.4174
+square_wave,white,10,3,MMSE-STSA,4.6598,14.7502,14.509,9.5302,0.3249
+square_wave,white,10,3,log-MMSE,4.3601,14.4366,14.204,12.9004,0.3457
+square_wave,white,10,4,Spectral Subtraction,3.7443,13.8809,13.5724,9.717,0.392
+square_wave,white,10,4,Spectral Gating,3.374,13.4899,13.2104,10.8689,0.4301
+square_wave,white,10,4,Wiener,3.8799,13.9494,13.7078,17.9914,0.4158
+square_wave,white,10,4,MMSE-STSA,4.6901,14.7753,14.5413,9.5314,0.3231
+square_wave,white,10,4,log-MMSE,4.4058,14.4818,14.2545,12.9181,0.3439
+square_wave,pink,-5,0,Spectral Subtraction,7.2826,3.7879,1.0365,10.9051,0.3061
+square_wave,pink,-5,0,Spectral Gating,8.6615,4.8519,2.8359,11.1752,0.3221
+square_wave,pink,-5,0,Wiener,12.9266,8.1591,7.3885,18.9597,0.2588
+square_wave,pink,-5,0,MMSE-STSA,10.8282,6.721,4.7968,9.2239,0.2604
+square_wave,pink,-5,0,log-MMSE,12.3133,7.7342,6.4298,11.6744,0.2235
+square_wave,pink,-5,1,Spectral Subtraction,8.199,4.5781,2.0231,10.9419,0.3083
+square_wave,pink,-5,1,Spectral Gating,10.0249,5.5458,4.3781,11.2048,0.3217
+square_wave,pink,-5,1,Wiener,13.5187,8.7362,8.2196,18.9635,0.2628
+square_wave,pink,-5,1,MMSE-STSA,11.8346,7.3861,5.9388,9.4001,0.2625
+square_wave,pink,-5,1,log-MMSE,13.0456,8.3551,7.3576,11.9207,0.2281
+square_wave,pink,-5,2,Spectral Subtraction,7.8265,4.0924,1.8599,11.0767,0.3079
+square_wave,pink,-5,2,Spectral Gating,9.1861,4.8057,3.6806,11.2797,0.3214
+square_wave,pink,-5,2,Wiener,13.3107,8.507,7.6538,19.0562,0.2588
+square_wave,pink,-5,2,MMSE-STSA,11.3545,7.0413,5.5305,9.4009,0.2623
+square_wave,pink,-5,2,log-MMSE,12.8137,8.1388,7.0294,11.863,0.2265
+square_wave,pink,-5,3,Spectral Subtraction,8.477,4.3348,2.0976,10.9151,0.311
+square_wave,pink,-5,3,Spectral Gating,8.5342,4.1966,2.4101,11.2705,0.3386
+square_wave,pink,-5,3,Wiener,13.0646,8.2794,7.8993,18.725,0.2572
+square_wave,pink,-5,3,MMSE-STSA,11.9473,7.3356,5.9898,9.2329,0.2662
+square_wave,pink,-5,3,log-MMSE,12.7729,8.0568,7.1994,11.558,0.226
+square_wave,pink,-5,4,Spectral Subtraction,5.3576,2.6004,-1.1922,11.105,0.3092
+square_wave,pink,-5,4,Spectral Gating,4.6198,2.3633,-1.6344,11.3994,0.3295
+square_wave,pink,-5,4,Wiener,10.5915,7.31,4.1915,18.5595,0.2536
+square_wave,pink,-5,4,MMSE-STSA,8.3366,5.5261,1.9607,9.4216,0.2682
+square_wave,pink,-5,4,log-MMSE,9.8161,6.7671,3.2875,11.6058,0.2238
+square_wave,pink,0,0,Spectral Subtraction,6.8702,8.1512,6.3429,10.2253,0.3495
+square_wave,pink,0,0,Spectral Gating,8.0026,8.9459,7.6642,11.0045,0.377
+square_wave,pink,0,0,Wiener,11.264,11.3971,10.9732,18.3458,0.3434
+square_wave,pink,0,0,MMSE-STSA,9.8199,10.4556,9.3868,9.3928,0.2866
+square_wave,pink,0,0,log-MMSE,10.9272,11.1936,10.57,12.4401,0.2861
+square_wave,pink,0,1,Spectral Subtraction,7.6787,8.82,7.1859,10.277,0.355
+square_wave,pink,0,1,Spectral Gating,9.1658,9.5578,8.8649,11.0442,0.3824
+square_wave,pink,0,1,Wiener,11.399,11.5057,11.1194,18.6171,0.3552
+square_wave,pink,0,1,MMSE-STSA,10.5846,10.9596,10.2035,9.5389,0.2918
+square_wave,pink,0,1,log-MMSE,11.3119,11.4972,10.9942,12.715,0.296
+square_wave,pink,0,2,Spectral Subtraction,7.3369,8.3877,6.9266,10.33,0.3538
+square_wave,pink,0,2,Spectral Gating,8.5465,9.0395,8.3356,11.0447,0.379
+square_wave,pink,0,2,Wiener,11.2777,11.4059,10.9476,18.5423,0.3496
+square_wave,pink,0,2,MMSE-STSA,10.1998,10.6831,9.8374,9.4726,0.2898
+square_wave,pink,0,2,log-MMSE,11.1485,11.3607,10.8017,12.5971,0.2922
+square_wave,pink,0,3,Spectral Subtraction,7.9425,8.6526,7.4141,10.1891,0.3522
+square_wave,pink,0,3,Spectral Gating,8.0359,8.5412,7.7321,10.9077,0.3859
+square_wave,pink,0,3,Wiener,11.2492,11.3936,10.9836,18.3487,0.3417
+square_wave,pink,0,3,MMSE-STSA,10.6276,10.9196,10.2405,9.3044,0.2895
+square_wave,pink,0,3,log-MMSE,11.1915,11.3987,10.8849,12.3677,0.286
+square_wave,pink,0,4,Spectral Subtraction,5.1009,7.086,4.4686,10.3926,0.3519
+square_wave,pink,0,4,Spectral Gating,4.445,6.9273,4.0752,11.1777,0.3784
+square_wave,pink,0,4,Wiener,9.6056,10.7832,9.1019,18.2206,0.3382
+square_wave,pink,0,4,MMSE-STSA,7.7343,9.4396,7.1703,9.4967,0.2916
+square_wave,pink,0,4,log-MMSE,8.9945,10.4001,8.4365,12.4411,0.2849
+square_wave,pink,5,0,Spectral Subtraction,6.1324,12.11,10.8868,9.2141,0.3864
+square_wave,pink,5,0,Spectral Gating,6.9127,12.5758,11.7348,10.1155,0.432
+square_wave,pink,5,0,Wiener,8.7124,13.8309,13.5414,16.8889,0.4298
+square_wave,pink,5,0,MMSE-STSA,8.2585,13.6575,13.0514,9.1046,0.3305
+square_wave,pink,5,0,log-MMSE,8.7766,13.9497,13.5993,12.1853,0.3559
+square_wave,pink,5,1,Spectral Subtraction,6.7998,12.6494,11.5727,9.2095,0.39
+square_wave,pink,5,1,Spectral Gating,7.796,13.0681,12.633,10.0261,0.4352
+square_wave,pink,5,1,Wiener,8.8181,13.9339,13.6534,16.8064,0.4398
+square_wave,pink,5,1,MMSE-STSA,8.8129,14.0544,13.6288,9.116,0.3341
+square_wave,pink,5,1,log-MMSE,9.0349,14.1773,13.8714,12.2288,0.3645
+square_wave,pink,5,2,Spectral Subtraction,6.506,12.2881,11.3134,9.1866,0.3896
+square_wave,pink,5,2,Spectral Gating,7.3266,12.645,12.2025,10.0634,0.434
+square_wave,pink,5,2,Wiener,8.7471,13.871,13.5633,16.8576,0.4347
+square_wave,pink,5,2,MMSE-STSA,8.5318,13.8379,13.3487,9.0376,0.3325
+square_wave,pink,5,2,log-MMSE,8.9524,14.105,13.7745,12.1432,0.3594
+square_wave,pink,5,3,Spectral Subtraction,7.0228,12.554,11.7934,9.1521,0.3871
+square_wave,pink,5,3,Spectral Gating,7.0189,12.3788,11.8652,9.9789,0.4345
+square_wave,pink,5,3,Wiener,8.6766,13.8082,13.5033,16.8052,0.4274
+square_wave,pink,5,3,MMSE-STSA,8.8034,14.0072,13.6187,8.9966,0.331
+square_wave,pink,5,3,log-MMSE,8.925,14.0828,13.7578,12.0863,0.3548
+square_wave,pink,5,4,Spectral Subtraction,4.5841,11.1699,9.2916,9.3598,0.3911
+square_wave,pink,5,4,Spectral Gating,3.9143,10.8536,8.7016,10.3131,0.4357
+square_wave,pink,5,4,Wiener,7.6511,13.3121,12.4115,16.8944,0.4279
+square_wave,pink,5,4,MMSE-STSA,6.6945,12.865,11.425,9.162,0.3331
+square_wave,pink,5,4,log-MMSE,7.4705,13.3222,12.2175,12.2129,0.3563
+square_wave,pink,10,0,Spectral Subtraction,5.1423,15.8447,15.0275,7.3346,0.3781
+square_wave,pink,10,0,Spectral Gating,5.5538,16.0091,15.4634,7.9281,0.4405
+square_wave,pink,10,0,Wiener,5.9858,16.1164,15.8875,13.6136,0.4644
+square_wave,pink,10,0,MMSE-STSA,6.4482,16.705,16.3493,7.5937,0.3482
+square_wave,pink,10,0,log-MMSE,6.41,16.5514,16.3199,10.1166,0.3851
+square_wave,pink,10,1,Spectral Subtraction,5.6827,16.278,15.5773,7.3234,0.3789
+square_wave,pink,10,1,Spectral Gating,6.2409,16.4246,16.1577,7.9875,0.4402
+square_wave,pink,10,1,Wiener,6.1536,16.2883,16.0586,13.2451,0.4656
+square_wave,pink,10,1,MMSE-STSA,6.8712,17.0469,16.7824,7.5317,0.3479
+square_wave,pink,10,1,log-MMSE,6.6573,16.7948,16.5731,9.962,0.3863
+square_wave,pink,10,2,Spectral Subtraction,5.4292,15.986,15.3387,7.275,0.3794
+square_wave,pink,10,2,Spectral Gating,5.9045,16.112,15.8408,7.8788,0.4411
+square_wave,pink,10,2,Wiener,6.072,16.2001,15.9661,13.3325,0.4654
+square_wave,pink,10,2,MMSE-STSA,6.6506,16.8558,16.557,7.469,0.3486
+square_wave,pink,10,2,log-MMSE,6.5771,16.7044,16.4824,9.9231,0.3857
+square_wave,pink,10,3,Spectral Subtraction,5.7842,16.1646,15.6789,7.3792,0.3801
+square_wave,pink,10,3,Spectral Gating,5.6207,15.8795,15.5392,7.9272,0.4432
+square_wave,pink,10,3,Wiener,5.9548,16.0838,15.8542,13.5187,0.4638
+square_wave,pink,10,3,MMSE-STSA,6.7964,16.9514,16.7058,7.5501,0.3461
+square_wave,pink,10,3,log-MMSE,6.4906,16.6266,16.4021,10.0667,0.3838
+square_wave,pink,10,4,Spectral Subtraction,3.8372,15.0158,13.7008,7.4679,0.3843
+square_wave,pink,10,4,Spectral Gating,3.1797,14.5984,13.0699,8.0903,0.4473
+square_wave,pink,10,4,Wiener,5.3573,15.7429,15.2357,13.5076,0.4656
+square_wave,pink,10,4,MMSE-STSA,5.33,16.0902,15.2028,7.6016,0.351
+square_wave,pink,10,4,log-MMSE,5.5855,16.0921,15.4669,10.0602,0.386
+square_wave,narrowband,-5,0,Spectral Subtraction,6.0647,3.0669,0.5291,3.7988,0.1872
+square_wave,narrowband,-5,0,Spectral Gating,5.5677,3.3363,0.0642,3.5343,0.134
+square_wave,narrowband,-5,0,Wiener,14.7371,10.0592,9.2659,4.4169,0.1758
+square_wave,narrowband,-5,0,MMSE-STSA,10.4393,6.4874,4.8448,3.4481,0.3075
+square_wave,narrowband,-5,0,log-MMSE,13.1711,8.9168,7.6248,3.4038,0.1612
+square_wave,narrowband,-5,1,Spectral Subtraction,8.6899,5.9952,3.2117,3.0576,0.1881
+square_wave,narrowband,-5,1,Spectral Gating,8.6416,6.7358,3.193,2.801,0.1241
+square_wave,narrowband,-5,1,Wiener,15.5326,10.6151,10.1304,4.9356,0.186
+square_wave,narrowband,-5,1,MMSE-STSA,13.0727,9.1038,7.5744,2.9546,0.305
+square_wave,narrowband,-5,1,log-MMSE,14.7671,10.3637,9.3164,3.272,0.165
+square_wave,narrowband,-5,2,Spectral Subtraction,7.3396,4.8169,1.892,4.8242,0.3196
+square_wave,narrowband,-5,2,Spectral Gating,7.3625,5.8119,1.9451,3.1818,0.1477
+square_wave,narrowband,-5,2,Wiener,15.3073,10.4687,9.8829,7.6507,0.3645
+square_wave,narrowband,-5,2,MMSE-STSA,11.8418,7.8995,6.3139,5.147,0.3872
+square_wave,narrowband,-5,2,log-MMSE,14.2086,9.8509,8.7156,6.0082,0.3182
+square_wave,narrowband,-5,3,Spectral Subtraction,8.3975,5.5435,2.8361,7.6115,0.4199
+square_wave,narrowband,-5,3,Spectral Gating,7.9388,5.8045,2.4408,3.4833,0.1797
+square_wave,narrowband,-5,3,Wiener,15.1352,10.1868,9.6925,10.4125,0.468
+square_wave,narrowband,-5,3,MMSE-STSA,12.4739,8.1842,6.8922,8.6551,0.4902
+square_wave,narrowband,-5,3,log-MMSE,14.3146,9.699,8.8047,9.2616,0.4385
+square_wave,narrowband,-5,4,Spectral Subtraction,9.092,6.008,3.5536,3.7847,0.245
+square_wave,narrowband,-5,4,Spectral Gating,8.4933,5.562,2.9557,3.2247,0.1387
+square_wave,narrowband,-5,4,Wiener,15.4259,10.481,10.0132,6.2931,0.2793
+square_wave,narrowband,-5,4,MMSE-STSA,12.8665,8.7787,7.3405,3.8829,0.3385
+square_wave,narrowband,-5,4,log-MMSE,14.7435,10.1902,9.2831,4.5179,0.2383
+square_wave,narrowband,0,0,Spectral Subtraction,5.4136,6.7741,4.9579,3.0561,0.1501
+square_wave,narrowband,0,0,Spectral Gating,4.8707,6.5991,4.4559,2.9541,0.128
+square_wave,narrowband,0,0,Wiener,10.465,10.5729,10.0569,4.0385,0.1355
+square_wave,narrowband,0,0,MMSE-STSA,8.7458,9.4979,8.2719,2.6819,0.2952
+square_wave,narrowband,0,0,log-MMSE,10.1529,10.529,9.7277,2.7334,0.1277
+square_wave,narrowband,0,1,Spectral Subtraction,7.6285,8.9741,7.2214,2.4658,0.146
+square_wave,narrowband,0,1,Spectral Gating,7.4848,9.1069,7.1078,2.4114,0.1169
+square_wave,narrowband,0,1,Wiener,10.7488,10.794,10.3672,4.6031,0.137
+square_wave,narrowband,0,1,MMSE-STSA,10.5144,11.1993,10.1332,2.3529,0.2919
+square_wave,narrowband,0,1,log-MMSE,10.9643,11.2682,10.602,2.7847,0.1272
+square_wave,narrowband,0,2,Spectral Subtraction,6.5334,8.1062,6.1416,3.2969,0.241
+square_wave,narrowband,0,2,Spectral Gating,6.4366,8.4021,6.0407,2.6698,0.1322
+square_wave,narrowband,0,2,Wiener,10.7329,10.8297,10.3501,5.7821,0.2638
+square_wave,narrowband,0,2,MMSE-STSA,9.8242,10.6215,9.4217,3.3891,0.3347
+square_wave,narrowband,0,2,log-MMSE,10.7826,11.1783,10.4057,4.0994,0.2261
+square_wave,narrowband,0,3,Spectral Subtraction,7.2701,8.4797,6.8033,5.8874,0.3619
+square_wave,narrowband,0,3,Spectral Gating,6.7935,8.3703,6.3344,2.8771,0.1552
+square_wave,narrowband,0,3,Wiener,10.4105,10.4398,9.9967,9.3367,0.4131
+square_wave,narrowband,0,3,MMSE-STSA,9.9623,10.4435,9.5292,6.6106,0.4332
+square_wave,narrowband,0,3,log-MMSE,10.5442,10.7459,10.1434,7.6189,0.3736
+square_wave,narrowband,0,4,Spectral Subtraction,7.8423,8.9439,7.4002,2.8348,0.1813
+square_wave,narrowband,0,4,Spectral Gating,7.3323,8.4113,6.8999,2.7275,0.125
+square_wave,narrowband,0,4,Wiener,10.6529,10.6827,10.2624,5.0952,0.1849
+square_wave,narrowband,0,4,MMSE-STSA,10.2858,10.8612,9.8842,2.7928,0.3067
+square_wave,narrowband,0,4,log-MMSE,10.8647,11.0943,10.4936,3.2546,0.1619
+square_wave,narrowband,5,0,Spectral Subtraction,4.1063,9.9558,8.7688,2.5212,0.1317
+square_wave,narrowband,5,0,Spectral Gating,3.6266,9.6143,8.3356,2.5195,0.1263
+square_wave,narrowband,5,0,Wiener,5.9166,11.0189,10.5502,3.7925,0.1168
+square_wave,narrowband,5,0,MMSE-STSA,6.315,11.977,10.9921,2.1607,0.2894
+square_wave,narrowband,5,0,log-MMSE,6.3693,11.6495,11.0404,2.4053,0.1118
+square_wave,narrowband,5,1,Spectral Subtraction,5.667,11.4909,10.3663,2.1526,0.1236
+square_wave,narrowband,5,1,Spectral Gating,5.4487,11.3116,10.1715,2.1326,0.114
+square_wave,narrowband,5,1,Wiener,5.9868,11.0605,10.6273,4.3454,0.1175
+square_wave,narrowband,5,1,MMSE-STSA,7.2783,12.9157,12.0134,2.0558,0.2869
+square_wave,narrowband,5,1,log-MMSE,6.7356,11.9587,11.4377,2.6402,0.1117
+square_wave,narrowband,5,2,Spectral Subtraction,5.0699,11.0503,9.7838,2.4296,0.1806
+square_wave,narrowband,5,2,Spectral Gating,4.626,10.7217,9.3361,2.2824,0.1252
+square_wave,narrowband,5,2,Wiener,6.2811,11.542,10.9474,4.4774,0.1813
+square_wave,narrowband,5,2,MMSE-STSA,7.174,12.8635,11.9079,2.3727,0.3073
+square_wave,narrowband,5,2,log-MMSE,7.0067,12.4869,11.7264,2.9482,0.1592
+square_wave,narrowband,5,3,Spectral Subtraction,5.2955,10.9958,9.9577,4.0493,0.292
+square_wave,narrowband,5,3,Spectral Gating,4.713,10.4489,9.3438,2.4721,0.1387
+square_wave,narrowband,5,3,Wiener,5.7627,10.8066,10.3836,7.3121,0.3391
+square_wave,narrowband,5,3,MMSE-STSA,6.8923,12.3742,11.602,4.5534,0.3737
+square_wave,narrowband,5,3,log-MMSE,6.437,11.6058,11.117,5.6236,0.2949
+square_wave,narrowband,5,4,Spectral Subtraction,5.7516,11.4535,10.4344,2.3118,0.1417
+square_wave,narrowband,5,4,Spectral Gating,5.201,10.7787,9.8911,2.3666,0.1219
+square_wave,narrowband,5,4,Wiener,5.8738,10.9158,10.5041,4.52,0.1323
+square_wave,narrowband,5,4,MMSE-STSA,6.9876,12.4498,11.7037,2.2175,0.294
+square_wave,narrowband,5,4,log-MMSE,6.5654,11.7365,11.2545,2.7442,0.1226
+square_wave,narrowband,10,0,Spectral Subtraction,2.6516,13.4918,12.4599,1.9642,0.1178
+square_wave,narrowband,10,0,Spectral Gating,2.4186,13.3999,12.2809,1.9782,0.1218
+square_wave,narrowband,10,0,Wiener,3.1366,14.1239,12.9292,2.7816,0.105
+square_wave,narrowband,10,0,MMSE-STSA,4.5853,15.5122,14.4318,1.6965,0.2851
+square_wave,narrowband,10,0,log-MMSE,4.1641,15.1483,14.0025,1.9263,0.1003
+square_wave,narrowband,10,1,Spectral Subtraction,3.6764,14.6634,13.5035,1.8082,0.1102
+square_wave,narrowband,10,1,Spectral Gating,3.6425,14.5349,13.5076,1.7987,0.1086
+square_wave,narrowband,10,1,Wiener,2.7019,13.3961,12.4716,3.3041,0.11
+square_wave,narrowband,10,1,MMSE-STSA,5.2135,16.2604,15.081,1.7568,0.2834
+square_wave,narrowband,10,1,log-MMSE,4.1723,15.0729,14.0149,2.2483,0.1029
+square_wave,narrowband,10,2,Spectral Subtraction,3.5869,14.5552,13.4292,1.8562,0.1398
+square_wave,narrowband,10,2,Spectral Gating,3.0421,14.0153,12.9061,1.8563,0.1179
+square_wave,narrowband,10,2,Wiener,3.8162,14.8869,13.6389,2.9972,0.1321
+square_wave,narrowband,10,2,MMSE-STSA,5.5445,16.3836,15.4226,1.7398,0.2948
+square_wave,narrowband,10,2,log-MMSE,4.957,15.8202,14.8212,2.1362,0.1214
+square_wave,narrowband,10,3,Spectral Subtraction,3.4221,14.2057,13.2342,2.6896,0.2231
+square_wave,narrowband,10,3,Spectral Gating,2.6509,13.4324,12.4521,2.0465,0.1285
+square_wave,narrowband,10,3,Wiener,2.5333,13.1094,12.2958,5.0295,0.2477
+square_wave,narrowband,10,3,MMSE-STSA,4.8336,15.6688,14.6918,3.0468,0.3289
+square_wave,narrowband,10,3,log-MMSE,3.7499,14.3979,13.5809,3.8533,0.2123
+square_wave,narrowband,10,4,Spectral Subtraction,3.8581,14.8277,13.6857,1.8119,0.1191
+square_wave,narrowband,10,4,Spectral Gating,3.6106,14.3907,13.4773,1.8509,0.1172
+square_wave,narrowband,10,4,Wiener,2.2992,12.8401,12.0421,3.4224,0.1137
+square_wave,narrowband,10,4,MMSE-STSA,4.9975,16.0278,14.8589,1.7689,0.2886
+square_wave,narrowband,10,4,log-MMSE,3.9284,14.7385,13.7615,2.2014,0.1065

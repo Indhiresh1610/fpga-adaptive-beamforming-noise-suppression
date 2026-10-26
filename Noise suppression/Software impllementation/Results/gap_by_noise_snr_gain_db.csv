@@ -1,0 +1,4 @@
+noise_type,Wiener,MMSE-STSA,log-MMSE,gap W-MMSE,gap W-logMMSE
+white,15.41,11.74,13.79,3.67 ± 0.10,1.62 ± 0.04
+pink,15.86,11.63,13.94,4.23 ± 0.64,1.92 ± 0.35
+narrowband,20.64,12.49,15.76,8.15 ± 0.47,4.88 ± 0.56

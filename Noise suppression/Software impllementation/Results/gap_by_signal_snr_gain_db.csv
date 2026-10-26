@@ -1,0 +1,6 @@
+signal_type,Wiener,MMSE-STSA,log-MMSE,gap W-MMSE,gap W-logMMSE
+single_tone,21.19,13.33,16.86,7.86 ± 0.30,4.33 ± 0.26
+multi_tone,18.11,12.17,14.78,5.94 ± 0.39,3.33 ± 0.38
+chirp,16.65,12.28,14.74,4.37 ± 0.60,1.91 ± 0.32
+am_modulated,21.64,13.44,17.06,8.20 ± 0.29,4.58 ± 0.29
+square_wave,8.93,8.55,9.04,0.38 ± 0.21,-0.11 ± 0.08

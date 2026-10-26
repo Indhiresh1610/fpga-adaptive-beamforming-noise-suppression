@@ -1,0 +1,6 @@
+signal_type,Spectral Subtraction,Spectral Gating,Wiener,MMSE-STSA,log-MMSE
+am_modulated,11.76,10.88,3.22,9.73,7.08
+chirp,14.29,13.31,4.4,12.37,9.37
+multi_tone,17.7,16.68,7.17,15.85,12.75
+single_tone,14.37,13.38,4.7,12.4,9.45
+square_wave,7.73,7.86,13.52,7.08,8.98

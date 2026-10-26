@@ -1,0 +1,6 @@
+method,snr_gain_db,segsnr_db,sdr_db,lsd_db,oracle_gain_rmse
+Wiener,17.304,20.715,19.738,6.602,0.154
+Spectral Subtraction,7.849,11.099,10.155,13.169,0.249
+Spectral Subtraction (tuned),16.888,19.672,19.672,6.796,0.168
+Spectral Gating,8.169,11.675,10.549,12.42,0.245
+Spectral Gating (tuned),15.346,18.595,17.555,5.545,0.196
