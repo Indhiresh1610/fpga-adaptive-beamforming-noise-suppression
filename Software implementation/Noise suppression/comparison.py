@@ -1,25 +1,3 @@
-"""
-postfilter_narrowband.py
-----------------------------------------------------------
-Floating-point REFERENCE MODEL comparing 5 spectral post-filters on
-NARROWBAND digitally generated signals :
-
-    Spectral Subtraction | Spectral Gating | Wiener | MMSE-STSA | log-MMSE
-
-Test signals : single tone, multi-tone, chirp, AM tone, square wave
-Noise types  : white, pink, narrowband (1.1-1.3 kHz)
-Input SNRs   : -5, 0, 5, 10 dB
-Seeds        : 5 (every table shows mean +/- std over seeds)
-
-
-
-HOW TO RUN
-    pip install numpy scipy
-    python postfilter_narrowband.py            (about 5 min with tuning)
-    set RUN_TUNING = False for a ~1 min run
-----------------------------------------------------------
-"""
-
 import csv
 from collections import defaultdict
 

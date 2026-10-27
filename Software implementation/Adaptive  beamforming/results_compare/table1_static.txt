@@ -1,0 +1,27 @@
+TABLE 1 - STATIC SUITE: steady-state output SINR (dB)
+========================================================================
+GSC mu = 0.0003 | MVDR lambda = 0.5, block 0.15 s, loading 0.001 | 20 seeds, mean +/- std | 0.15 s windows
+MVDR-GSC > 0 means MVDR is better (paired by seed)
+Scored interval 1.50-3.00 s; fluct = std of windowed output SINR within it.
+
+Case                             Input SINR (dB)  MVDR SINR (dB)   GSC SINR (dB)  MVDR-GSC (dB)  seeds MVDR>GSC  MVDR fluct (dB)  GSC fluct (dB)
+-------------------------------  ---------------  --------------  --------------  -------------  --------------  ---------------  --------------
+T01_no_interference_broadside      9.12 +/- 0.02  15.13 +/- 0.01  15.12 +/- 0.02  0.01 +/- 0.01           20/20             0.05            0.05
+T02_two_separated                 -3.27 +/- 0.01  14.66 +/- 0.02  14.19 +/- 0.02  0.47 +/- 0.01           20/20             0.05            0.05
+T03_three_interferers             -4.95 +/- 0.00  13.70 +/- 0.03  13.12 +/- 0.02  0.58 +/- 0.03           20/20             0.06            0.16
+T04_four_interferers              -6.15 +/- 0.00  11.37 +/- 0.06   7.41 +/- 0.41  3.96 +/- 0.38           20/20             0.08            0.28
+T05_six_interferers               -7.87 +/- 0.04   8.24 +/- 0.04   7.56 +/- 0.10  0.68 +/- 0.09           20/20             0.24            0.35
+T06_near_desired                  -0.50 +/- 0.01   5.11 +/- 0.02   4.92 +/- 0.02  0.19 +/- 0.01           20/20             0.05            0.05
+T07_same_direction                -0.50 +/- 0.01  -0.13 +/- 0.00  -0.13 +/- 0.00  0.00 +/- 0.00           17/20             0.01            0.01
+T08_duplicate_directions          -4.95 +/- 0.00  14.81 +/- 0.02  11.63 +/- 0.02  3.18 +/- 0.02           20/20             0.07            0.15
+T09_angle_boundary                -3.27 +/- 0.01  14.65 +/- 0.02  13.14 +/- 0.03  1.52 +/- 0.02           20/20             0.06            0.11
+T10_strong_interferer            -20.01 +/- 0.00  14.11 +/- 0.02  12.75 +/- 0.02  1.36 +/- 0.01           20/20             0.09            0.09
+T11_weak_low_noise                16.97 +/- 0.00  27.89 +/- 0.01  21.57 +/- 0.00  6.32 +/- 0.01           20/20             0.25            0.18
+T12_high_noise                    -4.77 +/- 0.01   5.56 +/- 0.02   5.50 +/- 0.02  0.06 +/- 0.00           20/20             0.05            0.05
+T13_near_endfire                  -3.27 +/- 0.01  13.45 +/- 0.01  13.01 +/- 0.02  0.44 +/- 0.01           20/20             0.05            0.05
+T14_symmetric_interference        -3.27 +/- 0.01  14.90 +/- 0.02  14.47 +/- 0.02  0.43 +/- 0.02           20/20             0.05            0.05
+T15_mixed_power_interference      -8.68 +/- 0.00  11.46 +/- 0.02  10.47 +/- 0.40  1.00 +/- 0.40           20/20             0.06            0.21
+MEAN over cases (fluct: MEDIAN)   -3.02 +/- 0.01  12.33 +/- 0.01  10.98 +/- 0.06  1.35 +/- 0.05                             0.06            0.09
+
+MVDR wins/ties/loses: 8/7/0 of 15 (tie = +/-0.5 dB) | mean advantage +1.35 dB | smallest: T07_same_direction (+0.00 dB)
+MVDR fluct <= GSC fluct in 14/15 cases (exceptions: T11_weak_low_noise)
