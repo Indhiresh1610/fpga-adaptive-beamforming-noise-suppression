@@ -1,0 +1,283 @@
+
+
+================================================================
+== Vitis HLS Report for 'wiener_fd_top'
+================================================================
+* Date:           Tue Oct 27 23:13:28 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 12 2025)
+* Project:        wiener_fd_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: spartan7
+* Target device:  xc7s50-csga324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  8.747 ns|     1.25 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline|
+    |   min   |   max   |    min   |    max   | min |  max  |   Type  |
+    +---------+---------+----------+----------+-----+-------+---------+
+    |      402|    35869|  4.020 us|  0.359 ms|  403|  35870|       no|
+    +---------+---------+----------+----------+-----+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------+------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+        |                                               |                                    |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
+        |                    Instance                   |               Module               |   min   |   max   |    min    |    max    | min | max |        Type       |
+        +-----------------------------------------------+------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+        |grp_wiener_fd_top_Pipeline_RESET_FRAME_fu_295  |wiener_fd_top_Pipeline_RESET_FRAME  |      514|      514|   5.140 us|   5.140 us|    0|    0|  loop pipeline stp|
+        |grp_wiener_fd_top_Pipeline_RESET_BIN_fu_303    |wiener_fd_top_Pipeline_RESET_BIN    |      259|      259|   2.590 us|   2.590 us|    0|    0|  loop pipeline stp|
+        |grp_wiener_fd_top_Pipeline_PUSH_fu_311         |wiener_fd_top_Pipeline_PUSH         |      130|      130|   1.300 us|   1.300 us|    0|    0|  loop pipeline stp|
+        |grp_wiener_fd_top_Pipeline_LOAD_fu_321         |wiener_fd_top_Pipeline_LOAD         |     1031|     1031|  10.310 us|  10.310 us|    0|    0|  loop pipeline stp|
+        |grp_wfd_fft_fu_333                             |wfd_fft                             |    13845|    13845|   0.138 ms|   0.138 ms|    0|    0|  loop pipeline stp|
+        |grp_wiener_fd_top_Pipeline_GAIN_LOOP_fu_343    |wiener_fd_top_Pipeline_GAIN_LOOP    |     4160|     4160|  41.600 us|  41.600 us|    0|    0|  loop pipeline stp|
+        |grp_wiener_fd_top_Pipeline_OLA_ADD_fu_355      |wiener_fd_top_Pipeline_OLA_ADD      |     2062|     2062|  20.620 us|  20.620 us|    0|    0|  loop pipeline stp|
+        |grp_wiener_fd_top_Pipeline_NOISE_ACC_fu_366    |wiener_fd_top_Pipeline_NOISE_ACC    |     1043|     1043|  10.430 us|  10.430 us|    0|    0|  loop pipeline stp|
+        |grp_wiener_fd_top_Pipeline_OUT_fu_374          |wiener_fd_top_Pipeline_OUT          |      266|      266|   2.660 us|   2.660 us|    0|    0|  loop pipeline stp|
+        +-----------------------------------------------+------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- NOISE_INV  |     7196|     7196|        28|          -|          -|   257|        no|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF  |  LUT  | URAM|
++-----------------+---------+-----+-------+-------+-----+
+|DSP              |        -|    -|      -|      -|    -|
+|Expression       |        -|    -|      0|    252|    -|
+|FIFO             |        -|    -|      -|      -|    -|
+|Instance         |        2|   12|   4401|   5397|    -|
+|Memory           |       12|    -|      0|      0|    0|
+|Multiplexer      |        -|    -|      0|   1188|    -|
+|Register         |        -|    -|    328|      -|    -|
++-----------------+---------+-----+-------+-------+-----+
+|Total            |       14|   12|   4729|   6837|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Available        |      150|  120|  65200|  32600|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Utilization (%)  |        9|   10|      7|     20|    0|
++-----------------+---------+-----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------+------------------------------------+---------+----+------+------+-----+
+    |                    Instance                   |               Module               | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-----------------------------------------------+------------------------------------+---------+----+------+------+-----+
+    |fadd_32ns_32ns_32_5_full_dsp_1_U61             |fadd_32ns_32ns_32_5_full_dsp_1      |        0|   2|   205|   205|    0|
+    |fdiv_32ns_32ns_32_16_no_dsp_1_U63              |fdiv_32ns_32ns_32_16_no_dsp_1       |        0|   0|     0|     0|    0|
+    |fmul_32ns_32ns_32_4_max_dsp_1_U62              |fmul_32ns_32ns_32_4_max_dsp_1       |        0|   3|   143|   140|    0|
+    |grp_wfd_fft_fu_333                             |wfd_fft                             |        2|   7|  1505|  1352|    0|
+    |grp_wiener_fd_top_Pipeline_GAIN_LOOP_fu_343    |wiener_fd_top_Pipeline_GAIN_LOOP    |        0|   0|  1033|   861|    0|
+    |grp_wiener_fd_top_Pipeline_LOAD_fu_321         |wiener_fd_top_Pipeline_LOAD         |        0|   0|   214|   455|    0|
+    |grp_wiener_fd_top_Pipeline_NOISE_ACC_fu_366    |wiener_fd_top_Pipeline_NOISE_ACC    |        0|   0|   384|   281|    0|
+    |grp_wiener_fd_top_Pipeline_OLA_ADD_fu_355      |wiener_fd_top_Pipeline_OLA_ADD      |        0|   0|   326|   223|    0|
+    |grp_wiener_fd_top_Pipeline_OUT_fu_374          |wiener_fd_top_Pipeline_OUT          |        0|   0|   548|  1674|    0|
+    |grp_wiener_fd_top_Pipeline_PUSH_fu_311         |wiener_fd_top_Pipeline_PUSH         |        0|   0|    20|    85|    0|
+    |grp_wiener_fd_top_Pipeline_RESET_BIN_fu_303    |wiener_fd_top_Pipeline_RESET_BIN    |        0|   0|    11|    59|    0|
+    |grp_wiener_fd_top_Pipeline_RESET_FRAME_fu_295  |wiener_fd_top_Pipeline_RESET_FRAME  |        0|   0|    12|    62|    0|
+    +-----------------------------------------------+------------------------------------+---------+----+------+------+-----+
+    |Total                                          |                                    |        2|  12|  4401|  5397|    0|
+    +-----------------------------------------------+------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +------------+-----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |   Memory   |         Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------+-----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |WFD_HANN_U  |WFD_HANN_ROM_AUTO_1R   |        1|  0|   0|    0|   512|   32|     1|        16384|
+    |im_U        |im_RAM_AUTO_1R1W       |        1|  0|   0|    0|   512|   32|     1|        16384|
+    |im2_U       |im_RAM_AUTO_1R1W       |        1|  0|   0|    0|   512|   32|     1|        16384|
+    |noise_r_U   |noise_r_RAM_AUTO_1R1W  |        1|  0|   0|    0|   257|   32|     1|         8224|
+    |aprev2_U    |noise_r_RAM_AUTO_1R1W  |        1|  0|   0|    0|   257|   32|     1|         8224|
+    |ola_U       |ola_RAM_AUTO_1R1W      |        2|  0|   0|    0|   512|   32|     1|        16384|
+    |re_U        |re_RAM_AUTO_1R1W       |        2|  0|   0|    0|   512|   32|     1|        16384|
+    |re2_U       |re_RAM_AUTO_1R1W       |        2|  0|   0|    0|   512|   32|     1|        16384|
+    |xbuf_U      |xbuf_RAM_AUTO_1R1W     |        1|  0|   0|    0|   512|   18|     1|         9216|
+    +------------+-----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total       |                       |       12|  0|   0|    0|  4098|  274|     9|       123968|
+    +------------+-----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |add_ln129_fu_467_p2              |         +|   0|  0|  16|           9|           1|
+    |add_ln184_fu_489_p2              |         +|   0|  0|  16|           9|           8|
+    |add_ln185_fu_501_p2              |         +|   0|  0|  39|          32|           1|
+    |enh_fu_435_p2                    |       and|   0|  0|   2|           1|           1|
+    |learn_fu_423_p2                  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln127_fu_447_p2             |      icmp|   0|  0|  39|          32|           5|
+    |icmp_ln129_fu_461_p2             |      icmp|   0|  0|  16|           9|           9|
+    |icmp_ln99_1_fu_417_p2            |      icmp|   0|  0|  39|          32|           5|
+    |icmp_ln99_fu_411_p2              |      icmp|   0|  0|  39|          32|           2|
+    |ap_block_state2_on_subcall_done  |        or|   0|  0|   2|           1|           1|
+    |ap_predicate_op73_call_state2    |        or|   0|  0|   2|           1|           1|
+    |noise_r_we0                      |        or|   0|  0|   2|           1|           1|
+    |or_ln102_fu_441_p2               |        or|   0|  0|   2|           1|           1|
+    |or_ln185_fu_507_p2               |        or|   0|  0|   2|           1|           1|
+    |select_ln185_fu_512_p3           |    select|   0|  0|  32|           1|          32|
+    |xor_ln100_fu_429_p2              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |Total                            |          |   0|  0| 252|         164|          72|
+    +---------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+-----+-----------+-----+-----------+
+    |           Name           | LUT | Input Size| Bits| Total Bits|
+    +--------------------------+-----+-----------+-----+-----------+
+    |WFD_HANN_address0         |   15|          3|    9|         27|
+    |WFD_HANN_ce0              |   15|          3|    1|          3|
+    |ap_NS_fsm                 |  209|         48|    1|         48|
+    |aprev2_address0           |   15|          3|    9|         27|
+    |aprev2_ce0                |   15|          3|    1|          3|
+    |aprev2_d0                 |   15|          3|   32|         96|
+    |aprev2_we0                |   15|          3|    1|          3|
+    |empty_reg_251             |   15|          3|    1|          3|
+    |fcnt_loc_0_reg_190        |    9|          2|   32|         64|
+    |grp_fu_270_ce             |   21|          4|    1|          4|
+    |grp_fu_270_p0             |   27|          5|   32|        160|
+    |grp_fu_270_p1             |   27|          5|   32|        160|
+    |grp_fu_282_ce             |   33|          6|    1|          6|
+    |grp_fu_282_p0             |   38|          7|   32|        224|
+    |grp_fu_282_p1             |   38|          7|   32|        224|
+    |grp_fu_384_ce             |    9|          2|    1|          2|
+    |grp_fu_384_p0             |   15|          3|   32|         96|
+    |grp_fu_384_p1             |   15|          3|   32|         96|
+    |grp_wfd_fft_fu_333_im_q0  |   15|          3|   32|         96|
+    |grp_wfd_fft_fu_333_re_q1  |   15|          3|   32|         96|
+    |im2_address0              |   15|          3|    9|         27|
+    |im2_ce0                   |   15|          3|    1|          3|
+    |im2_d0                    |   15|          3|   32|         96|
+    |im2_we0                   |   15|          3|    1|          3|
+    |im_address0               |   27|          5|    9|         45|
+    |im_ce0                    |   27|          5|    1|          5|
+    |im_d0                     |   15|          3|   32|         96|
+    |im_we0                    |   15|          3|    1|          3|
+    |k_fu_134                  |    9|          2|    9|         18|
+    |noise_r_address0          |   21|          4|    9|         36|
+    |noise_r_address0_local    |   15|          3|    9|         27|
+    |noise_r_ce0               |   21|          4|    1|          4|
+    |noise_r_d0                |   15|          3|   32|         96|
+    |noise_r_we0               |   15|          3|    1|          3|
+    |ola_address0              |   21|          4|    9|         36|
+    |ola_ce0                   |   21|          4|    1|          4|
+    |ola_ce1                   |    9|          2|    1|          2|
+    |ola_d0                    |   21|          4|   32|        128|
+    |ola_we0                   |   21|          4|    1|          4|
+    |re2_address0              |   21|          4|    9|         36|
+    |re2_ce0                   |   21|          4|    1|          4|
+    |re2_ce1                   |    9|          2|    1|          2|
+    |re2_d0                    |   15|          3|   32|         96|
+    |re2_we0                   |   15|          3|    1|          3|
+    |re_address0               |   27|          5|    9|         45|
+    |re_ce0                    |   27|          5|    1|          5|
+    |re_ce1                    |    9|          2|    1|          2|
+    |re_d0                     |   15|          3|   32|         96|
+    |re_we0                    |   15|          3|    1|          3|
+    |ready_flag_1_reg_214      |   15|          3|    1|          3|
+    |ready_loc_0_reg_202       |    9|          2|    1|          2|
+    |wr_loc_0_reg_164          |    9|          2|    9|         18|
+    |xbuf_address0             |   21|          4|    9|         36|
+    |xbuf_ce0                  |   21|          4|    1|          4|
+    |xbuf_d0                   |   15|          3|   18|         54|
+    |xbuf_we0                  |   15|          3|    1|          3|
+    +--------------------------+-----+-----------+-----+-----------+
+    |Total                     | 1188|        239|  665|       2486|
+    +--------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------------------+----+----+-----+-----------+
+    |                            Name                            | FF | LUT| Bits| Const Bits|
+    +------------------------------------------------------------+----+----+-----+-----------+
+    |add6_reg_582                                                |  32|   0|   32|          0|
+    |ap_CS_fsm                                                   |  47|   0|   47|          0|
+    |div_reg_587                                                 |  32|   0|   32|          0|
+    |empty_reg_251                                               |   1|   0|    1|          0|
+    |fcnt                                                        |  32|   0|   32|          0|
+    |fcnt_flag_0_reg_176                                         |   1|   0|    1|          0|
+    |fcnt_loc_0_reg_190                                          |  32|   0|   32|          0|
+    |grp_wfd_fft_fu_333_ap_start_reg                             |   1|   0|    1|          0|
+    |grp_wiener_fd_top_Pipeline_GAIN_LOOP_fu_343_ap_start_reg    |   1|   0|    1|          0|
+    |grp_wiener_fd_top_Pipeline_LOAD_fu_321_ap_start_reg         |   1|   0|    1|          0|
+    |grp_wiener_fd_top_Pipeline_NOISE_ACC_fu_366_ap_start_reg    |   1|   0|    1|          0|
+    |grp_wiener_fd_top_Pipeline_OLA_ADD_fu_355_ap_start_reg      |   1|   0|    1|          0|
+    |grp_wiener_fd_top_Pipeline_OUT_fu_374_ap_start_reg          |   1|   0|    1|          0|
+    |grp_wiener_fd_top_Pipeline_PUSH_fu_311_ap_start_reg         |   1|   0|    1|          0|
+    |grp_wiener_fd_top_Pipeline_RESET_BIN_fu_303_ap_start_reg    |   1|   0|    1|          0|
+    |grp_wiener_fd_top_Pipeline_RESET_FRAME_fu_295_ap_start_reg  |   1|   0|    1|          0|
+    |icmp_ln99_1_reg_541                                         |   1|   0|    1|          0|
+    |initialised                                                 |   1|   0|    1|          0|
+    |initialised_load_reg_537                                    |   1|   0|    1|          0|
+    |k_fu_134                                                    |   9|   0|    9|          0|
+    |learn_reg_547                                               |   1|   0|    1|          0|
+    |mul_reg_577                                                 |  32|   0|   32|          0|
+    |noise_addr_reg_567                                          |   9|   0|    9|          0|
+    |noise_load_reg_572                                          |  32|   0|   32|          0|
+    |or_ln185_reg_592                                            |   1|   0|    1|          0|
+    |ready_flag_1_reg_214                                        |   1|   0|    1|          0|
+    |ready_loc_0_reg_202                                         |   1|   0|    1|          0|
+    |ready_new_1_reg_232                                         |   1|   0|    1|          0|
+    |ready_r                                                     |   1|   0|    1|          0|
+    |reset_read_reg_524                                          |   1|   0|    1|          0|
+    |select_ln185_reg_596                                        |  32|   0|   32|          0|
+    |wr                                                          |   9|   0|    9|          0|
+    |wr_loc_0_reg_164                                            |   9|   0|    9|          0|
+    +------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                       | 328|   0|  328|          0|
+    +------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+---------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  | Source Object |    C Type    |
++--------------------+-----+-----+------------+---------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|  wiener_fd_top|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|  wiener_fd_top|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|  wiener_fd_top|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  wiener_fd_top|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  wiener_fd_top|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  wiener_fd_top|  return value|
+|x_address0          |  out|    7|   ap_memory|              x|         array|
+|x_ce0               |  out|    1|   ap_memory|              x|         array|
+|x_q0                |   in|   18|   ap_memory|              x|         array|
+|y_address0          |  out|    7|   ap_memory|              y|         array|
+|y_ce0               |  out|    1|   ap_memory|              y|         array|
+|y_we0               |  out|    1|   ap_memory|              y|         array|
+|y_d0                |  out|   24|   ap_memory|              y|         array|
+|reset               |   in|    1|     ap_none|          reset|        scalar|
+|noise_ready         |  out|    1|      ap_vld|    noise_ready|       pointer|
+|noise_ready_ap_vld  |  out|    1|      ap_vld|    noise_ready|       pointer|
++--------------------+-----+-----+------------+---------------+--------------+
+
