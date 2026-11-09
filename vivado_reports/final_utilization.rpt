@@ -1,0 +1,39 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun Nov  8 20:01:20 2026
+| Host         : DESKTOP-VBPE6UN running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 4 -file {C:/Users/chinese/Downloads/sp project work/final_utilization.rpt}
+| Design       : mvdr_board_top
+| Device       : xc7s50csga324-1
+| Speed File   : -1
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+|      Instance      |      Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+| mvdr_board_top     |            (top) |       3567 |       3459 |     108 |    0 | 3296 |      8 |      1 |          7 |
+|   (mvdr_board_top) |            (top) |         96 |         96 |       0 |    0 |   88 |      0 |      0 |          0 |
+|   u_core           |         mvdr_top |       3471 |       3363 |     108 |    0 | 3208 |      8 |      1 |          7 |
+|     u_wr           |      weight_regs |        172 |        172 |       0 |    0 |  401 |      0 |      0 |          0 |
+|     u_ctrl         | block_controller |         82 |         82 |       0 |    0 |  169 |      0 |      0 |          0 |
+|     u_eng          |    sample_engine |       1352 |       1352 |       0 |    0 | 1129 |      0 |      0 |          2 |
+|     u_mem          |        input_mem |         36 |         36 |       0 |    0 |  132 |      8 |      0 |          0 |
+|     u_out          | output_interface |          1 |          1 |       0 |    0 |   75 |      0 |      0 |          0 |
+|     u_sol          |     block_solver |       1832 |       1724 |     108 |    0 | 1302 |      0 |      1 |          5 |
+|       (u_sol)      |     block_solver |       1534 |       1426 |     108 |    0 | 1064 |      0 |      1 |          5 |
+|       u_div        |   serial_divider |        298 |        298 |       0 |    0 |  238 |      0 |      0 |          0 |
++--------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

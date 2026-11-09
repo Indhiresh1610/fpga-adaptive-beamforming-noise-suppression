@@ -1,0 +1,38 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun Nov  8 19:56:44 2026
+| Host         : DESKTOP-VBPE6UN running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 4 -file {C:/Users/chinese/Downloads/sp project work/utilization_post_implementation.rpt}
+| Design       : mvdr_board_top
+| Device       : xc7s50csga324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+|      Instance      |      Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+| mvdr_board_top     |            (top) |       3665 |       3557 |     108 |    0 | 3296 |      8 |      1 |          7 |
+|   (mvdr_board_top) |            (top) |         97 |         97 |       0 |    0 |   88 |      0 |      0 |          0 |
+|   u_core           |         mvdr_top |       3568 |       3460 |     108 |    0 | 3208 |      8 |      1 |          7 |
+|     u_wr           |      weight_regs |        172 |        172 |       0 |    0 |  401 |      0 |      0 |          0 |
+|     u_ctrl         | block_controller |         86 |         86 |       0 |    0 |  169 |      0 |      0 |          0 |
+|     u_eng          |    sample_engine |       1358 |       1358 |       0 |    0 | 1129 |      0 |      0 |          2 |
+|     u_mem          |        input_mem |         36 |         36 |       0 |    0 |  132 |      8 |      0 |          0 |
+|     u_out          | output_interface |          1 |          1 |       0 |    0 |   75 |      0 |      0 |          0 |
+|     u_sol          |     block_solver |       1916 |       1808 |     108 |    0 | 1302 |      0 |      1 |          5 |
+|       (u_sol)      |     block_solver |       1617 |       1509 |     108 |    0 | 1064 |      0 |      1 |          5 |
+|       u_div        |   serial_divider |        299 |        299 |       0 |    0 |  238 |      0 |      0 |          0 |
++--------------------+------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

@@ -1,0 +1,69 @@
+section,metric,value,note
+verdict,overall_PASS,1,A and C
+verdict,A_float64_within_tolerance,1,
+verdict,B_fixed_point_emulator_bit_exact,1,
+verdict,C_algorithm_tests,1,
+float64_vs_RTL,re_max_abs,1.157117e-06,
+float64_vs_RTL,re_mean_abs,2.580556e-07,
+float64_vs_RTL,re_rmse,3.298723e-07,
+float64_vs_RTL,re_max_rel,1.294270e-04,
+float64_vs_RTL,re_mean_rel,2.117036e-06,
+float64_vs_RTL,re_max_abs_lsb,4.853302e+00,LSB = 2^-22
+float64_vs_RTL,im_max_abs,9.947697e-07,
+float64_vs_RTL,im_mean_abs,2.607067e-07,
+float64_vs_RTL,im_rmse,3.296499e-07,
+float64_vs_RTL,im_max_rel,1.256936e-04,
+float64_vs_RTL,im_mean_rel,2.549050e-06,
+float64_vs_RTL,im_max_abs_lsb,4.172366e+00,LSB = 2^-22
+float64_vs_RTL,complex_max_abs,1.160398e-06,
+float64_vs_RTL,complex_mean_abs,4.078382e-07,
+float64_vs_RTL,complex_rmse,4.663527e-07,
+float64_vs_RTL,complex_max_rel,2.269615e-06,
+float64_vs_RTL,complex_mean_rel,9.112045e-07,
+float64_vs_RTL,complex_max_abs_lsb,4.867063e+00,LSB = 2^-22
+float64_vs_RTL,relative_error_floor,4.538112e-03,1% of RMS|y_RTL|
+float64_vs_RTL,samples_within_tolerance,1536,of 1536
+float64_vs_RTL,samples_outside_tolerance,0,
+float64_vs_RTL,tolerance_min,1.192093e-07,derived
+float64_vs_RTL,tolerance_max,4.104166e-05,derived
+float64_vs_RTL,worst_error_over_tolerance,0.054839,
+emulator_vs_RTL,re_max_abs,0.000000e+00,
+emulator_vs_RTL,re_mean_abs,0.000000e+00,
+emulator_vs_RTL,re_rmse,0.000000e+00,
+emulator_vs_RTL,im_max_abs,0.000000e+00,
+emulator_vs_RTL,im_mean_abs,0.000000e+00,
+emulator_vs_RTL,im_rmse,0.000000e+00,
+emulator_vs_RTL,complex_max_abs,0.000000e+00,
+emulator_vs_RTL,complex_mean_abs,0.000000e+00,
+emulator_vs_RTL,complex_rmse,0.000000e+00,
+emulator_vs_RTL,mismatching_samples,0,of 1536
+emulator_vs_RTL,max_raw_difference_LSB,0,
+float64_vs_emulator,complex_max_abs,1.160398e-06,
+float64_vs_emulator,complex_mean_abs,4.078382e-07,
+float64_vs_emulator,complex_rmse,4.663527e-07,
+algorithm_test,V1 Per-block covariance S: integer emulation of the RTL accumulator == float sum x x^H,PASS,max|S_fixed - S_float| = 0.000e+00
+algorithm_test,V2 Recursive covariance R_b = 0.8 R_{b-1} + 0.2 S_b (R_0 = S_0): emulator vs float,PASS,"max|R_fixed - R_float| = 3.394e-08  (bound 2.309e-06; coefficient 3355443/2^24 = 0.199999988, lambda_eff - 0.8 = 1.19e-08)"
+algorithm_test,V3 Covariance Hermitian symmetry and non-negative real diagonal,PASS,float max|R-R^H| = 0.00e+00; min fixed diagonal word = 17609625928 (>= 0)
+algorithm_test,"V4 Positive definiteness of the loaded, normalised covariance; LDL^H pivots above D_MIN = 2^-14",PASS,min eigenvalue = 0.0205; cond range 34.9..49.3; min fixed-point pivot = 0.0338 (floor 6.10e-05); err_pivot = 0
+algorithm_test,"V5 Distortionless constraint w^H a = 1 (float, quantised RTL-model weights, weights recovered from RTL output)",PASS,"float max|w^H a - 1| = 2.29e-16; quantised-weights max = 1.35e-06; RTL-implied max = 1.36e-06 (allowed ~ (eps_w+eps_LS)*||a||, e.g. block-1 bound 7.4e-05)"
+algorithm_test,V6 Solver weights (fixed-point LDL^H model) vs float w = R^-1 a / (a^H R^-1 a) from numpy.linalg.solve,PASS,"max ||dw||_2 = 1.972e-06; bound (per block, kappa-scaled) min 1.83e-05 .. max 3.56e-05"
+algorithm_test,V7 Blockwise weights recovered from the RTL output (least squares on y = w^H x) vs model weights,PASS,max||w_RTL-implied - w_fixed-model|| = 2.35e-07 (LS recovery bound max 1.38e-06); vs float reference 2.00e-06; vs same-block (non-causal) weights min 6.52e-02
+algorithm_test,V8 Causal weight update (perturb only block 7 of the input),PASS,"fixed model: weights of blocks 0..7 unchanged=True, block 8 changed=True, outputs of blocks 0..6 unchanged=True, block-7 outputs use the unperturbed weights=True; float model: blocks 0..7 unchanged=True, block 8 changed=True"
+algorithm_test,V9 Tail handling (16 samples after 20 full blocks),PASS,tail uses weights of the last full block (model)=True; RTL block label 20 on 16 rows=True; RTL-implied tail weights vs model: 2.35e-07 (bound 1.38e-06)
+algorithm_test,"V10 No saturation, pivot clamp, solver fallback or zero-trace event",PASS,"emulator flags {'err_pivot': 0, 'err_solver': 0, 'sat_solver': 0, 'sat_w': 0, 'zero_trace': 0, 'sat_y': 0}; float fallbacks {'fallback_zero_trace': 0, 'fallback_s': 0, 'pivot_below_dmin': 0}; RTL rows at Q2.22 rails: 0; headroom used: |y| 32.5% of 2^23, |w| 2.7% of 2^24, S 7.6% of 2^38"
+algorithm_test,V11 Block 0 uses quiescent weights w = a/4,PASS,model block-0 weights == a_raw<<4 (Q5.20): True; RTL block-0 output == bit-exact a/4 beamformer: True
+algorithm_test,V12 Discriminating power: do wrong algorithm variants fail the same comparison?,INFO,"forgetting 0.95 (HLS-design value): 1.11e-01 (rejected); forgetting 0.5: 1.24e-01 (rejected); loading 1e-2: 1.50e-02 (rejected); loading 1e-4: 1.68e-03 (rejected); no diagonal loading: 1.87e-03 (rejected); NON-causal (block uses own weights): 1.65e-01 (rejected)   [baseline 1.16e-06, largest tolerance 4.10e-05]"
+emulator_flags,err_pivot,0,
+emulator_flags,err_solver,0,
+emulator_flags,sat_solver,0,
+emulator_flags,sat_w,0,
+emulator_flags,zero_trace,0,
+emulator_flags,sat_y,0,
+parameter,num_antennas,4,RTL
+parameter,block_length,76,RTL mvdr_top
+parameter,num_samples,1536,RTL mvdr_top
+parameter,fs_hz,512,user
+parameter,forgetting_lambda,0.800000012,RTL 3355443/2^24 complement
+parameter,loading_coefficient_x_trace,2.500000410e-04,RTL 1073742/2^32 (= 1e-3*trace/4)
+parameter,initial_weights,a/4,RTL
+parameter,D_MIN,2^-14,RTL

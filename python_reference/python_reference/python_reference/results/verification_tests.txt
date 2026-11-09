@@ -1,0 +1,59 @@
+[PASS] V1  Per-block covariance S: integer emulation of the RTL accumulator == float sum x x^H
+      result : max|S_fixed - S_float| = 0.000e+00
+      shows  : The 16-word S map (4 diagonal, 6 Re, 6 Im upper-triangle entries, S[i,j] = x_i conj(x_j)) and the Q9.30 accumulation reproduce sum x x^H exactly (products are exact in 32 bits).
+      limits : S inside the RTL is not exposed in y_out.csv; it is verified indirectly because every later weight depends on it (see V7 and the bit-exact output match).
+
+[PASS] V2  Recursive covariance R_b = 0.8 R_{b-1} + 0.2 S_b (R_0 = S_0): emulator vs float
+      result : max|R_fixed - R_float| = 3.394e-08  (bound 2.309e-06; coefficient 3355443/2^24 = 0.199999988, lambda_eff - 0.8 = 1.19e-08)
+      shows  : The RTL update rule/constant implement the 0.8/0.2 exponential forgetting and the R = S start.
+      limits : Does not show that 0.8 is a good design value, only that it is what the RTL implements.
+
+[PASS] V3  Covariance Hermitian symmetry and non-negative real diagonal
+      result : float max|R-R^H| = 0.00e+00; min fixed diagonal word = 17609625928 (>= 0)
+      shows  : Float covariances are Hermitian; the RTL stores only the upper triangle (+4 real diagonal words), so its matrix is Hermitian by construction and its diagonal words are non-negative.
+      limits : Symmetry of the stored form is structural, not an independent measurement of the RTL registers.
+
+[PASS] V4  Positive definiteness of the loaded, normalised covariance; LDL^H pivots above D_MIN = 2^-14
+      result : min eigenvalue = 0.0205; cond range 34.9..49.3; min fixed-point pivot = 0.0338 (floor 6.10e-05); err_pivot = 0
+      shows  : Every solve was well-posed: all 4x4 loaded matrices are positive definite and the pivot clamp never engaged.
+      limits : Positive definiteness is a property of this data record; it says nothing about worst-case inputs.
+
+[PASS] V5  Distortionless constraint w^H a = 1 (float, quantised RTL-model weights, weights recovered from RTL output)
+      result : float max|w^H a - 1| = 2.29e-16; quantised-weights max = 1.35e-06; RTL-implied max = 1.36e-06 (allowed ~ (eps_w+eps_LS)*||a||, e.g. block-1 bound 7.4e-05)
+      shows  : Weights are correctly normalised (division by a^H u, Q5.20 rounding) and the weights the RTL actually applied satisfy the constraint to the quantisation limit.
+      limits : A distortionless response toward 0 deg is meaningful as a normalisation check only; it is not evidence of interference rejection.
+
+[PASS] V6  Solver weights (fixed-point LDL^H model) vs float w = R^-1 a / (a^H R^-1 a) from numpy.linalg.solve
+      result : max ||dw||_2 = 1.972e-06; bound (per block, kappa-scaled) min 1.83e-05 .. max 3.56e-05
+      shows  : The fixed-point LDL^H / forward / diagonal / backward / normalisation chain computes the MVDR solution of the stated formula to within the derived numerical-error bound.
+      limits : Bound is worst-case; agreement much tighter than the bound does not prove bit-exactness of the actual RTL (see the bit-exact emulator comparison).
+
+[PASS] V7  Blockwise weights recovered from the RTL output (least squares on y = w^H x) vs model weights
+      result : max||w_RTL-implied - w_fixed-model|| = 2.35e-07 (LS recovery bound max 1.38e-06); vs float reference 2.00e-06; vs same-block (non-causal) weights min 6.52e-02
+      shows  : Block b of the RTL output was produced with exactly the weights the causal model derives from blocks 0..b-1, not with weights from block b itself. This is a direct, weight-level causality check on the RTL output.
+      limits : RTL weight registers were not dumped; weights are inferred from y (valid because x has full column rank per block -- sigma_min is reported in the LS bound).
+
+[PASS] V8  Causal weight update (perturb only block 7 of the input)
+      result : fixed model: weights of blocks 0..7 unchanged=True, block 8 changed=True, outputs of blocks 0..6 unchanged=True, block-7 outputs use the unperturbed weights=True; float model: blocks 0..7 unchanged=True, block 8 changed=True
+      shows  : In both models, weights applied in a block depend only on earlier blocks and the first use of a block's data is in the next block (no retroactive update).
+      limits : This is a property of the models. The RTL itself is covered by V7 and the bit-exact output match.
+
+[PASS] V9  Tail handling (16 samples after 20 full blocks)
+      result : tail uses weights of the last full block (model)=True; RTL block label 20 on 16 rows=True; RTL-implied tail weights vs model: 2.35e-07 (bound 1.38e-06)
+      shows  : The RTL beamforms the tail with the weights solved after the last full block, with correct indexing/labelling.
+      limits : 'No covariance update/solve in the tail' is not observable from y_out.csv (nothing is output afterwards); it is read from the RTL source and modelled (accum_en = 0, solver bypassed).
+
+[PASS] V10  No saturation, pivot clamp, solver fallback or zero-trace event
+      result : emulator flags {'err_pivot': 0, 'err_solver': 0, 'sat_solver': 0, 'sat_w': 0, 'zero_trace': 0, 'sat_y': 0}; float fallbacks {'fallback_zero_trace': 0, 'fallback_s': 0, 'pivot_below_dmin': 0}; RTL rows at Q2.22 rails: 0; headroom used: |y| 32.5% of 2^23, |w| 2.7% of 2^24, S 7.6% of 2^38
+      shows  : On this record no arithmetic saturated and no fallback path was taken in the model; RTL outputs are not railed.
+      limits : The RTL status register is not in y_out.csv (the tb prints status at the end of the run; please confirm it printed status=0x00). Fallback and saturation paths are therefore NOT exercised/tested by this record.
+
+[PASS] V11  Block 0 uses quiescent weights w = a/4
+      result : model block-0 weights == a_raw<<4 (Q5.20): True; RTL block-0 output == bit-exact a/4 beamformer: True
+      shows  : First block is processed with w = a/4 exactly as specified.
+      limits : Nothing about later blocks.
+
+[INFO] V12  Discriminating power: do wrong algorithm variants fail the same comparison?
+      result : forgetting 0.95 (HLS-design value): 1.11e-01 (rejected); forgetting 0.5: 1.24e-01 (rejected); loading 1e-2: 1.50e-02 (rejected); loading 1e-4: 1.68e-03 (rejected); no diagonal loading: 1.87e-03 (rejected); NON-causal (block uses own weights): 1.65e-01 (rejected)   [baseline 1.16e-06, largest tolerance 4.10e-05]
+      shows  : Which parameter/ordering errors this particular input would have caught.
+      limits : Variants marked NOT distinguishable cannot be confirmed by this noise-only record; they need other test inputs.

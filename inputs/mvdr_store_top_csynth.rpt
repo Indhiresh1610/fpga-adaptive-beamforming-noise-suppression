@@ -1,0 +1,262 @@
+
+
+================================================================
+== Vitis HLS Report for 'mvdr_store_top'
+================================================================
+* Date:           Tue Oct 27 22:43:00 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 12 2025)
+* Project:        mvdr_store_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: spartan7
+* Target device:  xc7s50-csga324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  40.00 ns|  35.375 ns|     5.00 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |   Interval   | Pipeline|
+    |   min   |   max   |    min    |    max   |  min |  max  |   Type  |
+    +---------+---------+-----------+----------+------+-------+---------+
+    |     1028|    11246|  41.120 us|  0.450 ms|  1029|  11247|       no|
+    +---------+---------+-----------+----------+------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------+------------------------------------+---------+---------+-----------+-----------+------+-------+-------------------+
+        |                                               |                                    |  Latency (cycles) |   Latency (absolute)  |   Interval   |      Pipeline     |
+        |                    Instance                   |               Module               |   min   |   max   |    min    |    max    |  min |  max  |        Type       |
+        +-----------------------------------------------+------------------------------------+---------+---------+-----------+-----------+------+-------+-------------------+
+        |grp_mvdr_store_top_Pipeline_FETCH_LOOP_fu_210  |mvdr_store_top_Pipeline_FETCH_LOOP  |     1026|     1026|  41.040 us|  41.040 us|     0|      0|  loop pipeline stp|
+        |grp_mvdr_store_top_Pipeline_LOAD_LOOP_fu_247   |mvdr_store_top_Pipeline_LOAD_LOOP   |     1026|     1026|  41.040 us|  41.040 us|     0|      0|  loop pipeline stp|
+        |grp_mvdr_block_top_fu_284                      |mvdr_block_top                      |     8727|    10217|   0.349 ms|   0.409 ms|  8727|  10217|                 no|
+        +-----------------------------------------------+------------------------------------+---------+---------+-----------+-----------+------+-------+-------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF  |  LUT  | URAM|
++-----------------+---------+-----+-------+-------+-----+
+|DSP              |        -|    -|      -|      -|    -|
+|Expression       |        -|    -|      0|     41|    -|
+|FIFO             |        -|    -|      -|      -|    -|
+|Instance         |        -|   55|  12462|  11307|    -|
+|Memory           |       80|    -|      0|      0|    0|
+|Multiplexer      |        -|    -|      0|    561|    -|
+|Register         |        -|    -|     13|      -|    -|
++-----------------+---------+-----+-------+-------+-----+
+|Total            |       80|   55|  12475|  11909|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Available        |      150|  120|  65200|  32600|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Utilization (%)  |       53|   45|     19|     36|    0|
++-----------------+---------+-----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------+------------------------------------+---------+----+-------+-------+-----+
+    |                    Instance                   |               Module               | BRAM_18K| DSP|   FF  |  LUT  | URAM|
+    +-----------------------------------------------+------------------------------------+---------+----+-------+-------+-----+
+    |grp_mvdr_block_top_fu_284                      |mvdr_block_top                      |        0|  55|  12410|  11117|    0|
+    |grp_mvdr_store_top_Pipeline_FETCH_LOOP_fu_210  |mvdr_store_top_Pipeline_FETCH_LOOP  |        0|   0|     25|     95|    0|
+    |grp_mvdr_store_top_Pipeline_LOAD_LOOP_fu_247   |mvdr_store_top_Pipeline_LOAD_LOOP   |        0|   0|     27|     95|    0|
+    +-----------------------------------------------+------------------------------------+---------+----+-------+-------+-----+
+    |Total                                          |                                    |        0|  55|  12462|  11307|    0|
+    +-----------------------------------------------+------------------------------------+---------+----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +---------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |                                      Memory                                     |                                      Module                                      | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +---------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_U        |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_RAM_AjbC  |        1|  0|   0|    0|  1024|   18|     1|        18432|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_10_U        |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_RAM_AjbC  |        1|  0|   0|    0|  1024|   18|     1|        18432|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_9_U         |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_RAM_AjbC  |        1|  0|   0|    0|  1024|   18|     1|        18432|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_8_U         |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_RAM_AjbC  |        1|  0|   0|    0|  1024|   18|     1|        18432|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_15_U        |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_RAM_AjbC  |        1|  0|   0|    0|  1024|   18|     1|        18432|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_14_U        |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_RAM_AjbC  |        1|  0|   0|    0|  1024|   18|     1|        18432|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_13_U        |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_RAM_AjbC  |        1|  0|   0|    0|  1024|   18|     1|        18432|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_12_U        |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_RAM_AjbC  |        1|  0|   0|    0|  1024|   18|     1|        18432|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_U         |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_RAM_2Pbkb  |        9|  0|   0|    0|  8192|   18|     1|       147456|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_2_U         |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_RAM_2Pbkb  |        9|  0|   0|    0|  8192|   18|     1|       147456|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_1_U         |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_RAM_2Pbkb  |        9|  0|   0|    0|  8192|   18|     1|       147456|
+    |mvdr_mulmulmulstore_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_U  |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_RAM_2Pbkb  |        9|  0|   0|    0|  8192|   18|     1|       147456|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_7_U         |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_RAM_2Pbkb  |        9|  0|   0|    0|  8192|   18|     1|       147456|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_6_U         |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_RAM_2Pbkb  |        9|  0|   0|    0|  8192|   18|     1|       147456|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_5_U         |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_RAM_2Pbkb  |        9|  0|   0|    0|  8192|   18|     1|       147456|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_4_U         |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_RAM_2Pbkb  |        9|  0|   0|    0|  8192|   18|     1|       147456|
+    +---------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                                                                            |                                                                                  |       80|  0|   0|    0| 73728|  288|    16|      1327104|
+    +---------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |ap_block_state4_on_subcall_done  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln368_fu_415_p2             |      icmp|   0|  0|  39|          32|           1|
+    +---------------------------------+----------+----+---+----+------------+------------+
+    |Total                            |          |   0|  0|  41|          33|           2|
+    +---------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |                                        Name                                       | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                                                          |  33|          6|    1|          6|
+    |mvdr_mulmulmulstore_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_ce0  |   9|          2|    1|          2|
+    |mvdr_mulmulmulstore_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_ce1  |   9|          2|    1|          2|
+    |mvdr_mulmulmulstore_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_we1  |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_10_address0   |  15|          3|   10|         30|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_10_ce0        |  15|          3|    1|          3|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_10_we0        |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_address0   |  15|          3|   10|         30|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_ce0        |  15|          3|    1|          3|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_11_we0        |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_12_address0   |  15|          3|   10|         30|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_12_ce0        |  15|          3|    1|          3|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_12_we0        |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_13_address0   |  15|          3|   10|         30|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_13_ce0        |  15|          3|    1|          3|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_13_we0        |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_14_address0   |  15|          3|   10|         30|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_14_ce0        |  15|          3|    1|          3|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_14_we0        |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_15_address0   |  15|          3|   10|         30|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_15_ce0        |  15|          3|    1|          3|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_15_we0        |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_1_ce0         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_1_ce1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_1_we1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_2_ce0         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_2_ce1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_2_we1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_ce0         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_ce1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_3_we1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_4_ce0         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_4_ce1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_4_we1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_5_ce0         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_5_ce1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_5_we1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_6_ce0         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_6_ce1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_6_we1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_7_ce0         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_7_ce1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_7_we1         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_8_address0    |  15|          3|   10|         30|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_8_ce0         |  15|          3|    1|          3|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_8_we0         |   9|          2|    1|          2|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_9_address0    |  15|          3|   10|         30|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_9_ce0         |  15|          3|    1|          3|
+    |mvdr_store_top_int_int_ap_fixed_const_4_ap_fixed_const_4_ap_fixed_ap_9_we0         |   9|          2|    1|          2|
+    +-----------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                                              | 561|        118|  121|        334|
+    +-----------------------------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------------------+---+----+-----+-----------+
+    |                            Name                            | FF| LUT| Bits| Const Bits|
+    +------------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                                   |  5|   0|    5|          0|
+    |base_reg_426                                                |  3|   0|   13|         10|
+    |grp_mvdr_block_top_fu_284_ap_start_reg                      |  1|   0|    1|          0|
+    |grp_mvdr_store_top_Pipeline_FETCH_LOOP_fu_210_ap_start_reg  |  1|   0|    1|          0|
+    |grp_mvdr_store_top_Pipeline_LOAD_LOOP_fu_247_ap_start_reg   |  1|   0|    1|          0|
+    |icmp_ln368_reg_432                                          |  1|   0|    1|          0|
+    |reset_read_reg_421                                          |  1|   0|    1|          0|
+    +------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                       | 13|   0|   23|         10|
+    +------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+----------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++--------------------+-----+-----+------------+----------------+--------------+
+|ap_clk              |   in|    1|  ap_ctrl_hs|  mvdr_store_top|  return value|
+|ap_rst              |   in|    1|  ap_ctrl_hs|  mvdr_store_top|  return value|
+|ap_start            |   in|    1|  ap_ctrl_hs|  mvdr_store_top|  return value|
+|ap_done             |  out|    1|  ap_ctrl_hs|  mvdr_store_top|  return value|
+|ap_idle             |  out|    1|  ap_ctrl_hs|  mvdr_store_top|  return value|
+|ap_ready            |  out|    1|  ap_ctrl_hs|  mvdr_store_top|  return value|
+|cmd                 |   in|   32|     ap_none|             cmd|        scalar|
+|blk                 |   in|   32|     ap_none|             blk|        scalar|
+|x_re_0_address0     |  out|   10|   ap_memory|          x_re_0|         array|
+|x_re_0_ce0          |  out|    1|   ap_memory|          x_re_0|         array|
+|x_re_0_q0           |   in|   18|   ap_memory|          x_re_0|         array|
+|x_re_1_address0     |  out|   10|   ap_memory|          x_re_1|         array|
+|x_re_1_ce0          |  out|    1|   ap_memory|          x_re_1|         array|
+|x_re_1_q0           |   in|   18|   ap_memory|          x_re_1|         array|
+|x_re_2_address0     |  out|   10|   ap_memory|          x_re_2|         array|
+|x_re_2_ce0          |  out|    1|   ap_memory|          x_re_2|         array|
+|x_re_2_q0           |   in|   18|   ap_memory|          x_re_2|         array|
+|x_re_3_address0     |  out|   10|   ap_memory|          x_re_3|         array|
+|x_re_3_ce0          |  out|    1|   ap_memory|          x_re_3|         array|
+|x_re_3_q0           |   in|   18|   ap_memory|          x_re_3|         array|
+|x_im_0_address0     |  out|   10|   ap_memory|          x_im_0|         array|
+|x_im_0_ce0          |  out|    1|   ap_memory|          x_im_0|         array|
+|x_im_0_q0           |   in|   18|   ap_memory|          x_im_0|         array|
+|x_im_1_address0     |  out|   10|   ap_memory|          x_im_1|         array|
+|x_im_1_ce0          |  out|    1|   ap_memory|          x_im_1|         array|
+|x_im_1_q0           |   in|   18|   ap_memory|          x_im_1|         array|
+|x_im_2_address0     |  out|   10|   ap_memory|          x_im_2|         array|
+|x_im_2_ce0          |  out|    1|   ap_memory|          x_im_2|         array|
+|x_im_2_q0           |   in|   18|   ap_memory|          x_im_2|         array|
+|x_im_3_address0     |  out|   10|   ap_memory|          x_im_3|         array|
+|x_im_3_ce0          |  out|    1|   ap_memory|          x_im_3|         array|
+|x_im_3_q0           |   in|   18|   ap_memory|          x_im_3|         array|
+|y_re_address0       |  out|   10|   ap_memory|            y_re|         array|
+|y_re_ce0            |  out|    1|   ap_memory|            y_re|         array|
+|y_re_we0            |  out|    1|   ap_memory|            y_re|         array|
+|y_re_d0             |  out|   24|   ap_memory|            y_re|         array|
+|y_im_address0       |  out|   10|   ap_memory|            y_im|         array|
+|y_im_ce0            |  out|    1|   ap_memory|            y_im|         array|
+|y_im_we0            |  out|    1|   ap_memory|            y_im|         array|
+|y_im_d0             |  out|   24|   ap_memory|            y_im|         array|
+|a_re_address0       |  out|    2|   ap_memory|            a_re|         array|
+|a_re_ce0            |  out|    1|   ap_memory|            a_re|         array|
+|a_re_q0             |   in|   32|   ap_memory|            a_re|         array|
+|a_im_address0       |  out|    2|   ap_memory|            a_im|         array|
+|a_im_ce0            |  out|    1|   ap_memory|            a_im|         array|
+|a_im_q0             |   in|   32|   ap_memory|            a_im|         array|
+|reset               |   in|    1|     ap_none|           reset|        scalar|
+|w_used_re_address0  |  out|    2|   ap_memory|       w_used_re|         array|
+|w_used_re_ce0       |  out|    1|   ap_memory|       w_used_re|         array|
+|w_used_re_we0       |  out|    1|   ap_memory|       w_used_re|         array|
+|w_used_re_d0        |  out|   25|   ap_memory|       w_used_re|         array|
+|w_used_im_address0  |  out|    2|   ap_memory|       w_used_im|         array|
+|w_used_im_ce0       |  out|    1|   ap_memory|       w_used_im|         array|
+|w_used_im_we0       |  out|    1|   ap_memory|       w_used_im|         array|
+|w_used_im_d0        |  out|   25|   ap_memory|       w_used_im|         array|
++--------------------+-----+-----+------------+----------------+--------------+
+
