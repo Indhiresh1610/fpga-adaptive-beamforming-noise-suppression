@@ -23,6 +23,14 @@ module tb_regression;
     reg clk;
     always #5 clk = ~clk;
 
+    // Verilog has no $abs; simple real-valued absolute value
+    function real abs_r;
+        input real v;
+        begin
+            abs_r = (v < 0.0) ? -v : v;
+        end
+    endfunction
+
     integer pass_count;
     integer fail_count;
 
@@ -390,8 +398,8 @@ module tb_regression;
                                  (a_itf2_re[m]*sig_itf2_im[n] + a_itf2_im[m]*sig_itf2_re[n]) +
                                  (noise_sigma / 1.41421356) * z1;
 
-                if ($abs(x_raw_re[m][n]) > max_val) max_val = $abs(x_raw_re[m][n]);
-                if ($abs(x_raw_im[m][n]) > max_val) max_val = $abs(x_raw_im[m][n]);
+                if (abs_r(x_raw_re[m][n]) > max_val) max_val = abs_r(x_raw_re[m][n]);
+                if (abs_r(x_raw_im[m][n]) > max_val) max_val = abs_r(x_raw_im[m][n]);
             end
         end
 
@@ -478,8 +486,8 @@ module tb_regression;
                                  (a_itf2_re[m]*sig_itf2_im[0] + a_itf2_im[m]*sig_itf2_re[0]) +
                                  (noise_sigma / 1.41421356) * z1;
 
-                if ($abs(x_raw_re[m][0]) > max_val) max_val = $abs(x_raw_re[m][0]);
-                if ($abs(x_raw_im[m][0]) > max_val) max_val = $abs(x_raw_im[m][0]);
+                if (abs_r(x_raw_re[m][0]) > max_val) max_val = abs_r(x_raw_re[m][0]);
+                if (abs_r(x_raw_im[m][0]) > max_val) max_val = abs_r(x_raw_im[m][0]);
             end
         end
 
