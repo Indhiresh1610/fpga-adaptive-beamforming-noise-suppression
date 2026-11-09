@@ -37,8 +37,8 @@ def plot_all(ctx, outdir):
         z = slice(N - 40, N)
         ax[1].plot(n[z], comp(y_rtl)[z], "o-", ms=3.5, label="RTL")
         ax[1].plot(n[z], comp(y_ref)[z], "x--", ms=4, label="Python float64")
-        ax[1].axvline((nblk) * K - 0.5, color="r", lw=0.8, label="start of tail (block 20)")
-        ax[1].set_xlabel("sample index"); ax[1].set_ylabel(f"{lab}(y)"); ax[1].set_title("Zoom: last 40 samples (block 19 -> tail)")
+        ax[1].axvline((nblk) * K - 0.5, color="r", lw=0.8, label=f"start of tail (block {nblk})")
+        ax[1].set_xlabel("sample index"); ax[1].set_ylabel(f"{lab}(y)"); ax[1].set_title(f"Zoom: last 40 samples (block {nblk - 1} -> tail)")
         ax[1].legend(loc="best")
         paths.append(_save(fig, outdir, fn))
 
@@ -67,7 +67,7 @@ def plot_all(ctx, outdir):
     ax.bar(x + 0.2, [r["rmse"] for r in bl], 0.4, label="RMSE")
     ax.plot(x, [r["tol_max"] for r in bl], "k_", ms=18, mew=2, label="tolerance (max in block)")
     ax.axhline(LSB, color="g", ls=":", label="1 output LSB")
-    ax.set_yscale("log"); ax.set_xlabel("block (20 = tail)"); ax.set_ylabel("|y_python - y_RTL|")
+    ax.set_yscale("log"); ax.set_xlabel(f"block ({nblk} = tail)"); ax.set_ylabel("|y_python - y_RTL|")
     ax.set_title("Float64 reference vs RTL: error per block"); ax.legend(ncol=4, fontsize=8)
     paths.append(_save(fig, outdir, "04_error_per_block.png"))
 
@@ -83,7 +83,7 @@ def plot_all(ctx, outdir):
             ax[r, m].set_title(f"{lab}(w{m}) used in block")
             ax[r, m].grid(alpha=0.3)
             if r == 1:
-                ax[r, m].set_xlabel("block (20 = tail)")
+                ax[r, m].set_xlabel(f"block ({nblk} = tail)")
     ax[0, 0].legend(fontsize=7)
     fig.suptitle("Weight evolution across blocks (block 0 = a/4; block b uses the solve of block b-1)")
     paths.append(_save(fig, outdir, "05_weight_evolution.png"))

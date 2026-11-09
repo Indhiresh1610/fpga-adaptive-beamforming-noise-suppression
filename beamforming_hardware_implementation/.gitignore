@@ -1,0 +1,81 @@
+# ============================================================================
+# Git Ignore Configuration: MVDR FPGA Project (Spartan-7 Boolean Board)
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python distribution / packaging / virtual environments
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Vivado intermediate files, caches, and run directories
+*.log
+*.jou
+*.str
+*.wdb
+*.vcd
+*.pb
+.Xil/
+xsim.dir/
+webtalk*
+clockInfo.txt
+
+# Vivado project auto-generated caches and transient simulation outputs
+Beamforming_MVDR/Beamforming_MVDR.cache/
+Beamforming_MVDR/Beamforming_MVDR.hw/
+Beamforming_MVDR/Beamforming_MVDR.ip_user_files/
+Beamforming_MVDR/Beamforming_MVDR.sim/
+Beamforming_MVDR/Beamforming_MVDR.runs/
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Scratch and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ============================================================================
+# Explicitly whitelist vital project deliverables (never ignore these extensions)
+# ============================================================================
+!*.v
+!*.vh
+!*.xdc
+!*.mem
+!*.py
+!*.csv
+!*.json
+!*.rpt
+!*.png
+!*.xpr
+!*.md
+!*.cpp
+!*.h
+!*.cfg

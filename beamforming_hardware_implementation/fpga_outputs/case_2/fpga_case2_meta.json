@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "n_y": 2047,
+  "n_w": 27,
+  "status": 0,
+  "status_hex": "0x00",
+  "status_flags": [],
+  "solve_cycles_last_block": 1008,
+  "capture_overflow": false,
+  "samples_decoded": 2047,
+  "weight_sets_decoded": 27,
+  "bad_records": 0,
+  "skipped_bytes": 0,
+  "end_record": {
+    "n_y": 2047,
+    "n_w": 27
+  },
+  "checksum75_hex": "4289d6cdedb6e8c2273",
+  "checksum_parity_LD3": 1,
+  "problems": []
+}

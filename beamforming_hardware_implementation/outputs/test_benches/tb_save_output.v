@@ -1,12 +1,12 @@
 `timescale 1ns/1ps
 // ============================================================================
-// tb_save_output.v -- runs mvdr_top on x_mem.mem and SAVES every output sample to a CSV file.
-// Uses the same parameters as the board build (BLOCK_LEN 76, NUM_SAMPLES 1536, free-run, no
+// tb_save_output.v -- runs mvdr_top on case_2.mem and SAVES every output sample to a CSV file.
+// Uses the same parameters as the board build (BLOCK_LEN 76, NUM_SAMPLES 2047, free-run, no
 // backpressure), so the file shows what the FPGA computes for the same memory image.
 //
 // CSV columns:  idx, block, re_raw, im_raw, re_value, im_value, m_data_hex
 //   m_data[47:0] = {im[23:0], re[23:0]}, each signed Q2.22  ->  value = raw / 4194304
-//   (the values are scaled by the global gain g that was applied when x_mem.mem was written;
+//   (the values are scaled by the global gain g that was applied when the .mem file was written;
 //    divide by g to get the original amplitude)
 // Also prints the same running checksum the board wrapper computes, so LD3 on the board can be
 // compared with the parity printed here.
@@ -14,9 +14,9 @@
 // ============================================================================
 module tb_save_output;
     parameter BLOCK_LEN   = 76;
-    parameter NUM_SAMPLES = 1536;
+    parameter NUM_SAMPLES = 2047;
     parameter MEM_DEPTH   = 2048;
-    parameter MEM_FILE    = "x_mem.mem";
+    parameter MEM_FILE    = "case_2.mem";
     parameter OUT_FILE    = "y_out.csv";
 
     reg clk = 1'b0;

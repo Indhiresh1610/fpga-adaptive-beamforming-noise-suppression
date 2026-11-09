@@ -1,4 +1,4 @@
-"""parse_mem.py -- read the RTL input memory image (x_mem.mem) exactly as input_mem.v does.
+"""parse_mem.py -- read the RTL input memory image (case_N.mem) exactly as input_mem.v does.
 
 Facts taken from input_mem.v (and cross-checked against the file contents):
   * one 128-bit word per line, 32 hex digits, $readmemh order (line k -> mem[k])

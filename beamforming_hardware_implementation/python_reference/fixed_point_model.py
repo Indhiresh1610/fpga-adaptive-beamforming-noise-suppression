@@ -185,7 +185,7 @@ def accumulate_cov(S, xr, xi):
         S[10 + p] += xi[i] * xr[j] - xr[i] * xi[j]         # Im(x_i conj(x_j))
 
 
-def run_fixed_point(a_re, a_im, xr, xi, block_len=76, num_samples=1536):
+def run_fixed_point(a_re, a_im, xr, xi, block_len=76, num_samples=2047):
     """xr, xi: int arrays (n, 4).  Returns dict with raw outputs, weights per block, S/R per block, flags."""
     sol = Solver(a_re, a_im, block_len)
     nblk, tail = num_samples // block_len, num_samples % block_len

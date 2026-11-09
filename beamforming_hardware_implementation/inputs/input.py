@@ -1,4 +1,30 @@
+import os
 import numpy as np
+
+# ============================================================================
+# AI generated block: generate one .mem file per case (case_1.mem ... case_7.mem)
+#
+# Re-runs this script once per case in a separate Python process, passing the
+# case number and output file name through environment variables (read by the
+# "AI generated hook" line below). Every case therefore starts from the
+# same RNG seed, exactly as if you had edited `case` by hand and run the script.
+# The launching run then exits after all cases are written.
+# Set GENERATE_ALL_CASES = False to run only the single case selected below
+# (that run writes case_<case>.mem).
+# ============================================================================
+GENERATE_ALL_CASES = True
+ALL_CASES = [1, 2, 3, 4, 5, 6, 7]
+
+if GENERATE_ALL_CASES and "MVDR_CASE" not in os.environ:
+    import subprocess
+    import sys
+
+    for c in ALL_CASES:
+        env = dict(os.environ, MVDR_CASE=str(c))
+        subprocess.run([sys.executable, os.path.abspath(__file__)], env=env, check=True)
+    sys.exit(0)
+# ======================= End of AI generated block ==========================
+
 
 fs = 512
 
@@ -14,43 +40,41 @@ d = 0.5 # in terms of lambda
 # Random number generator
 rng = np.random.default_rng(seed)
 
-# Time array
-T = np.arange(int(fs * duration)) / fs
-N = len(T)
-
-# # CASE-1
-# ang_intf = [-80, -50, -10, 50, 85, 120]
-# pow_intf = [1.0] * 6
-
-# # should add the other cases
-
 # AI generated cases:
 
-case = 1
+case = int(os.environ.get("MVDR_CASE", 1))   # AI generated hook: the per-case block at the top sets MVDR_CASE
 
 if case == 1:
-    des_angle = 0
-    ang_intf = []
-    pow_intf = []
+    # Basic null steering: one strong (20 dB), well separated interferer
+    des_angle = 20
+    ang_intf = [-40]
+    pow_intf = [100.0]
 
 elif case == 2:
-    ang_intf = [-40, 75]
-    pow_intf = [1.0, 1.0]
+    # Full degrees of freedom: 3 interferers = M-1 nulls for a 4-element array
+    des_angle = -20
+    ang_intf = [-60, 15, 70]
+    pow_intf = [10.0, 10.0, 10.0]
 
 elif case == 3:
-    ang_intf = [-80, -50, -10, 50, 85, 120]
-    pow_intf = [1.0] * 6
+    # Overloaded array: more interferers than the array can null, two near endfire
+    des_angle = 0
+    ang_intf = [-75, -45, 25, 55, 85]
+    pow_intf = [10.0] * 5
 
 elif case == 4:
-    ang_intf = [25]
-    pow_intf = [1.0]
+    # Close-in interferer: 15 deg from the desired direction, inside the main beam
+    des_angle = -35
+    ang_intf = [-20]
+    pow_intf = [100.0]
 
 elif case == 5:
-    ang_intf = [-50, 65, 100]
-    pow_intf = [100.0, 0.1, 0.1]
+    # High dynamic range: 40 dB interferer plus a 0 dB interferer
+    des_angle = 50
+    ang_intf = [-30, 10]
+    pow_intf = [10000.0, 1.0]
 
 elif case == 6:
-    duration = 8.0
     ang_intf = [60, -30]
     pow_intf = [10.0, 10.0]
 
@@ -60,7 +84,6 @@ elif case == 6:
     sweep_angle_end = 20.0
 
 elif case == 7:
-    duration = 8.0
     ang_intf = [40, -30]
     pow_intf = [1.0, 10.0]
 
@@ -71,24 +94,11 @@ elif case == 7:
 else:
     raise ValueError("Invalid case number")
 
-# Re-create time array after selecting the case, since duration may change.
-T = np.arange(int(fs * duration)) / fs
-N = len(T)
-
 # End of AI generated case-code
 
-# # Dynamic case
-
-# duration = 8.0
-# T = np.arange(int(fs * duration)) / fs
-# N = len(T)
-
-# ang_intf = [60, -30]
-# pow_intf = [10.0, 10.0]
-# sweep_start = 0.3
-# sweep_end = 0.9
-# sweep_angle_start = 60
-# sweep_angle_end = 20
+# Time array
+T = np.arange(int(fs * duration)) / fs
+N = len(T)
 
 # Idea: Generate desired signal components, interference components, noise and add it all together
 
@@ -117,8 +127,6 @@ intf_offsets = [-18, 12, -10, 22, -25, 6]
 
 X = des_components.copy()
 
-intf_components = []
-
 n_angle = len(ang_intf)
 
 for k in range(n_angle):
@@ -136,7 +144,7 @@ for k in range(n_angle):
         ang_t = sweep_angle_start + (
             sweep_angle_end - sweep_angle_start
         ) * u
-    
+
     # case of stationary interferer (in termms of angle)
     else:
         ang_t = np.array([ang_intf[k]]*N)
@@ -187,39 +195,24 @@ X += noise
 
 # Creating the MEM FILE
 
-def q(x, frac):  # float -> 16-bit two's complement
-    return np.clip(np.round(x * 2**frac), -32768, 32767).astype(np.int64) & 0xFFFF
+PEAK      = 0.9            # largest |re| or |im| after scaling
+MEM_FILE  = f"case_{case}.mem"   # output file named after the selected case
+BLOCK_LEN = 76             # must match BLOCK_LEN in the RTL (mvdr_top.v)
 
-def write_mem(X, a, x_path="x_mem.mem", a_path="a_mem.mem", peak=0.9):
-    M, N = X.shape
-    g = peak / max(np.abs(X.real).max(), np.abs(X.imag).max())   # weights don't care about g
-    re, im = q(g * X.real.T, 15), q(g * X.imag.T, 15)            # (N, M), Q1.15
-    with open(x_path, "w") as f:
-        for n in range(N):
-            f.write("".join(f"{int(im[n,m]):04x}{int(re[n,m]):04x}"
-                            for m in reversed(range(M))) + "\n")
-    with open(a_path, "w") as f:                                  # Q2.14
-        for m in range(M):
-            f.write(f"{int(q(a[m].imag,14)):04x}{int(q(a[m].real,14)):04x}\n")
-    return g
-
-PEAK     = 0.9            # largest |re| or |im| after scaling
-MEM_FILE = "x_mem.mem"
- 
 def q(x, frac):
     """float -> 16-bit two's complement integer (0..65535), round + saturate."""
     return np.clip(np.round(x * 2**frac), -32768, 32767).astype(np.int64) & 0xFFFF
- 
+
 def write_mem(X, a, path, peak=PEAK):
     M, N = X.shape
     assert N & (N - 1) == 0, "N must be a power of two (set duration so fs*duration = 2^k)"
     n_used = N - 1                                   # line 0 is taken by the steering vector
     Xu = X[:, :n_used]
- 
+
     g = peak / max(np.abs(Xu.real).max(), np.abs(Xu.imag).max())   # ONE global gain
     re = q(g * Xu.real.T, 15)                        # (n_used, M), Q1.15
     im = q(g * Xu.imag.T, 15)
- 
+
     with open(path, "w") as f:
         # header line: steering vector, Q2.14 (1.0 = 0x4000), NOT scaled by g
         f.write("".join(f"{int(q(a[m].imag, 14)):04x}{int(q(a[m].real, 14)):04x}"
@@ -228,7 +221,7 @@ def write_mem(X, a, path, peak=PEAK):
             f.write("".join(f"{int(im[n, m]):04x}{int(re[n, m]):04x}"
                             for m in reversed(range(M))) + "\n")
     return g, n_used
- 
+
 g, n_used = write_mem(X, a_des, MEM_FILE)
-print(f"case {case}: N={N}, lines written={n_used + 1}, usable samples={n_used}, "
-      f"g={g:.6f}, 64-sample blocks={n_used // 64}")
+print(f"case {case}: {MEM_FILE}, des_angle={des_angle}, N={N}, usable samples={n_used}, "
+      f"g={g:.6f}, {BLOCK_LEN}-sample blocks={n_used // BLOCK_LEN} (+ tail {n_used % BLOCK_LEN})")

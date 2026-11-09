@@ -1,0 +1,19 @@
+Metric,Value,Unit / Notes
+Hardware Target,Real Digital Boolean Board (Spartan-7 XC7S50),FPGA Board
+Test Case,"case_2.mem (3 interferers, des_angle=-20 deg)",Input Signal
+Total Samples Decoded,2047,Samples
+Total Weight Sets Decoded,27,Weight snapshots
+UART Status Flags,0x00,0x00 = No Error
+Capture Overflow,False,False = No Overflow
+UART Bad Records,0,0 = Perfect Integrity
+Solve Cycles (Last Block),1008,Clock cycles at 50 MHz
+75-bit Running Checksum,4289d6cdedb6e8c2273,Hardware Checksum
+Checksum Parity (LD3),1,Matches LD3 LED (1)
+FPGA vs Fixed-Point Output Bit-Exact,True,2047 / 2047 exact raw integers
+FPGA vs Fixed-Point Weights Bit-Exact,True,27 / 27 exact Q5.20 integers
+FPGA vs Float64 Max Re Error,1.119266e-06,4.69 LSBs
+FPGA vs Float64 Max Im Error,1.014525e-06,4.26 LSBs
+FPGA vs Float64 Max Complex Error,1.127139e-06,4.73 LSBs
+FPGA vs Float64 Complex RMSE,3.881777e-07,1.63 LSBs
+FPGA vs Float64 Max Weight Diff,1.252686e-06,L2 norm error
+Final Validation Status,"PASS (BIT-EXACT WITH RTL, WITHIN NUMERICAL BOUND OF FLOAT64)",Overall Verdict

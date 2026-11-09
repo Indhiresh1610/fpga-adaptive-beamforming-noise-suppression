@@ -1,0 +1,84 @@
+================================================================================
+FINAL PHYSICAL FPGA HARDWARE VALIDATION REPORT — CASE 2
+Spartan-7 XC7S50 (Real Digital Boolean Board)
+================================================================================
+
+1. EXECUTIVE SUMMARY
+--------------------
+The hardware execution of the 4-antenna causal block MVDR beamformer on the physical
+Real Digital Boolean Board has been completely verified against both reference models:
+
+  * FPGA vs Bit-Accurate Fixed-Point RTL Model: 100% BIT-EXACT MATCH
+    - All 2047 beamformed samples (re_raw and im_raw) match bit-for-bit (0 mismatches).
+    - All 27 weight sets (Q5.20 fixed-point words for 4 antennas) match bit-for-bit (0 mismatches).
+
+  * FPGA vs Float64 Reference Model: PASS WITHIN THEORETICAL TOLERANCE
+    - Max complex error: 1.1274e-06 (4.73 output LSBs, well below derived bound of 78 LSBs).
+    - Complex RMSE: 3.8818e-07 (1.63 output LSBs).
+    - All 2047 samples are well within the derived numerical error bounds.
+
+2. HARDWARE TELEMETRY & INTEGRITY (from fpga_case2_meta.json)
+-----------------------------------------------------------
+  * Protocol Version           : 1
+  * Status Register            : 0x00 (all status flags 0)
+    - err_overrun              : 0
+    - err_pivot                : 0 (no pivot fell below D_MIN = 2^-14)
+    - err_solver               : 0 (no matrix singularity or fallback)
+    - sat_solver               : 0 (no intermediate solver saturation)
+    - sat_w                    : 0 (no weight saturation in Q5.20)
+    - sat_y                    : 0 (no output rail saturation in Q2.22)
+    - info_zero_trace          : 0 (valid input power throughout)
+    - err_cfg                  : 0 (configuration valid)
+  * Capture Buffer Overflow    : False (False)
+  * Solve Duration (Last Block): 1008 clock cycles (20.16 us at 50 MHz)
+  * UART Frame Integrity       : 0 bad checksums, 0 skipped bytes
+  * 75-bit Hardware Checksum   : 0x4289d6cdedb6e8c2273
+  * Running Checksum Parity    : 1 (matches LD3 LED state: ON)
+  * Samples Decoded            : 2047 / 2047
+  * Weight Sets Decoded        : 27 / 27
+
+3. SAMPLE INDEXING, BLOCK STRUCTURE & SCALING
+---------------------------------------------
+  * Sample Indexing            : Contiguous indices 0 to 2046 in monotonic order.
+  * Block Structuring          : Blocks 0 to 25 (76 samples each) = 1976 samples;
+                                 Block 26 (Tail) = 71 samples. Total = 2047 samples.
+  * Quantization & Scaling     : Output Q2.22 (LSB = 2^-22 = 2.384186e-07).
+                                 Values scaled by input global gain g = 0.082728.
+
+4. BIT-EXACT VERIFICATION (FPGA vs Fixed-Point C/RTL Model)
+----------------------------------------------------------
+  * Beamformed Output Samples (re_raw, im_raw) : 2047 / 2047 BIT-EXACT (0 mismatches)
+  * Weight Registers (Q5.20 integer components): 27 / 27 BIT-EXACT (0 mismatches)
+  * Conclusion: The Verilog synthesis and FPGA implementation execute arithmetic
+    identical to the bit-accurate simulation model to the exact least significant bit.
+
+5. NUMERICAL ACCURACY (FPGA vs Float64 Reference)
+-------------------------------------------------
+  * Real Component Max Error    : 1.119266e-06 (4.69 LSBs)
+  * Imaginary Component Max Err : 1.014525e-06 (4.26 LSBs)
+  * Complex Magnitude Max Error : 1.127139e-06 (4.73 LSBs)
+  * Complex Magnitude Mean Error: 3.366761e-07 (1.41 LSBs)
+  * Complex Output RMSE         : 3.881777e-07 (1.63 LSBs)
+  * Max Weight Difference (L2)  : 1.252686e-06
+
+6. PER-BLOCK ERROR SUMMARY (Selected Sample)
+-------------------------------------------
+Block | Kind  | Samples | Max Err (LSB) | RMSE (LSB) | Max Re (LSB) | Max Im (LSB)
+----------------------------------------------------------------------------------
+    0 | block |      76 |          0.63 |       0.39 |         0.49 |         0.49
+    1 | block |      76 |          2.05 |       1.00 |         1.94 |         1.77
+    2 | block |      76 |          3.75 |       2.29 |         3.28 |         3.52
+    5 | block |      76 |          3.72 |       2.26 |         2.63 |         3.64
+   10 | block |      76 |          2.53 |       1.45 |         1.69 |         2.48
+   15 | block |      76 |          1.59 |       0.79 |         1.52 |         1.04
+   20 | block |      76 |          3.52 |       1.74 |         3.52 |         2.34
+   25 | block |      76 |          2.52 |       1.40 |         2.18 |         2.52
+   26 | tail  |      71 |          3.04 |       1.83 |         2.53 |         2.81
+----------------------------------------------------------------------------------
+Full 27-block details available in reports/per_block_validation.csv
+
+7. FINAL VERDICT
+----------------
+OVERALL STATUS: FULL HARDWARE SUCCESS (PASS)
+The physical Boolean board FPGA implementation is confirmed to be BIT-EXACT with
+the fixed-point hardware model, and mathematically compliant with the float64 MVDR reference.

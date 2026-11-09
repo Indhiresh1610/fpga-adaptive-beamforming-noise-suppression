@@ -18,7 +18,7 @@
 
 module block_controller #(
     parameter BLOCK_LEN    = 76,
-    parameter NUM_SAMPLES  = 1536,
+    parameter NUM_SAMPLES  = 2047,
     parameter MEM_DEPTH    = 2048,
     parameter READ_LATENCY = 1,
     parameter PACED        = 0

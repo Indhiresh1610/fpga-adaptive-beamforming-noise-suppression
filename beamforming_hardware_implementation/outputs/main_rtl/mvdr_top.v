@@ -14,9 +14,9 @@
 
 module mvdr_top #(
     parameter BLOCK_LEN             = 76,
-    parameter NUM_SAMPLES           = 1536,
+    parameter NUM_SAMPLES           = 2047,
     parameter MEM_DEPTH             = 2048,
-    parameter MEM_FILE              = "x_mem.mem",
+    parameter MEM_FILE              = "x_mem.mem", // UNUSED: the file is set in input_mem.v
     parameter READ_LATENCY          = 1,
     parameter PACED                 = 0,
     parameter LAMBDA_ONE_MINUS_COEF = 3355443, // round(0.2 * 2^24)
@@ -112,7 +112,8 @@ module mvdr_top #(
     input_mem #(
         .MEM_DEPTH(MEM_DEPTH),
         .NUM_SAMPLES(NUM_SAMPLES),
-        .MEM_FILE(MEM_FILE),
+        // MEM_FILE is deliberately NOT passed down: the input file name is
+        // typed directly in input_mem.v (one place for sim and bitstream).
         .READ_LATENCY(READ_LATENCY)
     ) u_mem (
         .clk(clk),

@@ -27,7 +27,7 @@ D_MIN = 2.0 ** -14
 class RefConfig:
     num_ant: int = 4
     block_len: int = 76
-    num_samples: int = 1536
+    num_samples: int = 2047
     fs_hz: float = 512.0
     forgetting: float = 0.8
     loading: float = 1e-3        # fraction of trace/M

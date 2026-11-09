@@ -6,14 +6,18 @@
 // mem[1..N]    = snapshots x[0..N-1] (Q1.15) -> read with sample_idx = 0..N-1
 // Word layout: {s3, s2, s1, s0}; sensor m = word[32*m +: 32];
 // re = [15:0], im = [31:16] (signed).
+//
+// The input file is chosen ONLY here (MEM_FILE below); mvdr_top does not
+// override it. Add the .mem file to the Vivado project as a design source
+// (and as a simulation source) so $readmemh can find it.
 // ============================================================================
 
 `timescale 1ns/1ps
 
 module input_mem #(
     parameter MEM_DEPTH    = 2048,
-    parameter NUM_SAMPLES  = 1536,
-    parameter MEM_FILE     = "x_mem.mem",
+    parameter NUM_SAMPLES  = 2047,
+    parameter MEM_FILE     = "case_2.mem",   // Selected Case 2: 3 interferers (full M-1 DoF), des_angle=-20 deg
     parameter READ_LATENCY = 1
 )(
     input  wire                               clk,

@@ -1,0 +1,12 @@
+metric,value
+input_case,case_2.mem
+num_samples,2047
+num_full_blocks,26
+tail_samples,71
+overall_verdict,PASS
+cond_min,20.06
+cond_max,24.02
+max_abs_err_lsb,4.73
+rmse_lsb,1.63
+samples_within_tol,2047
+samples_outside_tol,0
